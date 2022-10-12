@@ -2,7 +2,7 @@
   "name": "storybook-ui",
   "description": "Library of customizable components for web subscriptions",
   "main": "index.ts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "start": "react-scripts start",
     "eject": "react-scripts eject",
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:gismart/storybook-ui.git"
+    "url": "git+ssh://git@github.com:gismart/storybook-ui.git"
   },
   "homepage": "https://github.com/gismart/storybook-ui",
   "dependencies": {
