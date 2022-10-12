@@ -1,0 +1,15 @@
+.idea/
+.vscode/
+/node_modules
+/coverage
+/dist
+/temp
+.cache
+.DS_Store
+id_rsa
+package.json
+package-lock.json
+jest.config.js
+tsconfig.json
+webpack.config.js
+server.js
