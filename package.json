@@ -1,7 +1,29 @@
 {
   "name": "storybook-ui",
+  "description": "Library of customizable components for web subscriptions",
+  "main": "index.ts",
   "version": "0.1.0",
-  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "lint": "node_modules/.bin/eslint '**/*.{ts?(x),js?(x)}'",
+    "lint:fix": "node_modules/.bin/eslint --fix '**/*.{ts?(x),js?(x)}'",
+    "prettier:check": "node_modules/.bin/prettier --check '**/*.{ts?(x),js?(x),json}'",
+    "prettier:fix": "node_modules/.bin/prettier --write '**/*.{ts?(x),js?(x),json}'",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
+    "prepare:package": "npm run lint && npm run prettier:check && npm run build",
+    "publish:package": "npm run prepare:package && npm publish --registry https://npm.gismart.xyz"
+  },
+  "files": [
+    "core"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gismart/storybook-ui.git"
+  },
+  "homepage": "https://github.com/gismart/storybook-ui",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,18 +38,8 @@
     "styled-components": "^5.3.5",
     "typescript": "^4.8.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "lint": "node_modules/.bin/eslint '**/*.{ts?(x),js?(x)}'",
-    "lint:fix": "node_modules/.bin/eslint --fix '**/*.{ts?(x),js?(x)}'",
-    "prettier:check": "node_modules/.bin/prettier --check '**/*.{ts?(x),js?(x),json}'",
-    "prettier:fix": "node_modules/.bin/prettier --write '**/*.{ts?(x),js?(x),json}'"
-  },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
@@ -40,6 +52,7 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/styled-components": "^5.1.26",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "8.15.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "8.5.0",
@@ -62,6 +75,16 @@
   "lint-staged": {
     "*.{js?(x),ts?(x)}": "node_modules/.bin/eslint",
     "*.{js?(x),ts?(x),json}": "node_modules/.bin/prettier --check"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
   },
   "browserslist": [
     "last 1 chrome version",
