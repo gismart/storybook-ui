@@ -2,7 +2,7 @@
   "name": "storybook-ui",
   "description": "Library of customizable components for web subscriptions",
   "main": "index.ts",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "scripts": {
     "start": "start-storybook -p 6006",
     "clean": "rm -rf core",
