@@ -7,7 +7,6 @@
     "start": "start-storybook -p 6006",
     "clean": "rm -rf core",
     "build": "npm run clean && npm run build:styles && npm run build:js && npm run build:assets",
-    "build:styles": "lessc --js src/styles/index.less core/styles.css && ./assetPath.sh",
     "build:js": "node_modules/.bin/tsc --declaration --declarationMap --outDir core",
     "build:assets": "cp -R ./src/assets ./core/assets",
     "build:storybook": "build-storybook -c .storybook -o static-storybook",
