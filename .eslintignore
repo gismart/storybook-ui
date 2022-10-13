@@ -3,6 +3,7 @@
 /node_modules
 /coverage
 /dist
+/core
 /temp
 .cache
 .DS_Store
