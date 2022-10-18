@@ -90,6 +90,12 @@ export const COMMON_STYLES_CONTROLS = {
       category: ControlsCategories.SIZES,
     },
   },
+  border: {
+    control: 'text',
+    table: {
+      category: ControlsCategories.SIZES,
+    },
+  },
   textAlign: {
     control: 'select',
     table: {
