@@ -1,6 +1,9 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
+import { COMMON_STYLES_CONTROLS } from '../constants/controls'
+import { ControlsCategories } from '../constants/root-constants'
+
 import { Button } from '../components/Button'
 
 // eslint-disable-next-line import/no-default-export
@@ -9,93 +12,19 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Components/Buttons',
+  title: 'Components/Button',
   component: Button,
   argTypes: {
-    backgroundColor: {
-      control: 'color',
+    ...COMMON_STYLES_CONTROLS,
+    disabled: {
       table: {
-        category: 'colors',
-      },
-    },
-    backgroundGradientColor: {
-      control: 'text',
-      table: {
-        category: 'colors',
-      },
-    },
-    color: {
-      control: 'color',
-      table: {
-        category: 'colors',
-      },
-    },
-    minWidth: {
-      control: {
-        type: 'number',
-        min: 1,
-        max: 2560,
-        step: 1,
-      },
-      table: {
-        category: 'sizes',
-      },
-    },
-    isFullWidth: {
-      table: {
-        category: 'sizes',
-      },
-    },
-    padding: {
-      control: 'text',
-      table: {
-        category: 'sizes',
-      },
-    },
-    textAlign: {
-      control: 'select',
-      table: {
-        category: 'alignment',
-      },
-    },
-    isDisabled: {
-      table: {
-        category: 'interaction',
+        category: ControlsCategories.INTERACTION,
       },
     },
     disableBackgroundColor: {
       control: 'color',
       table: {
-        category: 'colors',
-      },
-    },
-    borderRadius: {
-      control: 'text',
-      table: {
-        category: 'visual',
-      },
-    },
-    fontSize: {
-      control: 'number',
-      table: {
-        category: 'fonts',
-      },
-    },
-    lineHeight: {
-      control: 'number',
-      table: {
-        category: 'fonts',
-      },
-    },
-    fontWeight: {
-      control: {
-        type: 'number',
-        min: 100,
-        max: 900,
-        step: 100,
-      },
-      table: {
-        category: 'fonts',
+        category: ControlsCategories.COLORS,
       },
     },
     buttonRef: { control: false },
@@ -106,10 +35,15 @@ export default {
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
 // 👇 Each story then reuses that template
-export const Simple = Template.bind({})
-Simple.args = {
-  children: 'Button',
-  padding: '10px 20px',
-  minWidth: 240,
-  fontSize: 20,
+export const Regular = Template.bind({})
+Regular.args = {
+  isFullWidth: true,
+  children: 'Ok, Got it!',
+  height: 50,
+  lineHeight: 50,
+  borderRadius: '12px',
+  padding: '0 15px',
+  maxWidth: 320,
+  fontSize: 17,
+  backgroundColor: 'rgb(255, 130, 118)',
 }
