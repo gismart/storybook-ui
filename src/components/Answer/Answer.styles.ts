@@ -5,7 +5,9 @@ import { IAnswerButtonProps } from './Answer'
 
 export const StyledAnswerBased = css<IAnswerButtonProps>`
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: ${({ contentHorizontalAlign }) =>
     contentHorizontalAlign || ContentHorizontalAlignment.START};
 
@@ -44,6 +46,9 @@ export const StyledAnswerBased = css<IAnswerButtonProps>`
       !activeBackgroundGradientColor && (activeBackgroundColor || '#ff8276')};
     background-image: ${({ activeBackgroundGradientColor }) =>
       activeBackgroundGradientColor};
+    color: ${({ activeColor }) => activeColor || '#fff'};
+  }
+  input:checked + & > * {
     color: ${({ activeColor }) => activeColor || '#fff'};
   }
 `

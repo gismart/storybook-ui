@@ -4,6 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { OptionType } from '../components/Option'
 import { COMMON_STYLES_CONTROLS } from '../constants/controls'
 import { ControlsCategories } from '../constants/root-constants'
+import { ComplexAnswerContent } from '../content/ComplexAnswerContent'
 
 import { Answer } from '../components/Answer'
 
@@ -66,6 +67,22 @@ const Template: ComponentStory<typeof Answer> = (args) => <Answer {...args} />
 export const Simple = Template.bind({})
 Simple.args = {
   children: 'Answer',
+  type: OptionType.CHECKBOX,
+  boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
+  isFullWidth: true,
+  maxWidth: 320,
+  height: 64,
+  backgroundColor: '#ffffff',
+  color: 'rgb(45, 50, 64)',
+  fontSize: 17,
+  borderRadius: '20px',
+  padding: '0 15px',
+  value: 'User answer',
+}
+
+export const Complex = Template.bind({})
+Complex.args = {
+  children: <ComplexAnswerContent />,
   type: OptionType.CHECKBOX,
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
   isFullWidth: true,
