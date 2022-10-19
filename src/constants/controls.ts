@@ -27,42 +27,48 @@ export const COMMON_STYLES_CONTROLS = {
   },
   minWidth: {
     control: {
-      type: 'number',
-      min: 1,
-      max: 2560,
-      step: 1,
+      type: 'text',
     },
     table: {
       category: ControlsCategories.SIZES,
     },
   },
   width: {
+    control: {
+      type: 'text',
+    },
     table: {
       category: ControlsCategories.SIZES,
     },
   },
   maxWidth: {
+    control: {
+      type: 'text',
+    },
     table: {
       category: ControlsCategories.SIZES,
     },
   },
   minHeight: {
     control: {
-      type: 'number',
-      min: 1,
-      max: 2560,
-      step: 1,
+      type: 'text',
     },
     table: {
       category: ControlsCategories.SIZES,
     },
   },
   height: {
+    control: {
+      type: 'text',
+    },
     table: {
       category: ControlsCategories.SIZES,
     },
   },
   maxHeight: {
+    control: {
+      type: 'text',
+    },
     table: {
       category: ControlsCategories.SIZES,
     },
@@ -103,23 +109,20 @@ export const COMMON_STYLES_CONTROLS = {
     },
   },
   fontSize: {
-    control: 'number',
+    control: 'text',
     table: {
       category: ControlsCategories.FONTS,
     },
   },
   lineHeight: {
-    control: 'number',
+    control: 'text',
     table: {
       category: ControlsCategories.FONTS,
     },
   },
   fontWeight: {
     control: {
-      type: 'number',
-      min: 100,
-      max: 900,
-      step: 100,
+      type: 'text',
     },
     table: {
       category: ControlsCategories.FONTS,

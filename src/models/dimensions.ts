@@ -1,28 +1,28 @@
 export interface IDimensionsProps {
   /**
-   * Define minimum width in px
+   * Define minimum width
    */
-  minWidth?: number
+  minWidth?: string
   /**
-   * Define maximum width in px
+   * Define maximum width
    */
-  maxWidth?: number
+  maxWidth?: string
   /**
-   * Define element width in px
+   * Define element width
    */
-  width?: number
+  width?: string
   /**
-   * Define minimum height in px
+   * Define minimum height
    */
-  minHeight?: number
+  minHeight?: string
   /**
-   * Define maximum height in px
+   * Define maximum height
    */
-  maxHeight?: number
+  maxHeight?: string
   /**
-   * Define element height in px
+   * Define element height
    */
-  height?: number
+  height?: string
   /**
    * Set element padding
    */

@@ -2,13 +2,13 @@ export interface IFontsProps {
   /**
    * Text size in px
    */
-  fontSize?: number
+  fontSize?: string
   /**
    * Line height in px
    */
-  lineHeight?: number
+  lineHeight?: string
   /**
    * Text weight
    */
-  fontWeight?: number
+  fontWeight?: string
 }
