@@ -1,10 +1,10 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { COMMON_STYLES_CONTROLS } from '../constants/controls'
-import { ControlsCategories } from '../constants/root-constants'
+import { COMMON_STYLES_CONTROLS } from 'constants/controls'
+import { ControlsCategories } from 'constants/rootConstants'
 
-import { Button } from '../components/Button'
+import { Button } from 'components/Button'
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -39,11 +39,11 @@ export const Regular = Template.bind({})
 Regular.args = {
   isFullWidth: true,
   children: 'Ok, Got it!',
-  height: 50,
-  lineHeight: 50,
+  height: '50px',
+  lineHeight: '50px',
   borderRadius: '12px',
   padding: '0 15px',
-  maxWidth: 320,
-  fontSize: 17,
+  maxWidth: '320px',
+  fontSize: '17px',
   backgroundColor: 'rgb(255, 130, 118)',
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { OptionType } from '../components/Option'
-import { COMMON_STYLES_CONTROLS } from '../constants/controls'
-import { ControlsCategories } from '../constants/root-constants'
-import { ComplexAnswerContent } from '../content/ComplexAnswerContent'
+import { OptionType } from 'components/Option'
+import { COMMON_STYLES_CONTROLS } from 'constants/controls'
+import { ControlsCategories } from 'constants/rootConstants'
+import { ComplexAnswerContent } from 'content/ComplexAnswerContent'
 
-import { AnswerWithIcon } from '../components/AnswerWithIcon'
+import { AnswerWithIcon } from 'components/AnswerWithIcon'
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -106,12 +106,12 @@ Simple.args = {
   type: OptionType.CHECKBOX,
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
   isFullWidth: true,
-  maxWidth: 320,
-  height: 64,
+  maxWidth: '320px',
+  height: '64px',
   backgroundColor: '#ffffff',
   color: 'rgb(45, 50, 64)',
-  fontSize: 17,
-  lineHeight: 22,
+  fontSize: '17px',
+  lineHeight: '22px',
   borderRadius: '20px',
   padding: '0 15px',
   value: 'User answer',
@@ -126,11 +126,11 @@ Complex.args = {
   type: OptionType.CHECKBOX,
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
   isFullWidth: true,
-  maxWidth: 320,
+  maxWidth: '320px',
   backgroundColor: '#ffffff',
   color: 'rgb(45, 50, 64)',
-  fontSize: 17,
-  lineHeight: 22,
+  fontSize: '17px',
+  lineHeight: '22px',
   borderRadius: '20px',
   padding: '10px 15px',
   value: 'User answer',

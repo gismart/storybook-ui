@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { StyledAnswerBased } from '../Answer/Answer.styles'
+import { StyledAnswerBased } from 'components/Answer/Answer.styles'
 import {
   IAnswerWithIconProps,
   IAnswerWithIconContentProps,
