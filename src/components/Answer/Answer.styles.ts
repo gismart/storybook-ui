@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import { ContentHorizontalAlignment } from '../../constants/root-constants'
+import { ContentHorizontalAlignment } from 'constants/rootConstants'
 import { IAnswerButtonProps } from './Answer'
 
 export const StyledAnswerBased = css<IAnswerButtonProps>`

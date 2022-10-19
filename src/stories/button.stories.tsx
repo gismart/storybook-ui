@@ -1,10 +1,10 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { COMMON_STYLES_CONTROLS } from '../constants/controls'
-import { ControlsCategories } from '../constants/root-constants'
+import { COMMON_STYLES_CONTROLS } from 'constants/controls'
+import { ControlsCategories } from 'constants/rootConstants'
 
-import { Button } from '../components/Button'
+import { Button } from 'components/Button'
 
 // eslint-disable-next-line import/no-default-export
 export default {

@@ -1,12 +1,12 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { OptionType } from '../components/Option'
-import { COMMON_STYLES_CONTROLS } from '../constants/controls'
-import { ControlsCategories } from '../constants/root-constants'
-import { ComplexAnswerContent } from '../content/ComplexAnswerContent'
+import { OptionType } from 'components/Option'
+import { COMMON_STYLES_CONTROLS } from 'constants/controls'
+import { ControlsCategories } from 'constants/rootConstants'
+import { ComplexAnswerContent } from 'content/ComplexAnswerContent'
 
-import { AnswerWithIcon } from '../components/AnswerWithIcon'
+import { AnswerWithIcon } from 'components/AnswerWithIcon'
 
 // eslint-disable-next-line import/no-default-export
 export default {

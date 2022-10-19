@@ -1,4 +1,4 @@
-import { ControlsCategories } from './root-constants'
+import { ControlsCategories } from './rootConstants'
 
 export const COMMON_STYLES_CONTROLS = {
   backgroundColor: {
