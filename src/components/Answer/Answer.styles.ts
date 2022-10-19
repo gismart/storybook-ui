@@ -1,9 +1,15 @@
 import styled, { css } from 'styled-components'
 
 import { ContentHorizontalAlignment } from 'constants/rootConstants'
+import { CommonFontsStyles } from 'styles/CommonFonts.styles'
+import { CommonColorsStyles } from 'styles/CommonColors.styles'
+import { CommonDimensionsStyles } from 'styles/CommonDimensions.styles'
 import { IAnswerButtonProps } from './Answer'
 
 export const StyledAnswerBased = css<IAnswerButtonProps>`
+  ${CommonFontsStyles};
+  ${CommonColorsStyles};
+  ${CommonDimensionsStyles};
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -17,27 +23,6 @@ export const StyledAnswerBased = css<IAnswerButtonProps>`
   font-family: sans-serif;
   overflow-wrap: break-word;
   word-break: break-all;
-
-  background-color: ${({ backgroundColor }) => backgroundColor || '#000000'};
-  background-image: ${({ backgroundGradientColor }) => backgroundGradientColor};
-  color: ${({ color }) => color || '#ffffff'};
-  box-shadow: ${({ boxShadow }) => boxShadow || 'none'};
-
-  min-width: ${({ minWidth }) => (minWidth ? `${minWidth}px` : 'auto')};
-  max-width: ${({ maxWidth }) => (maxWidth ? `${maxWidth}px` : 'auto')};
-  width: ${({ width, isFullWidth }) =>
-    // eslint-disable-next-line no-nested-ternary
-    isFullWidth ? '100%' : width ? `${width}px` : 'auto'};
-  min-height: ${({ minHeight }) => (minHeight ? `${minHeight}px` : 'auto')};
-  height: ${({ height }) => (height ? `${height}px` : 'auto')};
-  padding: ${({ padding }) => padding || 0};
-  margin: ${({ margin }) => margin || 0};
-  border-radius: ${({ borderRadius }) => borderRadius || 0};
-  border: ${({ border }) => border || 'none'};
-
-  font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : '16px')};
-  line-height: ${({ lineHeight }) => (lineHeight ? `${lineHeight}px` : '16px')};
-  font-weight: ${({ fontWeight }) => fontWeight || 400};
 
   input:checked + & {
     background-color: ${({
