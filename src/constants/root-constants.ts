@@ -21,4 +21,5 @@ export const enum ControlsCategories {
   SIZES = 'sizes',
   ALIGNMENT = 'alignment',
   INTERACTION = 'interaction',
+  ADDON = 'addon',
 }

@@ -39,4 +39,8 @@ export interface IDimensionsProps {
    * Define element border radius
    */
   borderRadius?: string
+  /**
+   * Define element border
+   */
+  border?: string
 }

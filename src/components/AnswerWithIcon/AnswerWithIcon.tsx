@@ -6,12 +6,17 @@ import { IDimensionsProps } from '../../models/dimensions'
 import { ContentHorizontalAlignment } from '../../constants/root-constants'
 import { Option } from '../Option'
 import { IOptionProps } from '../Option/Option'
-import { StyledAnswer as S } from './Answer.styles'
+import { StyledAnswerWithIcon as S } from './AnswerWithIcon.styles'
 
-export interface IAnswerButtonProps
+export interface IAnswerWithIconContentProps {
+  spacingBetweenIconAndContent?: string
+}
+
+export interface IAnswerWithIconProps
   extends IDimensionsProps,
     IFontsProps,
-    IColorsProps {
+    IColorsProps,
+    IAnswerWithIconContentProps {
   children?: React.ReactNode
   /**
    * How content will alignment horizontally
@@ -30,12 +35,28 @@ export interface IAnswerButtonProps
    */
   activeBackgroundGradientColor?: string
   /**
+   * Icon path
+   */
+  iconSrc?: string
+  /**
+   * Icon width
+   */
+  iconWidth?: string
+  /**
+   * Icon height
+   */
+  iconHeight?: string
+  /**
+   * Should icon render on the left side
+   */
+  reverse?: boolean
+  /**
    * Define border on active element
    */
   activeBorder?: string
 }
 
-export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
+export const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps> = ({
   children,
   type,
   value,
@@ -43,6 +64,10 @@ export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
   checked,
   disabled,
   onChange,
+  iconSrc,
+  iconWidth,
+  iconHeight,
+  spacingBetweenIconAndContent,
   ...props
 }) => (
   <Option
@@ -53,6 +78,15 @@ export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
     disabled={disabled}
     onChange={onChange}
   >
-    <S.Root {...props}>{children}</S.Root>
+    <S.Root {...props}>
+      <S.Icon
+        src={iconSrc}
+        alt=""
+        style={{ width: iconWidth, height: iconHeight }}
+      />
+      <S.Content spacingBetweenIconAndContent={spacingBetweenIconAndContent}>
+        {children}
+      </S.Content>
+    </S.Root>
   </Option>
 )

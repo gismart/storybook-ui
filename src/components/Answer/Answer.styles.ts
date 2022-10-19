@@ -33,6 +33,7 @@ export const StyledAnswerBased = css<IAnswerButtonProps>`
   padding: ${({ padding }) => padding || 0};
   margin: ${({ margin }) => margin || 0};
   border-radius: ${({ borderRadius }) => borderRadius || 0};
+  border: ${({ border }) => border || 'none'};
 
   font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : '16px')};
   line-height: ${({ lineHeight }) => (lineHeight ? `${lineHeight}px` : '16px')};
@@ -47,6 +48,7 @@ export const StyledAnswerBased = css<IAnswerButtonProps>`
     background-image: ${({ activeBackgroundGradientColor }) =>
       activeBackgroundGradientColor};
     color: ${({ activeColor }) => activeColor || '#fff'};
+    border: ${({ border, activeBorder }) => activeBorder || border};
   }
   input:checked + & > * {
     color: ${({ activeColor }) => activeColor || '#fff'};
