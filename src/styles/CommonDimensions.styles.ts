@@ -13,4 +13,5 @@ export const CommonDimensionsStyles = css<IDimensionsProps>`
   padding: ${({ padding }) => padding || 0};
   margin: ${({ margin }) => margin || 0};
   border-radius: ${({ borderRadius }) => borderRadius || 0};
+  border: ${({ border }) => border || 'none'};
 `
