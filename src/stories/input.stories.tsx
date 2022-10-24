@@ -43,3 +43,22 @@ Regular.args = {
   focusedLabelFontSize: '13px',
   focusedLabelColor: 'rgb(45, 50, 64)',
 }
+
+export const Number = Template.bind({})
+Number.args = {
+  maxWidth: '320px',
+  width: '260px',
+  height: '48px',
+  isValid: true,
+  color: 'rgb(45, 50, 64)',
+  fontSize: '15px',
+  fontWeight: '500',
+  lineHeight: '1px',
+  borderRadius: '10px',
+  backgroundColor: 'rgb(255, 255, 255)',
+  border: '1px solid rgb(129, 132, 140)',
+  padding: '8px 25px',
+  type: 'number',
+  allowFloatNumbers: false,
+  isContentCentered: true,
+}
