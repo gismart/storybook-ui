@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components'
 import { CommonFontsStyles } from 'styles/CommonFonts.styles'
-import { TLabelProps, TProps, TWrapperProps } from 'components/Input/Input'
+import { ILabelProps, IProps, IWrapperProps } from 'components/Input/Input'
 import { CommonDimensionsStyles } from 'styles/CommonDimensions.styles'
 import { CommonColorsStyles } from 'styles/CommonColors.styles'
 
 export const StyledInput = {
-  Wrapper: styled.div<TWrapperProps>`
+  Wrapper: styled.div<IWrapperProps>`
     position: relative;
     display: block;
     width: ${({ width }) => width || '100%'};
@@ -26,7 +26,7 @@ export const StyledInput = {
       }
     }
   `,
-  Input: styled.input<TProps>`
+  Input: styled.input<IProps>`
     display: block;
     ${CommonDimensionsStyles};
     ${CommonFontsStyles};
@@ -82,7 +82,7 @@ export const StyledInput = {
       color: rgba(19, 29, 48, 0.5);
     }
   `,
-  Label: styled.span<TLabelProps>`
+  Label: styled.span<ILabelProps>`
     position: absolute;
     top: 20px;
     left: ${({ leftLabelPosition }) => leftLabelPosition || '16px'};

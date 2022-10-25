@@ -3,18 +3,18 @@ import { CommonColorsStyles } from 'styles/CommonColors.styles'
 import { CommonFontsStyles } from 'styles/CommonFonts.styles'
 import { CommonDimensionsStyles } from 'styles/CommonDimensions.styles'
 import {
-  TLabelProps,
-  TProps,
+  ILabelProps,
+  IProps,
 } from 'components/InputWithFloatPlaceholder/InputWithFloatPlaceholder'
 
 export const StyledInputWithFloatPlaceholder = {
-  Wrapper: styled.div<TProps>`
+  Wrapper: styled.div<IProps>`
     ${CommonDimensionsStyles};
     position: relative;
     display: block;
     margin-bottom: ${({ marginBottom }) => `${marginBottom}px`};
   `,
-  Input: styled.input<TProps>`
+  Input: styled.input<IProps>`
     display: block;
     ${CommonColorsStyles};
     ${CommonFontsStyles};
@@ -39,7 +39,7 @@ export const StyledInputWithFloatPlaceholder = {
         focusedBorderColor || '#ff9a90'};
     }
   `,
-  Label: styled.span<TLabelProps>`
+  Label: styled.span<ILabelProps>`
     position: absolute;
     top: ${({ hasValue }) => (hasValue ? '20px' : '50%')};
     transform: translateY(-50%);

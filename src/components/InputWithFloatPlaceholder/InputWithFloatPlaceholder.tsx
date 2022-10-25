@@ -1,18 +1,18 @@
 import React, { InputHTMLAttributes, RefObject } from 'react'
 
-import { StyledInputWithFloatPlaceholder as S } from './InputWithFloatPlaceholder.styles'
 import { IInputProps } from 'models/input'
+import { StyledInputWithFloatPlaceholder as S } from './InputWithFloatPlaceholder.styles'
 
-export interface TLabelProps {
+export interface ILabelProps {
   leftLabelPosition?: string
   labelColor?: string
   labelFontSize?: string
   hasValue?: boolean
 }
 
-export interface TProps
+export interface IProps
   extends IInputProps,
-    TLabelProps,
+    ILabelProps,
     Omit<InputHTMLAttributes<HTMLInputElement>, 'width' | 'height'> {
   inputRef?: RefObject<HTMLInputElement>
   className?: string
@@ -24,7 +24,7 @@ export interface TProps
   crossIconSvg?: string
 }
 
-export const InputWithFloatPlaceholder: React.FC<TProps> = ({
+export const InputWithFloatPlaceholder: React.FC<IProps> = ({
   value,
   label,
   isValid = true,

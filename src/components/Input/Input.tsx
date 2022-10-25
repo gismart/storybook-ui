@@ -6,15 +6,13 @@ import React, {
   useMemo,
   useState,
 } from 'react'
-import { StyledInput as S } from './Input.styles'
 import { IInputProps } from 'models/input'
+import { StyledInput as S } from './Input.styles'
 
-export const NumericKeypadRegex = new RegExp('([0-9]{1}|Backspace|Enter)')
-export const NumericKeypadFloatRegex = new RegExp(
-  '([0-9.,]{1}|Backspace|Enter)',
-)
+export const NumericKeypadRegex = /([0-9]{1}|Backspace|Enter)/
+export const NumericKeypadFloatRegex = /([0-9.,]{1}|Backspace|Enter)/
 
-export interface TWrapperProps {
+export interface IWrapperProps {
   width?: string
   validationText?: string
   validationTextColor?: string
@@ -22,16 +20,16 @@ export interface TWrapperProps {
   validationTextLineHeight?: string
 }
 
-export interface TLabelProps {
+export interface ILabelProps {
   leftLabelPosition?: string
   labelColor?: string
   labelFontSize?: string
 }
 
-export interface TProps
+export interface IProps
   extends IInputProps,
-    TLabelProps,
-    TWrapperProps,
+    ILabelProps,
+    IWrapperProps,
     Omit<InputHTMLAttributes<HTMLInputElement>, 'width' | 'height'> {
   hasVisibilityControl?: boolean
   inputRef?: RefObject<HTMLInputElement>
@@ -40,7 +38,7 @@ export interface TProps
   isContentCentered?: boolean
 }
 
-export const Input: React.FC<TProps> = ({
+export const Input: React.FC<IProps> = ({
   label,
   hasVisibilityControl = false,
   isValid = true,
