@@ -8,10 +8,6 @@ export interface IInputProps
     IFontsProps,
     IDimensionsProps {
   /**
-   * Input text color
-   */
-  color?: string
-  /**
    * Define input validity
    */
   isValid?: boolean
