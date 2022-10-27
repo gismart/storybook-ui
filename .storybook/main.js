@@ -21,6 +21,7 @@ module.exports = {
       models: path.resolve(__dirname, '../src/models'),
       content: path.resolve(__dirname, '../src/content'),
       styles: path.resolve(__dirname, '../src/styles'),
+      assets: path.resolve(__dirname, '../src/assets'),
     }
     return config
   },

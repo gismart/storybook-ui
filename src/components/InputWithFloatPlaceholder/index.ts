@@ -1,0 +1,1 @@
+export { InputWithFloatPlaceholder } from './InputWithFloatPlaceholder'
