@@ -14,14 +14,15 @@
     "prettier:check": "node_modules/.bin/prettier --check '**/*.{ts?(x),js?(x),json}'",
     "prettier:fix": "node_modules/.bin/prettier --write '**/*.{ts?(x),js?(x),json}'",
     "prepare:package": "npm run lint && npm run prettier:check && npm run build",
-    "publish:package": "npm run prepare:package && npm publish --registry https://npm.gismart.xyz"
+    "publish:package": "npm run prepare:package && npm publish --registry https://npm.gismart.xyz",
+    "chromatic": "npx chromatic --project-token=105d1a9d73e9"
   },
   "files": [
     "core"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:gismart/storybook-ui.git"
+    "url": "git+ssh://git@github.com/gismart/storybook-ui.git"
   },
   "homepage": "https://github.com/gismart/storybook-ui",
   "dependencies": {
@@ -91,5 +92,10 @@
     "last 1 chrome version",
     "last 1 firefox version",
     "last 1 safari version"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/gismart/storybook-ui/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@gismart/storybook-ui@0.1.8"
 }
