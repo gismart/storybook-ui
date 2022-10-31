@@ -70,8 +70,8 @@ export default {
 const Template: ComponentStory<typeof Answer> = (args) => <Answer {...args} />
 
 // 👇 Each story then reuses that template
-export const Simple = Template.bind({})
-Simple.args = {
+export const SimpleLuvly = Template.bind({})
+SimpleLuvly.args = {
   children: 'Answer',
   type: OptionType.CHECKBOX,
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
@@ -86,8 +86,8 @@ Simple.args = {
   value: 'User answer',
 }
 
-export const Complex = Template.bind({})
-Complex.args = {
+export const ComplexLuvly = Template.bind({})
+ComplexLuvly.args = {
   children: <ComplexAnswerContent />,
   type: OptionType.CHECKBOX,
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
@@ -100,4 +100,21 @@ Complex.args = {
   borderRadius: '20px',
   padding: '0 15px',
   value: 'User answer',
+}
+
+export const SimpleDanceBit = Template.bind({})
+SimpleDanceBit.args = {
+  children: 'Answer',
+  type: OptionType.CHECKBOX,
+  isFullWidth: true,
+  maxWidth: '320px',
+  height: '64px',
+  backgroundColor: 'rgb(245, 246, 247)',
+  color: 'rgb(19, 29, 48);',
+  fontSize: '16px',
+  fontWeight: 'regular',
+  borderRadius: '16px',
+  padding: '0 15px',
+  value: 'User answer',
+  activeBackgroundColor: 'rgb(3, 170, 245)',
 }
