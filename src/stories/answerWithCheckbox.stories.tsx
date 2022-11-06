@@ -18,7 +18,7 @@ export default {
   argTypes: {
     ...COMMON_STYLES_CONTROLS,
     textAlign: {
-      control: false,
+      control: 'select',
       table: {
         category: ControlsCategories.ALIGNMENT,
       },
@@ -145,7 +145,7 @@ Simple.args = {
   borderRadius: '20px',
   padding: '0 15px',
   value: 'User answer',
-  spacingBetweenCheckboxAndContent: '12px',
+  spacingBetweenCheckboxAndContent: '0 0 0 12px',
   checkboxActiveBorder: '1px solid #fff',
   checkboxBackgroundActiveColor: '#fff',
   iconSize: '12px',

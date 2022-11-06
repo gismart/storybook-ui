@@ -6,6 +6,7 @@ import { IDimensionsProps } from 'models/dimensions'
 import { Option } from 'components/Option'
 import { IOptionProps } from 'components/Option/Option'
 import { ContentHorizontalAlignment } from 'constants/rootConstants'
+
 import { StyledAnswer as S } from './Answer.styles'
 
 export interface IAnswerButtonProps

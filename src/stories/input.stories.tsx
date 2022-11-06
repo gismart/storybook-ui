@@ -3,6 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { Input } from 'components/Input'
 
+import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 // eslint-disable-next-line import/no-default-export
 export default {
   /* 👇 The title prop is optional.
@@ -11,6 +12,9 @@ export default {
    */
   title: 'Components/Input',
   component: Input,
+  argTypes: {
+    ...COMMON_STYLES_CONTROLS,
+  },
 } as ComponentMeta<typeof Input>
 
 // 👇 We create a “template” of how args map to rendering
