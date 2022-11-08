@@ -41,6 +41,9 @@ export const StyledAnswerWithCheckbox = {
   Content: styled.div<IAnswerWithCheckboxContentProps>`
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: ${({ contentHorizontalAlign }) =>
+      contentHorizontalAlign || 'flex-start'};
     align-items: center;
     align-content: center;
     margin: ${({ spacingBetweenCheckboxAndContent }) =>

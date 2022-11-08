@@ -5,6 +5,7 @@ import checkIcon from 'assets/images/check-icon-green.svg'
 import crossIcon from 'assets/images/cross-icon.svg'
 
 import { InputWithFloatPlaceholder } from 'components/InputWithFloatPlaceholder'
+import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -14,6 +15,9 @@ export default {
    */
   title: 'Components/InputWithFloatPlaceholder',
   component: InputWithFloatPlaceholder,
+  argTypes: {
+    ...COMMON_STYLES_CONTROLS,
+  },
 } as ComponentMeta<typeof InputWithFloatPlaceholder>
 
 // 👇 We create a “template” of how args map to rendering
