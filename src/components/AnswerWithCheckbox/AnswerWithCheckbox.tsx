@@ -11,6 +11,10 @@ import { StyledAnswerWithCheckbox as S } from './AnswerWithCheckbox.styles'
 
 export interface IAnswerWithCheckboxContentProps {
   spacingBetweenCheckboxAndContent?: string
+  /**
+   * How content will alignment horizontally
+   */
+  contentHorizontalAlign?: ContentHorizontalAlignment
 }
 
 export interface ICheckboxProps {
@@ -57,10 +61,6 @@ export interface IAnswerWithCheckboxProps
     IColorsProps {
   children?: React.ReactNode
   /**
-   * How content will alignment horizontally
-   */
-  contentHorizontalAlign?: ContentHorizontalAlignment
-  /**
    * What background color to use in active statement
    */
   activeBackgroundColor?: string
@@ -100,6 +100,7 @@ export const AnswerWithCheckbox: React.FC<
   checkboxBackgroundColor,
   checkboxBorder,
   spacingBetweenCheckboxAndContent,
+  contentHorizontalAlign,
   ...props
 }) => {
   return (
@@ -120,6 +121,7 @@ export const AnswerWithCheckbox: React.FC<
         />
         <S.Content
           spacingBetweenCheckboxAndContent={spacingBetweenCheckboxAndContent}
+          contentHorizontalAlign={contentHorizontalAlign}
         >
           {children}
         </S.Content>
