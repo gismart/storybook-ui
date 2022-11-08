@@ -4,6 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import checkIcon from 'assets/images/check-icon-pink.svg'
 
 import { ListItemWithIcon } from 'components/ListItemWithIcon'
+import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -13,6 +14,7 @@ export default {
    */
   title: 'Components/ListItemWithIcon',
   component: ListItemWithIcon,
+  argTypes: COMMON_STYLES_CONTROLS,
 } as ComponentMeta<typeof ListItemWithIcon>
 
 // 👇 We create a “template” of how args map to rendering
