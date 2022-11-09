@@ -14,9 +14,7 @@ export default {
    */
   title: 'Components/ListItemWithIcon',
   component: ListItemWithIcon,
-  argTypes: {
-    ...COMMON_STYLES_CONTROLS,
-  },
+  argTypes: COMMON_STYLES_CONTROLS,
 } as ComponentMeta<typeof ListItemWithIcon>
 
 // 👇 We create a “template” of how args map to rendering
