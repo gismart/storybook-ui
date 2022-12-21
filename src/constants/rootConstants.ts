@@ -14,6 +14,13 @@ export const enum ContentHorizontalAlignment {
   EVENLY = 'space-evenly',
 }
 
+export const enum ContentVerticalAlignment {
+  START = 'flex-start',
+  CENTER = 'center',
+  END = 'flex-end',
+  DEFAULT = 'stretch',
+}
+
 export const enum ControlsCategories {
   COMMON = 'common',
   COLORS = 'colors',

@@ -4,9 +4,9 @@ import { IFontsProps } from 'models/fonts'
 import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
 import { TextAlignment } from 'constants/rootConstants'
-import { StyledButton } from './Button.styles'
+import { StyledButtonWithIcon as S } from './ButtonWithIcon.styles'
 
-export interface IButtonProps
+export interface IButtonWithIconProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
     IFontsProps,
     IColorsProps,
@@ -27,22 +27,43 @@ export interface IButtonProps
    * What background color to use when disable
    */
   disableBackgroundColor?: string
+  /**
+   * Icon path
+   */
+  iconSrc?: string
+  /**
+   * Icon width
+   */
+  iconWidth?: string
+  /**
+   * Icon height
+   */
+  iconHeight?: string
+
+  iconPositionRight?: string
+
+  iconPositionLeft?: string
 
   style?: {
     [key: string]: any
   }
 }
 
-export const Button: React.FC<IButtonProps> = ({
+export const ButtonWithIcon: React.FC<IButtonWithIconProps> = ({
   children,
   buttonRef,
   textAlign,
   disabled,
   disableBackgroundColor,
+  iconSrc,
+  iconWidth,
+  iconHeight,
+  iconPositionRight,
+  iconPositionLeft,
   style,
   ...props
 }) => (
-  <StyledButton
+  <S.Button
     ref={buttonRef}
     textAlign={textAlign}
     disabled={disabled}
@@ -51,5 +72,14 @@ export const Button: React.FC<IButtonProps> = ({
     {...props}
   >
     {children}
-  </StyledButton>
+    <S.Icon
+      src={iconSrc}
+      style={{
+        width: iconWidth,
+        height: iconHeight,
+        right: iconPositionRight,
+        left: iconPositionLeft,
+      }}
+    />
+  </S.Button>
 )

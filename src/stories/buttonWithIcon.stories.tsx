@@ -4,7 +4,9 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 import { ControlsCategories } from 'constants/rootConstants'
 
-import { Button } from 'components/Button'
+import arrowIcon from 'src/assets/images/arrow-right-icon.svg'
+
+import { ButtonWithIcon } from 'components/ButtonWithIcon'
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -12,8 +14,8 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/ButtonWithIcon',
+  component: ButtonWithIcon,
   argTypes: {
     ...COMMON_STYLES_CONTROLS,
     disabled: {
@@ -29,29 +31,18 @@ export default {
     },
     buttonRef: { control: false },
   },
-} as ComponentMeta<typeof Button>
+} as ComponentMeta<typeof ButtonWithIcon>
 
 // 👇 We create a “template” of how args map to rendering
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
+const Template: ComponentStory<typeof ButtonWithIcon> = (args) => (
+  <ButtonWithIcon {...args} />
+)
 
 // 👇 Each story then reuses that template
 export const Regular = Template.bind({})
 Regular.args = {
   isFullWidth: true,
-  children: 'Ok, Got it!',
-  height: '50px',
-  lineHeight: '50px',
-  borderRadius: '12px',
-  padding: '0 15px',
-  maxWidth: '320px',
-  fontSize: '17px',
-  backgroundColor: 'rgb(255, 130, 118)',
-}
-
-export const RegularLuvlyGirlish = Template.bind({})
-RegularLuvlyGirlish.args = {
-  isFullWidth: true,
-  children: 'Sounds great!',
+  children: 'Continue',
   height: '52px',
   lineHeight: '52px',
   borderRadius: '32px',
@@ -59,9 +50,11 @@ RegularLuvlyGirlish.args = {
   maxWidth: '320px',
   fontSize: '18px',
   fontWeight: '700',
-  color: '#fff',
-  disableBackgroundColor: '#CACACA',
   backgroundColor: '#628F7B',
+  iconSrc: arrowIcon,
+  iconHeight: '24px',
+  iconWidth: '24px',
+  iconPositionRight: '14px',
   style: {
     letterSpacing: '0.2px',
   },

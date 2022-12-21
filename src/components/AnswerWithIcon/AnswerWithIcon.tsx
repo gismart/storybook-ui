@@ -3,7 +3,10 @@ import React from 'react'
 import { IFontsProps } from 'models/fonts'
 import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
-import { ContentHorizontalAlignment } from 'constants/rootConstants'
+import {
+  ContentHorizontalAlignment,
+  ContentVerticalAlignment,
+} from 'constants/rootConstants'
 import { Option } from 'components/Option'
 import { IOptionProps } from 'components/Option/Option'
 import { StyledAnswerWithIcon as S } from './AnswerWithIcon.styles'
@@ -54,6 +57,10 @@ export interface IAnswerWithIconProps
    * Define border on active element
    */
   activeBorder?: string
+  /**
+   * Define vertical alignment for icon
+   */
+  iconAlignSelf?: ContentVerticalAlignment
 }
 
 export const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps> = ({
@@ -68,6 +75,7 @@ export const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps> = ({
   iconWidth,
   iconHeight,
   spacingBetweenIconAndContent,
+  iconAlignSelf,
   ...props
 }) => (
   <Option
@@ -82,7 +90,11 @@ export const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps> = ({
       <S.Icon
         src={iconSrc}
         alt=""
-        style={{ width: iconWidth, height: iconHeight }}
+        style={{
+          width: iconWidth,
+          height: iconHeight,
+          alignSelf: iconAlignSelf,
+        }}
       />
       <S.Content spacingBetweenIconAndContent={spacingBetweenIconAndContent}>
         {children}

@@ -1,4 +1,15 @@
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10" cy="10" r="10" fill="#9BE42E"/>
-<path d="M5.83325 10.8327L8.33123 13.0184C8.77782 13.4092 9.46449 13.3273 9.8067 12.8425L14.1666 6.66602" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<svg
+  width="20"
+  height="20"
+  viewBox="0 0 20 20"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle cx="10" cy="10" r="10" fill="#9BE42E" />
+  <path
+    d="M5.83325 10.8327L8.33123 13.0184C8.77782 13.4092 9.46449 13.3273 9.8067 12.8425L14.1666 6.66602"
+    stroke="white"
+    stroke-width="1.5"
+    stroke-linecap="round"
+  />
 </svg>

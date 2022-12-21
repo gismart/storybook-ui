@@ -34,6 +34,10 @@ export interface IAnswerButtonProps
    * Define border on active element
    */
   activeBorder?: string
+  /**
+   * Define shadow on active element
+   */
+  activeBoxShadow?: string
 }
 
 export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
