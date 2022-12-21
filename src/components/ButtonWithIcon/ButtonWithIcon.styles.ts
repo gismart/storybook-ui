@@ -4,9 +4,9 @@ import { TextAlignment } from 'constants/rootConstants'
 import { CommonFontsStyles } from 'styles/CommonFonts.styles'
 import { CommonColorsStyles } from 'styles/CommonColors.styles'
 import { CommonDimensionsStyles } from 'styles/CommonDimensions.styles'
-import { IButtonProps } from './Button'
+import { IButtonWithIconProps } from './ButtonWithIcon'
 
-export const StyledButton = styled.button<IButtonProps>`
+export const StyledButton = styled.button<IButtonWithIconProps>`
   ${CommonFontsStyles};
   ${CommonColorsStyles};
   ${CommonDimensionsStyles};
@@ -18,6 +18,7 @@ export const StyledButton = styled.button<IButtonProps>`
   transition: 0.2s ease-out;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   overflow-wrap: break-word;
+  position: relative;
 
   text-align: ${({ textAlign }) => textAlign || TextAlignment.CENTER};
 
@@ -27,3 +28,14 @@ export const StyledButton = styled.button<IButtonProps>`
       disableBackgroundColor || '#e1e1e1'};
   }
 `
+
+export const StyledButtonWithIcon = {
+  Button: styled(StyledButton)``,
+  Icon: styled.img`
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  `,
+}

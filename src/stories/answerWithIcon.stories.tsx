@@ -74,6 +74,11 @@ export default {
         category: ControlsCategories.ADDON,
       },
     },
+    iconAlignSelf: {
+      table: {
+        category: ControlsCategories.ALIGNMENT,
+      },
+    },
     reverse: {
       table: {
         category: ControlsCategories.ADDON,

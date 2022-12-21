@@ -34,6 +34,7 @@ export const StyledAnswerBased = css<IAnswerButtonProps>`
       activeBackgroundGradientColor};
     color: ${({ activeColor }) => activeColor || '#fff'};
     border: ${({ border, activeBorder }) => activeBorder || border};
+    box-shadow: ${({ activeBoxShadow }) => activeBoxShadow || 'none'};
   }
   input:checked + & > * {
     color: ${({ activeColor }) => activeColor || '#fff'};
