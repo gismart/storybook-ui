@@ -1,15 +1,3 @@
-export {
-  Answer,
-  AnswerWithCheckbox,
-  AnswerWithIcon,
-  Button,
-  ButtonWithIcon,
-  CircleProgress,
-  Header,
-  Input,
-  InputWithFloatPlaceholder,
-  ListItemWithIcon,
-  Option,
-  ProgressBarBreadcrumbs,
-  Select,
-} from './components'
+import * as components from './components'
+
+export { components }
