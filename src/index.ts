@@ -1,13 +1,15 @@
-export * from './components/Answer'
-export * from './components/AnswerWithCheckbox'
-export * from './components/AnswerWithIcon'
-export * from './components/Button'
-export * from './components/ButtonWithIcon'
-export * from './components/CircleProgress'
-export * from './components/Header'
-export * from './components/Input'
-export * from './components/InputWithFloatPlaceholder'
-export * from './components/ListItemWithIcon'
-export * from './components/Option'
-export * from './components/ProgressBarBreadcrumbs'
-export * from './components/Select'
+export {
+  Answer,
+  AnswerWithCheckbox,
+  AnswerWithIcon,
+  Button,
+  ButtonWithIcon,
+  CircleProgress,
+  Header,
+  Input,
+  InputWithFloatPlaceholder,
+  ListItemWithIcon,
+  Option,
+  ProgressBarBreadcrumbs,
+  Select,
+} from './components'
