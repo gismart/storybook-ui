@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { StyledAnswerBased } from 'components/Answer/Answer.styles'
+import { CommonAnswerStyles } from '../../styles'
 import {
   ICheckboxProps,
   IAnswerWithCheckboxProps,
@@ -9,7 +9,7 @@ import {
 
 export const StyledAnswerWithCheckbox = {
   Root: styled.div<IAnswerWithCheckboxProps & ICheckboxProps>`
-    ${StyledAnswerBased}
+    ${CommonAnswerStyles};
     flex-wrap: nowrap;
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 

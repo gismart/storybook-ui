@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
-import { StyledAnswerBased } from 'components/Answer/Answer.styles'
 import {
   IAnswerWithIconProps,
   IAnswerWithIconContentProps,
 } from './AnswerWithIcon'
+import { CommonAnswerStyles } from '../../styles'
 
 export const StyledAnswerWithIcon = {
   Root: styled.div<IAnswerWithIconProps>`
-    ${StyledAnswerBased};
+    ${CommonAnswerStyles};
     flex-wrap: nowrap;
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 
