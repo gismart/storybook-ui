@@ -67,10 +67,7 @@ export interface IAnswerWithIconProps
   iconAlignSelf?: ContentVerticalAlignment
 }
 
-export const answerWithIconThemes: Record<
-  string,
-  Record<string, string | boolean>
-> = {
+const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
   girlish: {
     boxShadow: '0px 8px 20px #F2E6E1',
     isFullWidth: true,

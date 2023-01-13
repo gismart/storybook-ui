@@ -86,7 +86,7 @@ export interface IAnswerWithCheckboxProps
   reverse?: boolean
 }
 
-export const answerWithCheckboxThemes: Record<
+const answerWithCheckboxThemes: Record<
   string,
   Record<string, string | boolean>
 > = {
