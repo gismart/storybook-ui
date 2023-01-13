@@ -6,7 +6,7 @@ import { IOptionProps } from 'components/Option/Option'
 import { IAnswerButtonProps } from 'models/answer'
 import { StyledAnswer as S } from './Answer.styles'
 
-export const answerThemes = {
+export const answerThemes: Record<string, Record<string, string | boolean>> = {
   girlish: {
     boxShadow: '0px 8px 20px #F2E6E1',
     isFullWidth: true,
@@ -24,6 +24,7 @@ export const answerThemes = {
 }
 
 export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
+  theme,
   children,
   type,
   value,
@@ -42,7 +43,7 @@ export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
     disabled={disabled}
     onChange={onChange}
   >
-    <S.Root style={style} {...props}>
+    <S.Root style={style} {...(theme && answerThemes[theme])} {...props}>
       {children}
     </S.Root>
   </Option>
