@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { CommonColorsStyles } from 'styles/CommonColors.styles'
-import { CommonFontsStyles } from 'styles/CommonFonts.styles'
-import { CommonDimensionsStyles } from 'styles/CommonDimensions.styles'
+import { CommonColorsStyles } from '../../styles/CommonColors.styles'
+import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
+import { CommonDimensionsStyles } from '../../styles/CommonDimensions.styles'
 import {
   ILabelProps,
   IProps,
-} from 'components/InputWithFloatPlaceholder/InputWithFloatPlaceholder'
+} from '../../components/InputWithFloatPlaceholder/InputWithFloatPlaceholder'
 
 export const StyledInputWithFloatPlaceholder = {
   Wrapper: styled.div<IProps>`

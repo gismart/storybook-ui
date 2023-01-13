@@ -1,10 +1,11 @@
 import { ProgressHTMLAttributes } from 'react'
 import styled, { css } from 'styled-components'
-import { IFontsProps } from 'models/fonts'
-import { CommonFontsStyles } from 'styles/CommonFonts.styles'
-import { TextAlignment } from 'constants/rootConstants'
-import { IProgressBarBreadcrumbsProps } from 'components/ProgressBarBreadcrumbs/ProgressBarBreadcrumbs'
-import { CommonColorsStyles } from 'styles/CommonColors.styles'
+
+import { IFontsProps } from '../../models/fonts'
+import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
+import { IProgressBarBreadcrumbsProps } from '../../components/ProgressBarBreadcrumbs/ProgressBarBreadcrumbs'
+import { CommonColorsStyles } from '../../styles/CommonColors.styles'
+import { TextAlignment } from '../../constants/rootConstants'
 
 interface IProps extends ProgressHTMLAttributes<HTMLProgressElement> {
   pointsNumber: number

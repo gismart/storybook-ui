@@ -1,8 +1,12 @@
 import styled, { css } from 'styled-components'
-import { CommonFontsStyles } from 'styles/CommonFonts.styles'
-import { ILabelProps, IProps, IWrapperProps } from 'components/Input/Input'
-import { CommonDimensionsStyles } from 'styles/CommonDimensions.styles'
-import { CommonColorsStyles } from 'styles/CommonColors.styles'
+import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
+import {
+  ILabelProps,
+  IProps,
+  IWrapperProps,
+} from '../../components/Input/Input'
+import { CommonDimensionsStyles } from '../../styles/CommonDimensions.styles'
+import { CommonColorsStyles } from '../../styles/CommonColors.styles'
 
 export const StyledInput = {
   Wrapper: styled.div<IWrapperProps>`

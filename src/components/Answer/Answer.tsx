@@ -6,6 +6,23 @@ import { IOptionProps } from 'components/Option/Option'
 import { IAnswerButtonProps } from 'models/answer'
 import { StyledAnswer as S } from './Answer.styles'
 
+export const answerThemes = {
+  girlish: {
+    boxShadow: '0px 8px 20px #F2E6E1',
+    isFullWidth: true,
+    maxWidth: '320px',
+    height: '64px',
+    backgroundColor: '#ffffff',
+    activeBackgroundColor: '#D0DDD7',
+    activeColor: '#2C3131',
+    color: '#2C3131',
+    fontSize: '18px',
+    lineHeight: '24px',
+    borderRadius: '20px',
+    padding: '0 16px',
+  },
+}
+
 export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
   children,
   type,
@@ -14,6 +31,7 @@ export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
   checked,
   disabled,
   onChange,
+  style,
   ...props
 }) => (
   <Option
@@ -24,6 +42,8 @@ export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
     disabled={disabled}
     onChange={onChange}
   >
-    <S.Root {...props}>{children}</S.Root>
+    <S.Root style={style} {...props}>
+      {children}
+    </S.Root>
   </Option>
 )

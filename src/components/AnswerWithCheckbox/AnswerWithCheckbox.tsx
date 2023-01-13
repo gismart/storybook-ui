@@ -82,6 +82,28 @@ export interface IAnswerWithCheckboxProps
   reverse?: boolean
 }
 
+export const answerWithCheckboxThemes = {
+  girlish: {
+    boxShadow: '0px 8px 20px #F2E6E1',
+    isFullWidth: true,
+    maxWidth: '320px',
+    height: '64px',
+    backgroundColor: '#ffffff',
+    activeBackgroundColor: '#D0DDD7',
+    color: '#2C3131',
+    activeColor: '#2C3131',
+    fontSize: '18px',
+    lineHeight: '24px',
+    borderRadius: '20px',
+    reverse: true,
+    padding: '0 16px',
+    spacingBetweenCheckboxAndContent: '0',
+    checkboxActiveBorder: 'none',
+    checkboxBackgroundActiveColor: '#628F7B',
+    iconSize: '20px',
+  },
+}
+
 export const AnswerWithCheckbox: React.FC<
   IAnswerWithCheckboxProps &
     IOptionProps &
