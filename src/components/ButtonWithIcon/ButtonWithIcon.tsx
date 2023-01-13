@@ -14,6 +14,10 @@ export interface IButtonWithIconProps
     IColorsProps,
     IDimensionsProps {
   /**
+   * Current theme
+   */
+  theme?: string
+  /**
    * Ref object for best interaction
    */
   buttonRef?: React.Ref<HTMLButtonElement>
@@ -57,7 +61,7 @@ export interface IButtonWithIconProps
   }
 }
 
-export const buttonWithIconThemes = {
+export const buttonWithIconThemes: Record<string, any> = {
   girlish: {
     isFullWidth: true,
     height: '52px',
@@ -79,6 +83,7 @@ export const buttonWithIconThemes = {
 }
 
 export const ButtonWithIcon: React.FC<IButtonWithIconProps> = ({
+  theme,
   children,
   buttonRef,
   textAlign,
@@ -97,6 +102,7 @@ export const ButtonWithIcon: React.FC<IButtonWithIconProps> = ({
     textAlign={textAlign}
     disabled={disabled}
     disableBackgroundColor={disableBackgroundColor}
+    {...(theme && buttonWithIconThemes[theme])}
     style={style}
     {...props}
   >

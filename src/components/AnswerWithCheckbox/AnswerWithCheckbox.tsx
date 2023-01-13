@@ -59,6 +59,10 @@ export interface IAnswerWithCheckboxProps
   extends IDimensionsProps,
     IFontsProps,
     IColorsProps {
+  /**
+   * Current theme
+   */
+  theme?: string
   children?: React.ReactNode
   /**
    * What background color to use in active statement
@@ -82,7 +86,10 @@ export interface IAnswerWithCheckboxProps
   reverse?: boolean
 }
 
-export const answerWithCheckboxThemes = {
+export const answerWithCheckboxThemes: Record<
+  string,
+  Record<string, string | boolean>
+> = {
   girlish: {
     boxShadow: '0px 8px 20px #F2E6E1',
     isFullWidth: true,
@@ -110,6 +117,7 @@ export const AnswerWithCheckbox: React.FC<
     ICheckboxProps &
     IAnswerWithCheckboxContentProps
 > = ({
+  theme,
   children,
   type,
   value,
@@ -134,7 +142,7 @@ export const AnswerWithCheckbox: React.FC<
       disabled={disabled}
       onChange={onChange}
     >
-      <S.Root {...props}>
+      <S.Root {...(theme && answerWithCheckboxThemes[theme])} {...props}>
         <S.Checkbox
           checkboxWidth={checkboxWidth}
           checkboxHeight={checkboxHeight}

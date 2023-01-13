@@ -20,6 +20,10 @@ export interface IAnswerWithIconProps
     IFontsProps,
     IColorsProps,
     IAnswerWithIconContentProps {
+  /**
+   * Current theme
+   */
+  theme?: string
   children?: React.ReactNode
   /**
    * How content will alignment horizontally
@@ -63,7 +67,10 @@ export interface IAnswerWithIconProps
   iconAlignSelf?: ContentVerticalAlignment
 }
 
-export const answerWithIconThemes = {
+export const answerWithIconThemes: Record<
+  string,
+  Record<string, string | boolean>
+> = {
   girlish: {
     boxShadow: '0px 8px 20px #F2E6E1',
     isFullWidth: true,
@@ -84,6 +91,7 @@ export const answerWithIconThemes = {
 }
 
 export const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps> = ({
+  theme,
   children,
   type,
   value,
@@ -106,7 +114,7 @@ export const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps> = ({
     disabled={disabled}
     onChange={onChange}
   >
-    <S.Root {...props}>
+    <S.Root {...(theme && answerWithIconThemes[theme])} {...props}>
       <S.Icon
         src={iconSrc}
         alt=""
