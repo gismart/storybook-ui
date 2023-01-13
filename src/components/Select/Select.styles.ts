@@ -1,10 +1,15 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import styled from 'styled-components'
-import { IOptions, IPlaceholder, ISelectProps } from 'components/Select/Select'
-import { CommonFontsStyles } from 'styles/CommonFonts.styles'
-import { CommonColorsStyles } from 'styles/CommonColors.styles'
-import { IFontsProps } from 'models/fonts'
 import { GroupBase, StylesConfig } from 'react-select'
+
+import { CommonColorsStyles } from '../../styles/CommonColors.styles'
+import { IFontsProps } from '../../models/fonts'
+import {
+  IOptions,
+  IPlaceholder,
+  ISelectProps,
+} from '../../components/Select/Select'
+import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
 
 export const customSelectStyles = ({
   focusedOptionBorder,

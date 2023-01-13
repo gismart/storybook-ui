@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { IHeaderProps } from 'components/Header/Header'
-import { CommonDimensionsStyles } from 'styles/CommonDimensions.styles'
-import { CommonColorsStyles } from 'styles/CommonColors.styles'
-import { CommonFontsStyles } from 'styles/CommonFonts.styles'
+import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
+import { CommonColorsStyles } from '../../styles/CommonColors.styles'
+import { IHeaderProps } from '../../components/Header/Header'
+import { CommonDimensionsStyles } from '../../styles/CommonDimensions.styles'
 
 export const StyledHeader = {
   Wrapper: styled.header<IHeaderProps>`

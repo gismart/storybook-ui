@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-import { TextAlignment } from 'constants/rootConstants'
-import { CommonFontsStyles } from 'styles/CommonFonts.styles'
-import { CommonColorsStyles } from 'styles/CommonColors.styles'
-import { CommonDimensionsStyles } from 'styles/CommonDimensions.styles'
+import { TextAlignment } from '../../constants/rootConstants'
+import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
+import { CommonColorsStyles } from '../../styles/CommonColors.styles'
+import { CommonDimensionsStyles } from '../../styles/CommonDimensions.styles'
 import { IButtonWithIconProps } from './ButtonWithIcon'
 
 export const StyledButton = styled.button<IButtonWithIconProps>`

@@ -3,7 +3,11 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { OptionType } from 'components/Option'
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
-import { ControlsCategories } from 'constants/rootConstants'
+import {
+  ContentHorizontalAlignment,
+  ContentVerticalAlignment,
+  ControlsCategories,
+} from 'constants/rootConstants'
 import { ComplexAnswerContent } from 'content/ComplexAnswerContent'
 
 import { AnswerWithIcon } from 'components/AnswerWithIcon'
@@ -142,4 +146,28 @@ Complex.args = {
   iconSrc: 'https://cdn-icons-png.flaticon.com/512/1791/1791311.png',
   iconHeight: '24px',
   spacingBetweenIconAndContent: '12px',
+}
+
+export const Girlish = Template.bind({})
+Girlish.args = {
+  children: 'Answer with big',
+  type: OptionType.CHECKBOX,
+  boxShadow: '0px 8px 20px #F2E6E1',
+  isFullWidth: true,
+  maxWidth: '320px',
+  height: '64px',
+  backgroundColor: '#ffffff',
+  activeBackgroundColor: '#D0DDD7',
+  color: '#2C3131',
+  activeColor: '#2C3131',
+  fontSize: '18px',
+  lineHeight: '24px',
+  borderRadius: '20px',
+  contentHorizontalAlign: ContentHorizontalAlignment.START,
+  padding: '0 16px',
+  value: 'User answer',
+  iconHeight: '77px',
+  spacingBetweenIconAndContent: '8px',
+  iconSrc: 'https://cdn-icons-png.flaticon.com/512/1791/1791311.png',
+  iconAlignSelf: ContentVerticalAlignment.END,
 }

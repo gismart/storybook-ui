@@ -33,4 +33,10 @@ export interface IAnswerButtonProps
    * Define shadow on active element
    */
   activeBoxShadow?: string
+  /**
+   * Custom styles
+   */
+  style?: {
+    [key: string]: any
+  }
 }

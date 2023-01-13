@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { IListItemWithIconProps } from 'components/ListItemWithIcon/ListItemWithIcon'
-import { CommonFontsStyles } from 'styles/CommonFonts.styles'
-import { CommonDimensionsStyles } from 'styles/CommonDimensions.styles'
+import { IListItemWithIconProps } from '../../components/ListItemWithIcon/ListItemWithIcon'
+import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
+import { CommonDimensionsStyles } from '../../styles/CommonDimensions.styles'
 
 export const StyledListItemWithIcon = styled.li<IListItemWithIconProps>`
   ${CommonFontsStyles};
