@@ -6,7 +6,7 @@ import { IOptionProps } from 'components/Option/Option'
 import { IAnswerButtonProps } from 'models/answer'
 import { StyledAnswer as S } from './Answer.styles'
 
-export const answerThemes: Record<string, Record<string, string | boolean>> = {
+const answerThemes: Record<string, Record<string, string | boolean>> = {
   girlish: {
     boxShadow: '0px 8px 20px #F2E6E1',
     isFullWidth: true,

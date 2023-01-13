@@ -61,7 +61,7 @@ export interface IButtonWithIconProps
   }
 }
 
-export const buttonWithIconThemes: Record<string, any> = {
+const buttonWithIconThemes: Record<string, any> = {
   girlish: {
     isFullWidth: true,
     height: '52px',
