@@ -1,11 +1,8 @@
-export { Answer, answerThemes } from './Answer'
-export {
-  AnswerWithCheckbox,
-  answerWithCheckboxThemes,
-} from './AnswerWithCheckbox'
-export { AnswerWithIcon, answerWithIconThemes } from './AnswerWithIcon'
+export { Answer } from './Answer'
+export { AnswerWithCheckbox } from './AnswerWithCheckbox'
+export { AnswerWithIcon } from './AnswerWithIcon'
 export { Button } from './Button'
-export { ButtonWithIcon, buttonWithIconThemes } from './ButtonWithIcon'
+export { ButtonWithIcon } from './ButtonWithIcon'
 export { CircleProgress } from './CircleProgress'
 export { Header } from './Header'
 export { Input } from './Input'

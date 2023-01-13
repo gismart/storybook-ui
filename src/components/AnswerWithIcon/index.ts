@@ -1,1 +1,1 @@
-export { AnswerWithIcon, answerWithIconThemes } from './AnswerWithIcon'
+export { AnswerWithIcon } from './AnswerWithIcon'
