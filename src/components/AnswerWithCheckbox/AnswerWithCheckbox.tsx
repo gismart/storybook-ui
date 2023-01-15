@@ -5,7 +5,7 @@ import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
 import { Option } from 'components/Option'
 import { IOptionProps } from 'components/Option/Option'
-import { ContentHorizontalAlignment } from 'constants/rootConstants'
+import { ContentHorizontalAlignment } from '../../constants/rootConstants'
 
 import { StyledAnswerWithCheckbox as S } from './AnswerWithCheckbox.styles'
 

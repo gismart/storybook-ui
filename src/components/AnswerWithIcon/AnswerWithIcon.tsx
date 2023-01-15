@@ -3,12 +3,12 @@ import React from 'react'
 import { IFontsProps } from 'models/fonts'
 import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
+import { Option } from 'components/Option'
+import { IOptionProps } from 'components/Option/Option'
 import {
   ContentHorizontalAlignment,
   ContentVerticalAlignment,
-} from 'constants/rootConstants'
-import { Option } from 'components/Option'
-import { IOptionProps } from 'components/Option/Option'
+} from '../../constants/rootConstants'
 import { StyledAnswerWithIcon as S } from './AnswerWithIcon.styles'
 
 export interface IAnswerWithIconContentProps {
