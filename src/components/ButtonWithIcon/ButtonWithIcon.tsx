@@ -3,7 +3,7 @@ import React, { ButtonHTMLAttributes } from 'react'
 import { IFontsProps } from 'models/fonts'
 import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
-import arrowIcon from 'src/assets/images/arrow-right-icon.svg'
+import arrowIcon from '../../assets/images/arrow-right-icon.svg'
 import { TextAlignment } from '../../constants/rootConstants'
 
 import { StyledButtonWithIcon as S } from './ButtonWithIcon.styles'
