@@ -57,8 +57,9 @@ export interface IButtonWithIconProps
   }
 }
 
-const buttonWithIconThemes: Record<string, any> = {
+const themes: Record<string, any> = {
   girlish: {
+    display: 'block',
     isFullWidth: true,
     height: '52px',
     lineHeight: '52px',
@@ -71,6 +72,7 @@ const buttonWithIconThemes: Record<string, any> = {
     iconHeight: '24px',
     iconWidth: '24px',
     iconPositionRight: '14px',
+    disableBackgroundColor: '#cacaca;',
     style: {
       letterSpacing: '0.2px',
     },
@@ -115,5 +117,5 @@ const ButtonWithIconBase: React.FC<IButtonWithIconProps> = ({
 export const ButtonWithIcon: React.FC<
   IButtonWithIconProps & IThemedComponent
 > = ({ theme, ...props }) => (
-  <ButtonWithIconBase {...(theme && buttonWithIconThemes[theme])} {...props} />
+  <ButtonWithIconBase {...(theme && themes[theme])} {...props} />
 )

@@ -118,7 +118,7 @@ const AnswerWithIconBase: React.FC<IAnswerWithIconProps & IOptionProps> = ({
         }}
       />
       <S.Content spacingBetweenIconAndContent={spacingBetweenIconAndContent}>
-        {children}
+        <div>{children}</div>
       </S.Content>
     </S.Root>
   </Option>

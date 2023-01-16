@@ -7,7 +7,7 @@ export const ComplexAnswerContent = () => {
     <>
       <S.Title>Vegetarian</S.Title>
       <S.Description>
-        I abstain from meat, fish, and poultry produce
+        I <strong> abstain</strong> from meat, fish, and poultry produce
       </S.Description>
     </>
   )

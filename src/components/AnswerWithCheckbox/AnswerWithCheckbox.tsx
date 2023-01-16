@@ -149,7 +149,7 @@ const AnswerWithCheckboxBase: React.FC<
           spacingBetweenCheckboxAndContent={spacingBetweenCheckboxAndContent}
           contentHorizontalAlign={contentHorizontalAlign}
         >
-          {children}
+          <div>{children}</div>
         </S.Content>
       </S.Root>
     </Option>

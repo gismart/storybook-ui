@@ -47,7 +47,7 @@ export const Answer: React.FC<
     onChange={onChange}
   >
     <S.Root style={style} {...(theme && answerThemes[theme])} {...props}>
-      {children}
+      <div>{children}</div>
     </S.Root>
   </Option>
 )
