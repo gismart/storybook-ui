@@ -4,6 +4,7 @@ import { Option } from 'components/Option'
 import { IOptionProps } from 'components/Option/Option'
 
 import { IAnswerButtonProps } from 'models/answer'
+import { IThemedComponent } from 'models/common'
 import { StyledAnswer as S } from './Answer.styles'
 
 const answerThemes: Record<string, Record<string, string | boolean>> = {
@@ -23,7 +24,9 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
   },
 }
 
-export const Answer: React.FC<IAnswerButtonProps & IOptionProps> = ({
+export const Answer: React.FC<
+  IAnswerButtonProps & IOptionProps & IThemedComponent
+> = ({
   theme,
   children,
   type,

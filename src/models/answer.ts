@@ -8,10 +8,6 @@ export interface IAnswerButtonProps
   extends IDimensionsProps,
     IFontsProps,
     IColorsProps {
-  /**
-   * Current theme
-   */
-  theme?: string
   children?: React.ReactNode
   /**
    * How content will alignment horizontally

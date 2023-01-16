@@ -5,6 +5,7 @@ import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
 import { Option } from 'components/Option'
 import { IOptionProps } from 'components/Option/Option'
+import { IThemedComponent } from 'models/common'
 import { ContentHorizontalAlignment } from '../../constants/rootConstants'
 
 import { StyledAnswerWithCheckbox as S } from './AnswerWithCheckbox.styles'
@@ -59,10 +60,6 @@ export interface IAnswerWithCheckboxProps
   extends IDimensionsProps,
     IFontsProps,
     IColorsProps {
-  /**
-   * Current theme
-   */
-  theme?: string
   children?: React.ReactNode
   /**
    * What background color to use in active statement
@@ -111,13 +108,12 @@ const answerWithCheckboxThemes: Record<
   },
 }
 
-export const AnswerWithCheckbox: React.FC<
+const AnswerWithCheckboxBase: React.FC<
   IAnswerWithCheckboxProps &
     IOptionProps &
     ICheckboxProps &
     IAnswerWithCheckboxContentProps
 > = ({
-  theme,
   children,
   type,
   value,
@@ -142,7 +138,7 @@ export const AnswerWithCheckbox: React.FC<
       disabled={disabled}
       onChange={onChange}
     >
-      <S.Root {...(theme && answerWithCheckboxThemes[theme])} {...props}>
+      <S.Root {...props}>
         <S.Checkbox
           checkboxWidth={checkboxWidth}
           checkboxHeight={checkboxHeight}
@@ -159,3 +155,16 @@ export const AnswerWithCheckbox: React.FC<
     </Option>
   )
 }
+
+export const AnswerWithCheckbox: React.FC<
+  IAnswerWithCheckboxProps &
+    IOptionProps &
+    ICheckboxProps &
+    IAnswerWithCheckboxContentProps &
+    IThemedComponent
+> = ({ theme, ...props }) => (
+  <AnswerWithCheckboxBase
+    {...(theme && answerWithCheckboxThemes[theme])}
+    {...props}
+  />
+)

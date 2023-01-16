@@ -2,7 +2,7 @@
   "name": "@gismart/storybook-ui",
   "description": "Library of customizable components for web subscriptions",
   "main": "index.ts",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "scripts": {
     "start": "start-storybook -p 6006",
     "clean": "rm -rf core",
