@@ -4,7 +4,6 @@ import { IFontsProps } from 'models/fonts'
 import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
 import { IThemedComponent } from 'models/common'
-import arrowIcon from '../../assets/images/arrow-right-icon.svg'
 import { TextAlignment } from '../../constants/rootConstants'
 
 import { StyledButtonWithIcon as S } from './ButtonWithIcon.styles'
@@ -69,7 +68,6 @@ const buttonWithIconThemes: Record<string, any> = {
     fontSize: '18px',
     fontWeight: '700',
     backgroundColor: '#628F7B',
-    iconSrc: arrowIcon,
     iconHeight: '24px',
     iconWidth: '24px',
     iconPositionRight: '14px',
