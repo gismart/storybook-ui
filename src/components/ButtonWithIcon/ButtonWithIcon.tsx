@@ -3,6 +3,7 @@ import React, { ButtonHTMLAttributes } from 'react'
 import { IFontsProps } from 'models/fonts'
 import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
+import { IThemedComponent } from 'models/common'
 import arrowIcon from '../../assets/images/arrow-right-icon.svg'
 import { TextAlignment } from '../../constants/rootConstants'
 
@@ -13,10 +14,6 @@ export interface IButtonWithIconProps
     IFontsProps,
     IColorsProps,
     IDimensionsProps {
-  /**
-   * Current theme
-   */
-  theme?: string
   /**
    * Ref object for best interaction
    */
@@ -82,8 +79,7 @@ const buttonWithIconThemes: Record<string, any> = {
   },
 }
 
-export const ButtonWithIcon: React.FC<IButtonWithIconProps> = ({
-  theme,
+const ButtonWithIconBase: React.FC<IButtonWithIconProps> = ({
   children,
   buttonRef,
   textAlign,
@@ -102,7 +98,6 @@ export const ButtonWithIcon: React.FC<IButtonWithIconProps> = ({
     textAlign={textAlign}
     disabled={disabled}
     disableBackgroundColor={disableBackgroundColor}
-    {...(theme && buttonWithIconThemes[theme])}
     style={style}
     {...props}
   >
@@ -117,4 +112,10 @@ export const ButtonWithIcon: React.FC<IButtonWithIconProps> = ({
       }}
     />
   </S.Button>
+)
+
+export const ButtonWithIcon: React.FC<
+  IButtonWithIconProps & IThemedComponent
+> = ({ theme, ...props }) => (
+  <ButtonWithIconBase {...(theme && buttonWithIconThemes[theme])} {...props} />
 )

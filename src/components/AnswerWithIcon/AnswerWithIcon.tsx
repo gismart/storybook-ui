@@ -5,6 +5,7 @@ import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
 import { Option } from 'components/Option'
 import { IOptionProps } from 'components/Option/Option'
+import { IThemedComponent } from 'models/common'
 import {
   ContentHorizontalAlignment,
   ContentVerticalAlignment,
@@ -20,10 +21,6 @@ export interface IAnswerWithIconProps
     IFontsProps,
     IColorsProps,
     IAnswerWithIconContentProps {
-  /**
-   * Current theme
-   */
-  theme?: string
   children?: React.ReactNode
   /**
    * How content will alignment horizontally
@@ -87,8 +84,7 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
   },
 }
 
-export const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps> = ({
-  theme,
+const AnswerWithIconBase: React.FC<IAnswerWithIconProps & IOptionProps> = ({
   children,
   type,
   value,
@@ -111,7 +107,7 @@ export const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps> = ({
     disabled={disabled}
     onChange={onChange}
   >
-    <S.Root {...(theme && answerWithIconThemes[theme])} {...props}>
+    <S.Root {...props}>
       <S.Icon
         src={iconSrc}
         alt=""
@@ -126,4 +122,10 @@ export const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps> = ({
       </S.Content>
     </S.Root>
   </Option>
+)
+
+export const AnswerWithIcon: React.FC<
+  IAnswerWithIconProps & IOptionProps & IThemedComponent
+> = ({ theme, ...props }) => (
+  <AnswerWithIconBase {...(theme && answerWithIconThemes[theme])} {...props} />
 )
