@@ -1,12 +1,11 @@
 import React from 'react'
 
-import { IFontsProps } from 'models/fonts'
-import { IColorsProps } from 'models/colors'
-import { IDimensionsProps } from 'models/dimensions'
-import { IThemedComponent } from 'models/common'
+import { IColorsProps } from '../../models/colors'
+import { IDimensionsProps } from '../../models/dimensions'
+import { IThemedComponent } from '../../models/common'
+import { IFontsProps } from '../../models/fonts'
 import { Option } from '../Option'
 import { IOptionProps } from '../Option/Option'
-import { ContentHorizontalAlignment } from '../../constants/rootConstants'
 
 import { StyledAnswerWithCheckbox as S } from './AnswerWithCheckbox.styles'
 
@@ -15,7 +14,13 @@ export interface IAnswerWithCheckboxContentProps {
   /**
    * How content will alignment horizontally
    */
-  contentHorizontalAlign?: ContentHorizontalAlignment
+  contentHorizontalAlign?:
+    | 'flex-start'
+    | 'center'
+    | 'space-between'
+    | 'flex-end'
+    | 'space-around'
+    | 'space-evenly'
 }
 
 export interface ICheckboxProps {

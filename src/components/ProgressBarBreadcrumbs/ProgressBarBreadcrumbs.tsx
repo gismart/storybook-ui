@@ -1,10 +1,10 @@
 import React from 'react'
+import { IColorsProps } from '../../models/colors'
+import { IFontsProps } from '../../models/fonts'
 import {
   INITIAL_PROGRESS_VALUE,
   PROGRESS_SECTION_STEP,
-} from 'components/ProgressBarBreadcrumbs/constants'
-import { IFontsProps } from 'models/fonts'
-import { IColorsProps } from 'models/colors'
+} from '../../components/ProgressBarBreadcrumbs/constants'
 import { StyledPostPaymentProgressBar as S } from './ProgressBarBreadcrumbs.styles'
 
 export interface IProgressBarBreadcrumbsProps

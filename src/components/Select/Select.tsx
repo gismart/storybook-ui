@@ -1,8 +1,8 @@
 import React, { useRef, FocusEvent } from 'react'
 import ReactSelect, { MultiValue, SingleValue } from 'react-select'
-import { IColorsProps } from 'models/colors'
-import { IFontsProps } from 'models/fonts'
-import { IDimensionsProps } from 'models/dimensions'
+import { IDimensionsProps } from '../../models/dimensions'
+import { IColorsProps } from '../../models/colors'
+import { IFontsProps } from '../../models/fonts'
 import { StyledSelect as S, customSelectStyles } from './Select.styles'
 
 export interface IOptions {

@@ -1,7 +1,8 @@
-import { IColorsProps } from 'models/colors'
-import { IFontsProps } from 'models/fonts'
 import { HTMLInputTypeAttribute } from 'react'
-import { IDimensionsProps } from 'models/dimensions'
+
+import { IDimensionsProps } from './dimensions'
+import { IColorsProps } from './colors'
+import { IFontsProps } from './fonts'
 
 export interface IInputProps
   extends IColorsProps,

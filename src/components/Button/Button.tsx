@@ -1,9 +1,9 @@
 import React, { ButtonHTMLAttributes } from 'react'
 
-import { IFontsProps } from 'models/fonts'
-import { IColorsProps } from 'models/colors'
-import { IDimensionsProps } from 'models/dimensions'
-import { IThemedComponent } from 'models/common'
+import { IFontsProps } from '../../models/fonts'
+import { IColorsProps } from '../../models/colors'
+import { IDimensionsProps } from '../../models/dimensions'
+import { IThemedComponent } from '../../models/common'
 import { TextAlignment } from '../../constants/rootConstants'
 import { StyledButton } from './Button.styles'
 

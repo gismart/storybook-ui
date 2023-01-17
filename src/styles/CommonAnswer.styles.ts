@@ -1,6 +1,5 @@
 import { css } from 'styled-components'
-import { IAnswerButtonProps } from 'models/answer'
-import { ContentHorizontalAlignment } from '../constants'
+import { IAnswerButtonProps } from '../models/answer'
 import { CommonFontsStyles } from './CommonFonts.styles'
 import { CommonColorsStyles } from './CommonColors.styles'
 import { CommonDimensionsStyles } from './CommonDimensions.styles'
@@ -14,7 +13,7 @@ export const CommonAnswerStyles = css<IAnswerButtonProps>`
   align-items: center;
   align-content: center;
   justify-content: ${({ contentHorizontalAlign }) =>
-    contentHorizontalAlign || ContentHorizontalAlignment.START};
+    contentHorizontalAlign || 'flex-start'};
 
   cursor: pointer;
   transition: background-color 0.2s ease-out;

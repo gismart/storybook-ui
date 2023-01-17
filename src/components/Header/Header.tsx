@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { IFontsProps } from 'models/fonts'
-import { IColorsProps } from 'models/colors'
-import { IDimensionsProps } from 'models/dimensions'
+import { IFontsProps } from '../../models/fonts'
+import { IColorsProps } from '../../models/colors'
+import { IDimensionsProps } from '../../models/dimensions'
 import { StyledHeader as S } from './Header.styles'
 
 export interface IHeaderProps

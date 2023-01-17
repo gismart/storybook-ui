@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { IAnswerButtonProps } from 'models/answer'
-import { IThemedComponent } from 'models/common'
+import { IAnswerButtonProps } from '../../models/answer'
+import { IThemedComponent } from '../../models/common'
 import { IOptionProps } from '../Option/Option'
 import { Option } from '../Option'
 import { StyledAnswer as S } from './Answer.styles'

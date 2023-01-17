@@ -1,15 +1,11 @@
 import React from 'react'
 
-import { IFontsProps } from 'models/fonts'
-import { IColorsProps } from 'models/colors'
-import { IDimensionsProps } from 'models/dimensions'
-import { IThemedComponent } from 'models/common'
+import { IFontsProps } from '../../models/fonts'
+import { IColorsProps } from '../../models/colors'
+import { IDimensionsProps } from '../../models/dimensions'
+import { IThemedComponent } from '../../models/common'
 import { Option } from '../Option'
 import { IOptionProps } from '../Option/Option'
-import {
-  ContentHorizontalAlignment,
-  ContentVerticalAlignment,
-} from '../../constants/rootConstants'
 import { StyledAnswerWithIcon as S } from './AnswerWithIcon.styles'
 
 export interface IAnswerWithIconContentProps {
@@ -25,7 +21,13 @@ export interface IAnswerWithIconProps
   /**
    * How content will alignment horizontally
    */
-  contentHorizontalAlign?: ContentHorizontalAlignment
+  contentHorizontalAlign?:
+    | 'flex-start'
+    | 'center'
+    | 'space-between'
+    | 'flex-end'
+    | 'space-around'
+    | 'space-evenly'
   /**
    * What background color to use in active statement
    */
@@ -61,7 +63,7 @@ export interface IAnswerWithIconProps
   /**
    * Define vertical alignment for icon
    */
-  iconAlignSelf?: ContentVerticalAlignment
+  iconAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch'
 }
 
 const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
@@ -77,7 +79,7 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
     fontSize: '18px',
     lineHeight: '24px',
     borderRadius: '20px',
-    contentHorizontalAlign: ContentHorizontalAlignment.START,
+    contentHorizontalAlign: 'flex-start',
     margin: '0 0 16px',
     padding: '0 16px',
     iconHeight: '77px',

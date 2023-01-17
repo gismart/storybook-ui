@@ -3,11 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { OptionType } from 'components/Option'
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
-import {
-  ContentHorizontalAlignment,
-  ContentVerticalAlignment,
-  ControlsCategories,
-} from 'constants/rootConstants'
+import { ControlsCategories } from 'constants/rootConstants'
 import { ComplexAnswerContent } from 'content/ComplexAnswerContent'
 
 import { AnswerWithIcon } from 'components/AnswerWithIcon'
@@ -163,11 +159,11 @@ Girlish.args = {
   fontSize: '18px',
   lineHeight: '24px',
   borderRadius: '20px',
-  contentHorizontalAlign: ContentHorizontalAlignment.START,
+  contentHorizontalAlign: 'flex-start',
   padding: '0 16px',
   value: 'User answer',
   iconHeight: '77px',
   spacingBetweenIconAndContent: '8px',
   iconSrc: 'https://cdn-icons-png.flaticon.com/512/1791/1791311.png',
-  iconAlignSelf: ContentVerticalAlignment.END,
+  iconAlignSelf: 'flex-end',
 }

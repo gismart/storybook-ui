@@ -1,8 +1,7 @@
-import { IDimensionsProps } from 'models/dimensions'
-import { IFontsProps } from 'models/fonts'
-import { IColorsProps } from 'models/colors'
 import React from 'react'
-import { ContentHorizontalAlignment } from 'constants/rootConstants'
+import { IDimensionsProps } from './dimensions'
+import { IColorsProps } from './colors'
+import { IFontsProps } from './fonts'
 
 export interface IAnswerButtonProps
   extends IDimensionsProps,
@@ -12,7 +11,13 @@ export interface IAnswerButtonProps
   /**
    * How content will alignment horizontally
    */
-  contentHorizontalAlign?: ContentHorizontalAlignment
+  contentHorizontalAlign?:
+    | 'flex-start'
+    | 'center'
+    | 'space-between'
+    | 'flex-end'
+    | 'space-around'
+    | 'space-evenly'
   /**
    * What background color to use in active statement
    */

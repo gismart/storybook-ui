@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 
-import { IColorsProps } from 'models/colors'
+import { IColorsProps } from '../models/colors'
 
 export const CommonColorsStyles = css<IColorsProps>`
   background-color: ${({ backgroundColor }) => backgroundColor || '#000000'};

@@ -1,5 +1,5 @@
 import React from 'react'
-import { IFontsProps } from 'models/fonts'
+import { IFontsProps } from '../../models/fonts'
 import { StyledCircleProgress as S } from './CircleProgress.styles'
 
 export interface IContainerProps {

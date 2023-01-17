@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 
-import { IDimensionsProps } from 'models/dimensions'
+import { IDimensionsProps } from '../models/dimensions'
 
 export const CommonDimensionsStyles = css<IDimensionsProps>`
   min-width: ${({ minWidth }) => minWidth || 'auto'};

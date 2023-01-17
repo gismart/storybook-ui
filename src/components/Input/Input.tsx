@@ -6,7 +6,7 @@ import React, {
   useMemo,
   useState,
 } from 'react'
-import { IInputProps } from 'models/input'
+import { IInputProps } from '../../models/input'
 import { StyledInput as S } from './Input.styles'
 
 export const NumericKeypadRegex = /([0-9]{1}|Backspace|Enter)/

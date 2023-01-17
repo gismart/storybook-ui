@@ -1,7 +1,7 @@
 import React from 'react'
-import { IFontsProps } from 'models/fonts'
-import { IColorsProps } from 'models/colors'
-import { IDimensionsProps } from 'models/dimensions'
+import { IFontsProps } from '../../models/fonts'
+import { IColorsProps } from '../../models/colors'
+import { IDimensionsProps } from '../../models/dimensions'
 import { StyledListItemWithIcon } from './ListItemWithIcon.styles'
 
 export interface IListItemWithIconProps

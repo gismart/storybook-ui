@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 
-import { IFontsProps } from 'models/fonts'
+import { IFontsProps } from '../models/fonts'
 
 export const CommonFontsStyles = css<IFontsProps>`
   font-size: ${({ fontSize }) => fontSize || '16px'};

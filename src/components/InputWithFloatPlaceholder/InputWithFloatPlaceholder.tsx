@@ -1,6 +1,6 @@
 import React, { InputHTMLAttributes, RefObject } from 'react'
 
-import { IInputProps } from 'models/input'
+import { IInputProps } from '../../models/input'
 import { StyledInputWithFloatPlaceholder as S } from './InputWithFloatPlaceholder.styles'
 
 export interface ILabelProps {
