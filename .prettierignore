@@ -6,6 +6,9 @@
 /core
 /build
 /temp
+/public
+/static-storybook
+.storybook
 .cache
 .DS_Store
 id_rsa

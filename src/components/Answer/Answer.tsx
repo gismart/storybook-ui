@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { Option } from 'components/Option'
-import { IOptionProps } from 'components/Option/Option'
-
 import { IAnswerButtonProps } from 'models/answer'
 import { IThemedComponent } from 'models/common'
+import { IOptionProps } from '../Option/Option'
+import { Option } from '../Option'
 import { StyledAnswer as S } from './Answer.styles'
 
 const answerThemes: Record<string, Record<string, string | boolean>> = {

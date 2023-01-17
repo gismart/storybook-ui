@@ -3,9 +3,9 @@ import React from 'react'
 import { IFontsProps } from 'models/fonts'
 import { IColorsProps } from 'models/colors'
 import { IDimensionsProps } from 'models/dimensions'
-import { Option } from 'components/Option'
-import { IOptionProps } from 'components/Option/Option'
 import { IThemedComponent } from 'models/common'
+import { Option } from '../Option'
+import { IOptionProps } from '../Option/Option'
 import {
   ContentHorizontalAlignment,
   ContentVerticalAlignment,
