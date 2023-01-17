@@ -20,6 +20,7 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     fontSize: '18px',
     lineHeight: '24px',
     borderRadius: '20px',
+    margin: '0 0 16px',
     padding: '0 16px',
   },
 }

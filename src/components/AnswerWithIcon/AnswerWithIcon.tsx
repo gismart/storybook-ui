@@ -78,6 +78,7 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
     lineHeight: '24px',
     borderRadius: '20px',
     contentHorizontalAlign: ContentHorizontalAlignment.START,
+    margin: '0 0 16px',
     padding: '0 16px',
     iconHeight: '77px',
     spacingBetweenIconAndContent: '8px',

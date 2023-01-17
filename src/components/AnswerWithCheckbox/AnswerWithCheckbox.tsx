@@ -100,6 +100,7 @@ const answerWithCheckboxThemes: Record<
     lineHeight: '24px',
     borderRadius: '20px',
     reverse: true,
+    margin: '0 0 16px',
     padding: '0 16px',
     spacingBetweenCheckboxAndContent: '0',
     checkboxActiveBorder: 'none',

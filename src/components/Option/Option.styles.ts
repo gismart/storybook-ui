@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 type TOptionContainerProps = {
   fullWidth?: boolean
-  withoutMargin?: boolean
   disabled?: boolean
 }
 
@@ -12,7 +11,6 @@ export const StyledOption = {
     display: block;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'auto')};
-    margin-bottom: ${({ withoutMargin }) => (withoutMargin ? '0' : '16px')};
     pointer-events: ${({ disabled }) => (disabled ? 'none' : 'auto')};
 
     & > input {
