@@ -1,1 +1,1 @@
-export { Option, OptionType } from './Option'
+export { Option } from './Option'

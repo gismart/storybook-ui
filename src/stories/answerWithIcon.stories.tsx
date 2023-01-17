@@ -1,7 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { OptionType } from 'components/Option'
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 import { ControlsCategories } from 'constants/rootConstants'
 import { ComplexAnswerContent } from 'content/ComplexAnswerContent'
@@ -108,7 +107,7 @@ const Template: ComponentStory<typeof AnswerWithIcon> = (args) => (
 export const Simple = Template.bind({})
 Simple.args = {
   children: 'Answer with big amount of words and letters',
-  type: OptionType.CHECKBOX,
+  type: 'checkbox',
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
   isFullWidth: true,
   maxWidth: '320px',
@@ -128,7 +127,7 @@ Simple.args = {
 export const Complex = Template.bind({})
 Complex.args = {
   children: <ComplexAnswerContent />,
-  type: OptionType.CHECKBOX,
+  type: 'checkbox',
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
   isFullWidth: true,
   maxWidth: '320px',
@@ -147,7 +146,7 @@ Complex.args = {
 export const Girlish = Template.bind({})
 Girlish.args = {
   children: 'Answer with big',
-  type: OptionType.CHECKBOX,
+  type: 'checkbox',
   boxShadow: '0px 8px 20px #F2E6E1',
   isFullWidth: true,
   maxWidth: '320px',

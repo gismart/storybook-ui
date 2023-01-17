@@ -1,7 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { OptionType } from 'components/Option'
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 import { ControlsCategories } from 'constants/rootConstants'
 import { ComplexAnswerContent } from 'content/ComplexAnswerContent'
@@ -73,7 +72,7 @@ const Template: ComponentStory<typeof Answer> = (args) => <Answer {...args} />
 export const SimpleLuvly = Template.bind({})
 SimpleLuvly.args = {
   children: 'Answer',
-  type: OptionType.CHECKBOX,
+  type: 'checkbox',
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
   isFullWidth: true,
   maxWidth: '320px',
@@ -90,7 +89,7 @@ SimpleLuvly.args = {
 export const ComplexLuvly = Template.bind({})
 ComplexLuvly.args = {
   children: <ComplexAnswerContent />,
-  type: OptionType.CHECKBOX,
+  type: 'checkbox',
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
   isFullWidth: true,
   maxWidth: '320px',
@@ -107,7 +106,7 @@ ComplexLuvly.args = {
 export const SimpleDanceBit = Template.bind({})
 SimpleDanceBit.args = {
   children: 'Answer',
-  type: OptionType.CHECKBOX,
+  type: 'checkbox',
   isFullWidth: true,
   maxWidth: '320px',
   height: '64px',
@@ -124,7 +123,7 @@ SimpleDanceBit.args = {
 export const SimpleLuvlyGirlish = Template.bind({})
 SimpleLuvlyGirlish.args = {
   children: '18-29',
-  type: OptionType.RADIO,
+  type: 'radio',
   boxShadow: '0px 8px 20px #F2E6E1',
   isFullWidth: true,
   maxWidth: '320px',

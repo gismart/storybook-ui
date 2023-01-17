@@ -1,13 +1,8 @@
 import React, { InputHTMLAttributes, useMemo } from 'react'
 import { StyledOption as S } from './Option.styles'
 
-export const enum OptionType {
-  RADIO = 'radio',
-  CHECKBOX = 'checkbox',
-}
-
 export interface IOptionProps {
-  type?: OptionType
+  type?: 'radio' | 'checkbox'
   /**
    * Will save as user answer
    */

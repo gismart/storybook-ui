@@ -1,7 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { OptionType } from 'components/Option'
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 import { ControlsCategories } from 'constants/rootConstants'
 import girlishCheckIcon from 'assets/images/check-white-girlish.svg'
@@ -135,7 +134,7 @@ const Template: ComponentStory<typeof AnswerWithCheckbox> = (args) => (
 export const Simple = Template.bind({})
 Simple.args = {
   children: 'Answer',
-  type: OptionType.CHECKBOX,
+  type: 'checkbox',
   boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
   isFullWidth: true,
   maxWidth: '320px',
@@ -157,7 +156,7 @@ Simple.args = {
 export const Girlish = Template.bind({})
 Girlish.args = {
   children: 'Answer',
-  type: OptionType.CHECKBOX,
+  type: 'checkbox',
   boxShadow: '0px 8px 20px #F2E6E1',
   isFullWidth: true,
   maxWidth: '320px',
