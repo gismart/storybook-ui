@@ -21,7 +21,6 @@ export const CommonAnswerStyles = css<IAnswerButtonProps>`
   position: relative;
   font-family: sans-serif;
   overflow-wrap: break-word;
-  word-break: break-all;
 
   input:checked + & {
     background-color: ${({

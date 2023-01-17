@@ -36,6 +36,7 @@ export const StyledAnswerWithCheckbox = {
     mix-blend-mode: normal;
     border: ${({ checkboxBorder }) =>
       checkboxBorder || '1px solid rgba(85, 89, 101, 0.5)'};
+    box-sizing: border-box;
     transition: 0.2s ease-out;
   `,
   Content: styled.div<IAnswerWithCheckboxContentProps>`

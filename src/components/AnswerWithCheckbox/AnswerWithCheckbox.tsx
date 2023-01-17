@@ -103,9 +103,11 @@ const answerWithCheckboxThemes: Record<
     margin: '0 0 16px',
     padding: '0 16px',
     spacingBetweenCheckboxAndContent: '0',
+    checkboxWidth: '24px',
+    checkboxHeight: '24px',
     checkboxActiveBorder: 'none',
     checkboxBackgroundActiveColor: '#628F7B',
-    iconSize: '20px',
+    iconSize: '14px',
   },
 }
 
