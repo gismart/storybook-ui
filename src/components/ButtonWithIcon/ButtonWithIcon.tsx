@@ -59,7 +59,6 @@ export interface IButtonWithIconProps
 
 const themes: Record<string, any> = {
   girlish: {
-    display: 'block',
     isFullWidth: true,
     height: '52px',
     lineHeight: '52px',
@@ -68,11 +67,11 @@ const themes: Record<string, any> = {
     maxWidth: '320px',
     fontSize: '18px',
     fontWeight: '700',
-    backgroundColor: '#628F7B',
+    backgroundColor: '#628f7b',
     iconHeight: '24px',
     iconWidth: '24px',
     iconPositionRight: '14px',
-    disableBackgroundColor: '#cacaca;',
+    disableBackgroundColor: '#cacaca',
     style: {
       letterSpacing: '0.2px',
     },

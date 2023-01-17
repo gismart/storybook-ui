@@ -39,7 +39,6 @@ export interface IButtonProps
 
 const themes: Record<string, any> = {
   girlish: {
-    display: 'block',
     isFullWidth: true,
     height: '52px',
     lineHeight: '52px',
@@ -49,8 +48,8 @@ const themes: Record<string, any> = {
     fontSize: '18px',
     fontWeight: '700',
     color: '#fff',
-    disableBackgroundColor: '#CACACA',
-    backgroundColor: '#628F7B',
+    disableBackgroundColor: '#cacaca',
+    backgroundColor: '#628f7b',
     style: {
       letterSpacing: '0.2px',
     },

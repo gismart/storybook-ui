@@ -11,6 +11,7 @@ export const StyledButton = styled.button<IButtonProps>`
   ${CommonColorsStyles};
   ${CommonDimensionsStyles};
 
+  display: block;
   cursor: pointer;
   border: none;
   outline: none;
