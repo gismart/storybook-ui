@@ -42,7 +42,12 @@ const Template: ComponentStory<typeof ButtonWithIcon> = (args) => (
 export const Regular = Template.bind({})
 Regular.args = {
   isFullWidth: true,
-  children: 'Continue',
+  children: (
+    <div>
+      Continue
+      <img src={arrowIcon} alt="" />
+    </div>
+  ),
   height: '52px',
   lineHeight: '52px',
   borderRadius: '32px',
@@ -51,7 +56,6 @@ Regular.args = {
   fontSize: '18px',
   fontWeight: '700',
   backgroundColor: '#628F7B',
-  iconSrc: arrowIcon,
   iconHeight: '24px',
   iconWidth: '24px',
   iconPositionRight: '14px',

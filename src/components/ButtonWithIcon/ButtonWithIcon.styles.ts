@@ -31,12 +31,18 @@ export const StyledButton = styled.button<IButtonWithIconProps>`
 `
 
 export const StyledButtonWithIcon = {
-  Button: styled(StyledButton)``,
-  Icon: styled.img`
-    display: block;
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  Button: styled(StyledButton)`
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      width: ${({ iconWidth }) => iconWidth || '100%'};
+      height: ${({ iconHeight }) => iconHeight || 'auto'};
+      right: ${({ iconPositionRight }) => iconPositionRight || 'auto'};
+      left: ${({ iconPositionLeft }) => iconPositionLeft || 'auto'};
+    }
   `,
 }

@@ -30,10 +30,6 @@ export interface IButtonWithIconProps
    */
   disableBackgroundColor?: string
   /**
-   * Icon path
-   */
-  iconSrc?: string
-  /**
    * Icon width
    */
   iconWidth?: string
@@ -84,7 +80,6 @@ const ButtonWithIconBase: React.FC<IButtonWithIconProps> = ({
   textAlign,
   disabled,
   disableBackgroundColor,
-  iconSrc,
   iconWidth,
   iconHeight,
   iconPositionRight,
@@ -98,18 +93,13 @@ const ButtonWithIconBase: React.FC<IButtonWithIconProps> = ({
     disabled={disabled}
     disableBackgroundColor={disableBackgroundColor}
     style={style}
+    iconWidth={iconWidth}
+    iconHeight={iconHeight}
+    iconPositionRight={iconPositionRight}
+    iconPositionLeft={iconPositionLeft}
     {...props}
   >
     {children}
-    <S.Icon
-      src={iconSrc}
-      style={{
-        width: iconWidth,
-        height: iconHeight,
-        right: iconPositionRight,
-        left: iconPositionLeft,
-      }}
-    />
   </S.Button>
 )
 
