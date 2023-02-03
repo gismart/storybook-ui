@@ -138,3 +138,23 @@ SimpleLuvlyGirlish.args = {
   padding: '0 16px',
   value: 'User answer',
 }
+
+export const SimpleBook = Template.bind({})
+SimpleBook.args = {
+  children: 'Physical activity',
+  type: 'radio',
+  boxShadow: '0px 8px 20px #E8E8E8',
+  isFullWidth: true,
+  maxWidth: '320px',
+  height: '64px',
+  backgroundColor: '#ffffff',
+  activeBackgroundColor: '#83BAB3',
+  activeColor: '#FFFFFF',
+  color: '#17202A',
+  fontSize: '16px',
+  fontWeight: '400',
+  lineHeight: '24px',
+  borderRadius: '20px',
+  padding: '0 16px',
+  value: 'User answer',
+}

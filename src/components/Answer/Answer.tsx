@@ -6,7 +6,7 @@ import { IOptionProps } from '../Option/Option'
 import { Option } from '../Option'
 import { StyledAnswer as S } from './Answer.styles'
 
-const answerThemes: Record<string, Record<string, string | boolean>> = {
+const themes: Record<string, Record<string, string | boolean>> = {
   girlish: {
     boxShadow: '0px 8px 20px #F2E6E1',
     isFullWidth: true,
@@ -17,6 +17,21 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     activeColor: '#2C3131',
     color: '#2C3131',
     fontSize: '18px',
+    lineHeight: '24px',
+    borderRadius: '20px',
+    margin: '0 0 16px',
+    padding: '0 16px',
+  },
+  book: {
+    boxShadow: '0px 8px 20px #E8E8E8',
+    isFullWidth: true,
+    maxWidth: '320px',
+    height: '64px',
+    backgroundColor: '#ffffff',
+    activeBackgroundColor: '#83BAB3',
+    activeColor: '#FFFFFF',
+    color: '#17202A',
+    fontSize: '16px',
     lineHeight: '24px',
     borderRadius: '20px',
     margin: '0 0 16px',
@@ -46,7 +61,7 @@ export const Answer: React.FC<
     disabled={disabled}
     onChange={onChange}
   >
-    <S.Root style={style} {...(theme && answerThemes[theme])} {...props}>
+    <S.Root style={style} {...(theme && themes[theme])} {...props}>
       <div>{children}</div>
     </S.Root>
   </Option>

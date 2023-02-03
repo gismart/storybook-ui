@@ -179,3 +179,32 @@ Girlish.args = {
   iconSize: '14px',
   iconSrc: girlishCheckIcon,
 }
+
+export const Book = Template.bind({})
+Book.args = {
+  children: 'Answer',
+  type: 'checkbox',
+  boxShadow: '0px 8px 20px #F2E6E1',
+  isFullWidth: true,
+  maxWidth: '320px',
+  height: '64px',
+  backgroundColor: '#ffffff',
+  activeBackgroundColor: '#83BAB3',
+  color: '#17202A',
+  activeColor: '#ffffff',
+  fontSize: '16px',
+  lineHeight: '24px',
+  borderRadius: '20px',
+  reverse: true,
+  padding: '0 16px',
+  value: 'User answer',
+  spacingBetweenCheckboxAndContent: '0',
+  checkboxWidth: '24px',
+  checkboxHeight: '24px',
+  checkboxActiveBorder: 'none',
+  checkboxBackgroundActiveColor: '#ffffff',
+  checkboxBackgroundColor: '#ffffff',
+  iconSize: '14px',
+  iconSrc: girlishCheckIcon,
+  checkboxBorder: '1.5px solid #CACACA',
+}
