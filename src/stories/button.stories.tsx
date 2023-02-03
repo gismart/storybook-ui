@@ -66,3 +66,22 @@ RegularLuvlyGirlish.args = {
     letterSpacing: '0.2px',
   },
 }
+
+export const RegularBook = Template.bind({})
+RegularBook.args = {
+  isFullWidth: true,
+  children: 'Continue',
+  height: '60px',
+  lineHeight: '60px',
+  borderRadius: '30px',
+  padding: '0 16px',
+  maxWidth: '320px',
+  fontSize: '16px',
+  fontWeight: '700',
+  color: '#fff',
+  disableBackgroundColor: '#CACACA',
+  backgroundColor: '#EB7F5E',
+  style: {
+    letterSpacing: '0.2px',
+  },
+}

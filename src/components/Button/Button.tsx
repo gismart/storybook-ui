@@ -54,6 +54,22 @@ const themes: Record<string, any> = {
       letterSpacing: '0.2px',
     },
   },
+  book: {
+    isFullWidth: true,
+    height: '60px',
+    lineHeight: '60px',
+    borderRadius: '30px',
+    padding: '0 16px',
+    maxWidth: '320px',
+    fontSize: '16px',
+    fontWeight: '700',
+    color: '#fff',
+    disableBackgroundColor: '#cacaca',
+    backgroundColor: '#EB7F5E',
+    style: {
+      letterSpacing: '0.2px',
+    },
+  },
 }
 
 export const Button: React.FC<IButtonProps> = ({
