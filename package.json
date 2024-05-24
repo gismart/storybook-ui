@@ -1,7 +1,11 @@
 {
   "name": "@gismart/storybook-ui",
   "description": "Library of customizable components for web subscriptions",
-  "main": "index.ts",
+  "main": "dist/cjs/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "version": "1.0.47",
   "scripts": {
     "start": "start-storybook -p 6006",
@@ -15,11 +19,9 @@
     "prettier:fix": "node_modules/.bin/prettier --write '**/*.{ts?(x),js?(x),json}'",
     "prepare:package": "npm run lint && npm run prettier:check && npm run build",
     "publish:package": "npm run prepare:package && npm publish --registry https://npm.gismart.xyz",
-    "chromatic": "npx chromatic --project-token=105d1a9d73e9"
+    "chromatic": "npx chromatic --project-token=105d1a9d73e9",
+    "rollup": "rollup -c --bundleConfigAsCjs"
   },
-  "files": [
-    "core"
-  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/gismart/storybook-ui.git"
@@ -42,6 +44,10 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
@@ -68,6 +74,10 @@
     "lint-staged": "12.4.1",
     "prettier": "2.6.2",
     "prop-types": "^15.8.1",
+    "rollup": "^4.18.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.6.2",
     "webpack": "^5.74.0"
   },
   "husky": {
@@ -96,6 +106,9 @@
   ],
   "bugs": {
     "url": "https://github.com/gismart/storybook-ui/issues"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
   },
   "readme": "ERROR: No README data found!",
   "_id": "@gismart/storybook-ui@0.1.8"

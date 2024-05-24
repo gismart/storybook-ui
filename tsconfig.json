@@ -8,12 +8,11 @@
       "content/*": ["src/content/*"],
       "styles/*": ["src/styles/*"]
     },
-    "target": "es5",
+    "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
@@ -22,7 +21,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true
   },
   "include": ["src", "dts"]
 }

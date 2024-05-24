@@ -1,1 +1,0 @@
-{"version":3,"file":"Answer.d.ts","sourceRoot":"","sources":["../../../src/components/Answer/Answer.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AAEzB,OAAO,EAAE,kBAAkB,EAAE,MAAM,qBAAqB,CAAA;AACxD,OAAO,EAAE,gBAAgB,EAAE,MAAM,qBAAqB,CAAA;AACtD,OAAO,EAAE,YAAY,EAAE,MAAM,kBAAkB,CAAA;AAqC/C,eAAO,MAAM,MAAM,EAAE,KAAK,CAAC,EAAE,CAC3B,kBAAkB,GAAG,YAAY,GAAG,gBAAgB,CAyBrD,CAAA"}

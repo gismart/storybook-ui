@@ -1,2 +1,0 @@
-export var INITIAL_PROGRESS_VALUE = 0;
-export var PROGRESS_SECTION_STEP = 1;
