@@ -22,20 +22,19 @@ const themes: Record<string, Record<string, string | boolean>> = {
     margin: '0 0 16px',
     padding: '0 16px',
   },
-  book: {
-    boxShadow: '0px 8px 20px #E8E8E8',
+  luvlySimple: {
+    type: 'checkbox',
+    boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
     isFullWidth: true,
     maxWidth: '320px',
     height: '64px',
     backgroundColor: '#ffffff',
-    activeBackgroundColor: '#83BAB3',
-    activeColor: '#FFFFFF',
-    color: '#17202A',
-    fontSize: '16px',
-    lineHeight: '24px',
+    activeBackgroundColor: '#ff8276',
+    color: 'rgb(45, 50, 64)',
+    fontSize: '17px',
     borderRadius: '20px',
-    margin: '0 0 16px',
-    padding: '0 16px',
+    padding: '0 15px',
+    value: 'User answer',
   },
 }
 
