@@ -3,9 +3,10 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 import { ControlsCategories } from 'constants/rootConstants'
-import girlishCheckIcon from 'assets/images/check-white-girlish.svg'
 
 import { AnswerWithCheckbox } from 'components/AnswerWithCheckbox'
+
+import checkIconWhite from '../assets/images/check-icon-white.svg'
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -131,80 +132,36 @@ const Template: ComponentStory<typeof AnswerWithCheckbox> = (args) => (
 )
 
 // 👇 Each story then reuses that template
-export const Simple = Template.bind({})
-Simple.args = {
-  children: 'Answer',
+export const DancebitCheckbox = Template.bind({})
+DancebitCheckbox.args = {
+  children: (
+    <span>
+      Get a smaller <br /> waist
+    </span>
+  ),
   type: 'checkbox',
-  boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
   isFullWidth: true,
-  maxWidth: '320px',
-  height: '64px',
-  backgroundColor: '#ffffff',
-  color: 'rgb(45, 50, 64)',
-  fontSize: '17px',
-  borderRadius: '20px',
-  padding: '0 15px',
-  value: 'User answer',
-  spacingBetweenCheckboxAndContent: '0 0 0 12px',
-  checkboxActiveBorder: '1px solid #fff',
-  checkboxBackgroundActiveColor: '#fff',
-  iconSize: '12px',
-  iconSrc:
-    'https://face-yoga-ws.gidev.xyz/c19aab03cca9301d1739a4cd33e62b6f.svg',
-}
-
-export const Girlish = Template.bind({})
-Girlish.args = {
-  children: 'Answer',
-  type: 'checkbox',
-  boxShadow: '0px 8px 20px #F2E6E1',
-  isFullWidth: true,
-  maxWidth: '320px',
-  height: '64px',
-  backgroundColor: '#ffffff',
-  activeBackgroundColor: '#D0DDD7',
-  color: '#2C3131',
-  activeColor: '#2C3131',
-  fontSize: '18px',
-  lineHeight: '24px',
-  borderRadius: '20px',
-  reverse: true,
-  padding: '0 16px',
-  value: 'User answer',
-  spacingBetweenCheckboxAndContent: '0',
-  checkboxWidth: '24px',
-  checkboxHeight: '24px',
-  checkboxActiveBorder: 'none',
-  checkboxBackgroundActiveColor: '#628F7B',
-  iconSize: '14px',
-  iconSrc: girlishCheckIcon,
-}
-
-export const Book = Template.bind({})
-Book.args = {
-  children: 'Answer',
-  type: 'checkbox',
-  boxShadow: '0px 8px 20px #F2E6E1',
-  isFullWidth: true,
-  maxWidth: '320px',
-  height: '64px',
-  backgroundColor: '#ffffff',
-  activeBackgroundColor: '#83BAB3',
+  maxWidth: '218px',
+  height: '80px',
+  backgroundColor: '#F5F6F7',
   color: '#17202A',
-  activeColor: '#ffffff',
-  fontSize: '16px',
+  fontSize: '17px',
+  fontWeight: '700',
   lineHeight: '24px',
-  borderRadius: '20px',
-  reverse: true,
+  borderRadius: '6px',
   padding: '0 16px',
-  value: 'User answer',
-  spacingBetweenCheckboxAndContent: '0',
+  value: 'lose_belly_fat',
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  checkboxActiveBorder: 'none',
   checkboxWidth: '24px',
   checkboxHeight: '24px',
-  checkboxActiveBorder: 'none',
-  checkboxBackgroundActiveColor: '#ffffff',
-  checkboxBackgroundColor: '#ffffff',
-  iconSize: '14px',
-  iconSrc: girlishCheckIcon,
+  checkboxBorderRadius: '8px',
   checkboxBorder: '1.5px solid #CACACA',
+  checkboxBackgroundActiveColor: '#03AAF5',
+  reverse: true,
+  activeBackgroundColor: '#EAF7FF',
+  activeColor: '#17202A',
+  border: '2px solid transparent',
+  activeBorder: '2px solid#03AAF5',
+  iconSrc: checkIconWhite,
 }

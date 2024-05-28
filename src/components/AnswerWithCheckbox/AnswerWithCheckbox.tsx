@@ -59,6 +59,10 @@ export interface ICheckboxProps {
   /**
    * What checkbox background color to use
    */
+  checkboxBorderRadius?: string
+  /**
+   * What checkbox border radius to use
+   */
 }
 
 export interface IAnswerWithCheckboxProps
@@ -114,29 +118,6 @@ const answerWithCheckboxThemes: Record<
     checkboxBackgroundActiveColor: '#628F7B',
     iconSize: '14px',
   },
-  book: {
-    boxShadow: '0px 8px 20px #F2E6E1',
-    isFullWidth: true,
-    maxWidth: '320px',
-    height: '64px',
-    backgroundColor: '#ffffff',
-    activeBackgroundColor: '#83BAB3',
-    color: '#17202A',
-    activeColor: '#ffffff',
-    fontSize: '16px',
-    lineHeight: '24px',
-    borderRadius: '20px',
-    reverse: true,
-    padding: '0 16px',
-    spacingBetweenCheckboxAndContent: '0',
-    checkboxWidth: '24px',
-    checkboxHeight: '24px',
-    checkboxActiveBorder: 'none',
-    checkboxBackgroundActiveColor: '#ffffff',
-    checkboxBackgroundColor: '#ffffff',
-    iconSize: '14px',
-    checkboxBorder: '1.5px solid #CACACA',
-  },
 }
 
 const AnswerWithCheckboxBase: React.FC<
@@ -158,6 +139,7 @@ const AnswerWithCheckboxBase: React.FC<
   checkboxBorder,
   spacingBetweenCheckboxAndContent,
   contentHorizontalAlign,
+  checkboxBorderRadius,
   ...props
 }) => {
   return (
@@ -175,6 +157,7 @@ const AnswerWithCheckboxBase: React.FC<
           checkboxHeight={checkboxHeight}
           checkboxBackgroundColor={checkboxBackgroundColor}
           checkboxBorder={checkboxBorder}
+          checkboxBorderRadius={checkboxBorderRadius}
         />
         <S.Content
           spacingBetweenCheckboxAndContent={spacingBetweenCheckboxAndContent}

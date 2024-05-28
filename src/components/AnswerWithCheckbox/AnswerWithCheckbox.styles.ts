@@ -12,6 +12,7 @@ export const StyledAnswerWithCheckbox = {
     ${CommonAnswerStyles};
     flex-wrap: nowrap;
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+    transition: 0.2s ease-out;
 
     input:checked + & > span {
       background-color: ${({ checkboxBackgroundActiveColor }) =>
@@ -29,7 +30,8 @@ export const StyledAnswerWithCheckbox = {
   Checkbox: styled.span<ICheckboxProps>`
     width: ${({ checkboxWidth }) => checkboxWidth || '20px'};
     height: ${({ checkboxHeight }) => checkboxHeight || '20px'};
-    border-radius: 50%;
+    border-radius: ${({ checkboxBorderRadius }) =>
+      checkboxBorderRadius || '50%'};
     background-position: center;
     background-color: ${({ checkboxBackgroundColor }) =>
       checkboxBackgroundColor};
