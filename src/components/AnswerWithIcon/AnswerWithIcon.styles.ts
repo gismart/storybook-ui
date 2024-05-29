@@ -11,6 +11,7 @@ export const StyledAnswerWithIcon = {
     ${CommonAnswerStyles};
     flex-wrap: nowrap;
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+    transition: 0.2s ease-out;
 
     input:checked + & > * > * {
       color: ${({ activeColor }) => activeColor || '#fff'};

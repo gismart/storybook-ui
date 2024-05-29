@@ -5,9 +5,9 @@ import { IThemedComponent } from '../../models/common'
 import { Option } from '../Option'
 import { IOptionProps } from '../Option/Option'
 
-import { StyledAnswerWithCheckbox as S } from './AnswerWithCheckbox.styles'
+import { StyledAnswerWithIconAndCheckbox as S } from './AnswerWithIconAndCheckbox.styles'
 
-export interface IAnswerWithCheckboxContentProps {
+export interface IAnswerWithIconAndCheckboxContentProps {
   spacingBetweenCheckboxAndContent?: string
 
   contentHorizontalAlign?:
@@ -61,43 +61,40 @@ export interface ICheckboxProps {
    */
 }
 
-export interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
+export interface IAnswerWithIconAndCheckboxImageProps {
+  /**
+    Icon path
+*/
+  imageSrc?: string
+  /**
+   * Icon width
+   */
+  imageWidth?: string
+  /**
+   * Icon height
+   */
+  imageHeight?: string
+  /**
+   * Define vertical alignment for icon
+   */
+  imageAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch'
+}
+
+export interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
   reverse?: boolean
 }
 
 const answerWithCheckboxThemes: Record<
   string,
   Record<string, string | boolean>
-> = {
-  girlish: {
-    boxShadow: '0px 8px 20px #F2E6E1',
-    isFullWidth: true,
-    maxWidth: '320px',
-    height: '64px',
-    backgroundColor: '#ffffff',
-    activeBackgroundColor: '#D0DDD7',
-    color: '#2C3131',
-    activeColor: '#2C3131',
-    fontSize: '18px',
-    lineHeight: '24px',
-    borderRadius: '20px',
-    reverse: true,
-    margin: '0 0 16px',
-    padding: '0 16px',
-    spacingBetweenCheckboxAndContent: '0',
-    checkboxWidth: '24px',
-    checkboxHeight: '24px',
-    checkboxActiveBorder: 'none',
-    checkboxBackgroundActiveColor: '#628F7B',
-    iconSize: '14px',
-  },
-}
+> = {}
 
-const AnswerWithCheckboxBase: React.FC<
-  IAnswerWithCheckboxProps &
+const AnswerWithIconAndCheckboxBase: React.FC<
+  IAnswerWithIconAndCheckboxProps &
+    IAnswerWithIconAndCheckboxImageProps &
     IOptionProps &
     ICheckboxProps &
-    IAnswerWithCheckboxContentProps
+    IAnswerWithIconAndCheckboxContentProps
 > = ({
   children,
   type,
@@ -113,6 +110,10 @@ const AnswerWithCheckboxBase: React.FC<
   spacingBetweenCheckboxAndContent,
   contentHorizontalAlign,
   checkboxBorderRadius,
+  imageSrc,
+  imageWidth,
+  imageHeight,
+  imageAlignSelf,
   ...props
 }) => {
   return (
@@ -138,19 +139,29 @@ const AnswerWithCheckboxBase: React.FC<
         >
           <div>{children}</div>
         </S.Content>
+        <S.Icon
+          src={imageSrc}
+          alt=""
+          style={{
+            width: imageWidth,
+            height: imageHeight,
+            alignSelf: imageAlignSelf,
+          }}
+        />
       </S.Root>
     </Option>
   )
 }
 
-export const AnswerWithCheckbox: React.FC<
-  IAnswerWithCheckboxProps &
+export const AnswerWithIconAndCheckbox: React.FC<
+  IAnswerWithIconAndCheckboxProps &
+    IAnswerWithIconAndCheckboxImageProps &
     IOptionProps &
     ICheckboxProps &
-    IAnswerWithCheckboxContentProps &
+    IAnswerWithIconAndCheckboxContentProps &
     IThemedComponent
 > = ({ theme, ...props }) => (
-  <AnswerWithCheckboxBase
+  <AnswerWithIconAndCheckboxBase
     {...(theme && answerWithCheckboxThemes[theme])}
     {...props}
   />

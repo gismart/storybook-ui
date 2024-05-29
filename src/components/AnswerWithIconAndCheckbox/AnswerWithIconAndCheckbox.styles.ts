@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import { CommonAnswerStyles } from '../../styles'
 import {
   ICheckboxProps,
-  IAnswerWithCheckboxProps,
-  IAnswerWithCheckboxContentProps,
-} from './AnswerWithCheckbox'
+  IAnswerWithIconAndCheckboxProps,
+  IAnswerWithIconAndCheckboxContentProps,
+} from './AnswerWithIconAndCheckbox'
 
-export const StyledAnswerWithCheckbox = {
-  Root: styled.div<IAnswerWithCheckboxProps & ICheckboxProps>`
+export const StyledAnswerWithIconAndCheckbox = {
+  Root: styled.div<IAnswerWithIconAndCheckboxProps & ICheckboxProps>`
     ${CommonAnswerStyles};
     flex-wrap: nowrap;
     flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
@@ -40,7 +40,7 @@ export const StyledAnswerWithCheckbox = {
       checkboxBorder || '1px solid rgba(85, 89, 101, 0.5)'};
     transition: 0.2s ease-out;
   `,
-  Content: styled.div<IAnswerWithCheckboxContentProps>`
+  Content: styled.div<IAnswerWithIconAndCheckboxContentProps>`
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -50,5 +50,10 @@ export const StyledAnswerWithCheckbox = {
     align-content: center;
     margin: ${({ spacingBetweenCheckboxAndContent }) =>
       spacingBetweenCheckboxAndContent || 0};
+  `,
+  Icon: styled.img`
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
   `,
 }

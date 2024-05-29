@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 import { ControlsCategories } from 'constants/rootConstants'
 
-import { AnswerWithCheckbox } from 'components/AnswerWithCheckbox'
+import { AnswerWithIconAndCheckbox } from 'components/AnswerWithIconAndCheckbox'
 
 import checkIconWhite from '../assets/images/check-icon-white.svg'
 
@@ -14,8 +14,8 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Components/AnswerWithCheckbox',
-  component: AnswerWithCheckbox,
+  title: 'Components/AnswerWithIconAndCheckbox',
+  component: AnswerWithIconAndCheckbox,
   argTypes: {
     ...COMMON_STYLES_CONTROLS,
     textAlign: {
@@ -124,24 +124,20 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof AnswerWithCheckbox>
+} as ComponentMeta<typeof AnswerWithIconAndCheckbox>
 
 // 👇 We create a “template” of how args map to rendering
-const Template: ComponentStory<typeof AnswerWithCheckbox> = (args) => (
-  <AnswerWithCheckbox {...args} />
+const Template: ComponentStory<typeof AnswerWithIconAndCheckbox> = (args) => (
+  <AnswerWithIconAndCheckbox {...args} />
 )
 
 // 👇 Each story then reuses that template
-export const DancebitCheckbox = Template.bind({})
-DancebitCheckbox.args = {
-  children: (
-    <span>
-      Get a smaller <br /> waist
-    </span>
-  ),
+export const Dancebit = Template.bind({})
+Dancebit.args = {
+  children: <span>Busy family life</span>,
   type: 'checkbox',
   isFullWidth: true,
-  maxWidth: '218px',
+  maxWidth: '343px',
   height: '80px',
   backgroundColor: '#F5F6F7',
   color: '#17202A',
@@ -151,7 +147,7 @@ DancebitCheckbox.args = {
   borderRadius: '6px',
   padding: '0 16px',
   value: 'lose_belly_fat',
-  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  spacingBetweenCheckboxAndContent: '0 16px',
   checkboxWidth: '24px',
   checkboxHeight: '24px',
   checkboxBorderRadius: '8px',
@@ -165,4 +161,8 @@ DancebitCheckbox.args = {
   boxShadow: '0 0 0 1px #E9E9E9',
   activeBoxShadow: '0 0 0 2px #03AAF5',
   checkboxActiveBorder: '1px solid transparent',
+  imageSrc: 'https://i.ibb.co/C8zTW2k/break-up-1.png',
+  imageWidth: '40px',
+  imageHeight: '40px',
+  imageAlignSelf: 'center',
 }
