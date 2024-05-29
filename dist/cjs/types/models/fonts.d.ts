@@ -11,4 +11,8 @@ export interface IFontsProps {
      * Text weight
      */
     fontWeight?: string;
+    /**
+     * Text style
+     */
+    fontStyle?: string;
 }

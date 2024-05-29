@@ -80,6 +80,10 @@ interface IFontsProps {
      * Text weight
      */
     fontWeight?: string;
+    /**
+     * Text style
+     */
+    fontStyle?: string;
 }
 
 interface IAnswerButtonProps extends IDimensionsProps, IFontsProps, IColorsProps {
@@ -150,9 +154,6 @@ declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedCompon
 
 interface IAnswerWithCheckboxContentProps {
     spacingBetweenCheckboxAndContent?: string;
-    /**
-     * How content will alignment horizontally
-     */
     contentHorizontalAlign?: 'flex-start' | 'center' | 'space-between' | 'flex-end' | 'space-around' | 'space-evenly';
 }
 interface ICheckboxProps {
@@ -188,28 +189,12 @@ interface ICheckboxProps {
      * Define checkbox active state border style
      */
     checkboxActiveBorder?: string;
+    /**
+     * What checkbox background color to use
+     */
+    checkboxBorderRadius?: string;
 }
-interface IAnswerWithCheckboxProps extends IDimensionsProps, IFontsProps, IColorsProps {
-    children?: React.ReactNode;
-    /**
-     * What background color to use in active statement
-     */
-    activeBackgroundColor?: string;
-    /**
-     * What color to use in active statement
-     */
-    activeColor?: string;
-    /**
-     * What background gradient to use in active statement
-     */
-    activeBackgroundGradientColor?: string;
-    /**
-     * Define border on active element
-     */
-    activeBorder?: string;
-    /**
-     * Should icon render on the left side
-     */
+interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
     reverse?: boolean;
 }
 declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps & IAnswerWithCheckboxContentProps & IThemedComponent>;
@@ -217,24 +202,7 @@ declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionPro
 interface IAnswerWithIconContentProps {
     spacingBetweenIconAndContent?: string;
 }
-interface IAnswerWithIconProps extends IDimensionsProps, IFontsProps, IColorsProps, IAnswerWithIconContentProps {
-    children?: React.ReactNode;
-    /**
-     * How content will alignment horizontally
-     */
-    contentHorizontalAlign?: 'flex-start' | 'center' | 'space-between' | 'flex-end' | 'space-around' | 'space-evenly';
-    /**
-     * What background color to use in active statement
-     */
-    activeBackgroundColor?: string;
-    /**
-     * What color to use in active statement
-     */
-    activeColor?: string;
-    /**
-     * What background gradient to use in active statement
-     */
-    activeBackgroundGradientColor?: string;
+interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconContentProps {
     /**
      * Icon path
      */
@@ -251,10 +219,6 @@ interface IAnswerWithIconProps extends IDimensionsProps, IFontsProps, IColorsPro
      * Should icon render on the left side
      */
     reverse?: boolean;
-    /**
-     * Define border on active element
-     */
-    activeBorder?: string;
     /**
      * Define vertical alignment for icon
      */
