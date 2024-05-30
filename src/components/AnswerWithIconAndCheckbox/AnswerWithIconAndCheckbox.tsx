@@ -5,6 +5,8 @@ import { IThemedComponent } from '../../models/common'
 import { Option } from '../Option'
 import { IOptionProps } from '../Option/Option'
 
+import checkIconWhite from '../../assets/images/check-icon-white.svg'
+
 import { StyledAnswerWithIconAndCheckbox as S } from './AnswerWithIconAndCheckbox.styles'
 
 export interface IAnswerWithIconAndCheckboxContentProps {
@@ -84,10 +86,44 @@ export interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
   reverse?: boolean
 }
 
+export const enum answerWithIconAndCheckboxTheme {
+  DANCEBIT = 'dancebit',
+}
+
 const answerWithCheckboxThemes: Record<
   string,
   Record<string, string | boolean>
-> = {}
+> = {
+  dancebit: {
+    type: 'checkbox',
+    isFullWidth: true,
+    height: '80px',
+    backgroundColor: '#F5F6F7',
+    color: '#17202A',
+    fontSize: '17px',
+    fontWeight: '700',
+    lineHeight: '24px',
+    borderRadius: '6px',
+    padding: '0 16px',
+    spacingBetweenCheckboxAndContent: '0 16px',
+    checkboxWidth: '24px',
+    checkboxHeight: '24px',
+    checkboxBorderRadius: '8px',
+    checkboxBorder: '1.5px solid #CACACA',
+    checkboxBackgroundActiveColor: '#03AAF5',
+    reverse: true,
+    activeBackgroundColor: '#EAF7FF',
+    activeColor: '#17202A',
+    border: '2px solid transparent',
+    iconSrc: checkIconWhite,
+    boxShadow: '0 0 0 1px #E9E9E9',
+    activeBoxShadow: '0 0 0 2px #03AAF5',
+    checkboxActiveBorder: '1px solid transparent',
+    imageWidth: '40px',
+    imageHeight: '40px',
+    imageAlignSelf: 'center',
+  },
+}
 
 const AnswerWithIconAndCheckboxBase: React.FC<
   IAnswerWithIconAndCheckboxProps &

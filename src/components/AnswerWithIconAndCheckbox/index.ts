@@ -1,1 +1,4 @@
-export { AnswerWithIconAndCheckbox } from './AnswerWithIconAndCheckbox'
+export {
+  AnswerWithIconAndCheckbox,
+  answerWithIconAndCheckboxTheme,
+} from './AnswerWithIconAndCheckbox'

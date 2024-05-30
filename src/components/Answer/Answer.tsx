@@ -6,23 +6,29 @@ import { IOptionProps } from '../Option/Option'
 import { Option } from '../Option'
 import { StyledAnswer as S } from './Answer.styles'
 
-const themes: Record<string, Record<string, string | boolean>> = {
-  girlish: {
-    boxShadow: '0px 8px 20px #F2E6E1',
+export const enum answerTheme {
+  DANCEBIT = 'dancebit',
+  LUVLY = 'luvly',
+}
+
+const answerThemes: Record<string, Record<string, string | boolean>> = {
+  dancebit: {
+    type: 'checkbox',
     isFullWidth: true,
-    maxWidth: '320px',
-    height: '64px',
-    backgroundColor: '#ffffff',
-    activeBackgroundColor: '#D0DDD7',
-    activeColor: '#2C3131',
-    color: '#2C3131',
-    fontSize: '18px',
+    height: '80px',
+    backgroundColor: 'rgb(245, 246, 247)',
+    color: '#17202A',
+    fontSize: '17px',
+    fontWeight: '700',
     lineHeight: '24px',
-    borderRadius: '20px',
-    margin: '0 0 16px',
+    borderRadius: '16px',
     padding: '0 16px',
+    activeBackgroundColor: '#EAF7FF',
+    boxShadow: '0 0 0 1px #E9E9E9',
+    activeBoxShadow: '0 0 0 2px #03AAF5',
+    activeColor: '#17202A',
   },
-  luvlySimple: {
+  luvly: {
     type: 'checkbox',
     boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
     isFullWidth: true,
@@ -60,7 +66,7 @@ export const Answer: React.FC<
     disabled={disabled}
     onChange={onChange}
   >
-    <S.Root style={style} {...(theme && themes[theme])} {...props}>
+    <S.Root style={style} {...(theme && answerThemes[theme])} {...props}>
       <div>{children}</div>
     </S.Root>
   </Option>

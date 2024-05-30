@@ -5,6 +5,8 @@ import { IThemedComponent } from '../../models/common'
 import { Option } from '../Option'
 import { IOptionProps } from '../Option/Option'
 
+import checkIconWhite from '../../assets/images/check-icon-white.svg'
+
 import { StyledAnswerWithCheckbox as S } from './AnswerWithCheckbox.styles'
 
 export interface IAnswerWithCheckboxContentProps {
@@ -65,31 +67,39 @@ export interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
   reverse?: boolean
 }
 
+export const enum answerWithCheckboxTheme {
+  DANCEBIT = 'dancebit',
+}
+
 const answerWithCheckboxThemes: Record<
   string,
   Record<string, string | boolean>
 > = {
-  girlish: {
-    boxShadow: '0px 8px 20px #F2E6E1',
+  dancebitPrimary: {
+    type: 'checkbox',
     isFullWidth: true,
-    maxWidth: '320px',
-    height: '64px',
-    backgroundColor: '#ffffff',
-    activeBackgroundColor: '#D0DDD7',
-    color: '#2C3131',
-    activeColor: '#2C3131',
-    fontSize: '18px',
+    height: '80px',
+    backgroundColor: '#F5F6F7',
+    color: '#17202A',
+    fontSize: '17px',
+    fontWeight: '700',
     lineHeight: '24px',
-    borderRadius: '20px',
-    reverse: true,
-    margin: '0 0 16px',
+    borderRadius: '6px',
     padding: '0 16px',
-    spacingBetweenCheckboxAndContent: '0',
+    spacingBetweenCheckboxAndContent: '0 16px 0 0',
     checkboxWidth: '24px',
     checkboxHeight: '24px',
-    checkboxActiveBorder: 'none',
-    checkboxBackgroundActiveColor: '#628F7B',
-    iconSize: '14px',
+    checkboxBorderRadius: '8px',
+    checkboxBorder: '1.5px solid #CACACA',
+    checkboxBackgroundActiveColor: '#03AAF5',
+    reverse: true,
+    activeBackgroundColor: '#EAF7FF',
+    activeColor: '#17202A',
+    border: '2px solid transparent',
+    iconSrc: checkIconWhite,
+    boxShadow: '0 0 0 1px #E9E9E9',
+    activeBoxShadow: '0 0 0 2px #03AAF5',
+    checkboxActiveBorder: '1px solid transparent',
   },
 }
 

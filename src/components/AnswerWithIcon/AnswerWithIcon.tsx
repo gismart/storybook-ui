@@ -35,24 +35,30 @@ export interface IAnswerWithIconProps
   iconAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch'
 }
 
+export const enum answerWithIconTheme {
+  DANCEBIT = 'dancebit',
+}
+
 const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
-  girlish: {
-    boxShadow: '0px 8px 20px #F2E6E1',
+  dancebit: {
+    type: 'radio',
     isFullWidth: true,
-    maxWidth: '320px',
-    height: '64px',
-    backgroundColor: '#ffffff',
-    activeBackgroundColor: '#D0DDD7',
+    height: '100px',
+    backgroundColor: '#F5F6F7',
+    activeBackgroundColor: '#EAF7FF',
+    boxShadow: '0 0 0 1px#E9E9E9',
     color: '#2C3131',
     activeColor: '#2C3131',
-    fontSize: '18px',
+    fontSize: '17px',
+    fontWeight: '700',
     lineHeight: '24px',
-    borderRadius: '20px',
+    borderRadius: '16px',
     contentHorizontalAlign: 'flex-start',
-    margin: '0 0 16px',
-    padding: '0 16px',
-    iconHeight: '77px',
-    spacingBetweenIconAndContent: '8px',
+    padding: '0 16px 0 8px',
+    iconHeight: '100px',
+    spacingBetweenIconAndContent: '16px',
+    iconAlignSelf: 'flex-end',
+    activeBoxShadow: ' 0 0 0 2px #03AAF5',
   },
 }
 
