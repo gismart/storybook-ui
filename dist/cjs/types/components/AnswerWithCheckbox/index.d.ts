@@ -1,1 +1,1 @@
-export { AnswerWithCheckbox } from './AnswerWithCheckbox';
+export { AnswerWithCheckbox, answerWithCheckboxTheme, } from './AnswerWithCheckbox';

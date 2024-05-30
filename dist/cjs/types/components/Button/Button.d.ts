@@ -28,4 +28,7 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, I
         [key: string]: any;
     };
 }
+export declare const enum buttonTHeme {
+    DANCEBIT = "dancebitPrimary"
+}
 export declare const Button: React.FC<IButtonProps>;

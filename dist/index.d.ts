@@ -150,9 +150,93 @@ interface IOptionProps {
 }
 declare const Option: React.FC<IOptionProps>;
 
+declare const enum answerTheme {
+    DANCEBIT = "dancebit",
+    LUVLY = "luvly"
+}
 declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent>;
 
 interface IAnswerWithCheckboxContentProps {
+    spacingBetweenCheckboxAndContent?: string;
+    contentHorizontalAlign?: 'flex-start' | 'center' | 'space-between' | 'flex-end' | 'space-around' | 'space-evenly';
+}
+interface ICheckboxProps$1 {
+    /**
+     * Define checkbox width
+     */
+    checkboxWidth?: string;
+    /**
+     * Define checkbox height
+     */
+    checkboxHeight?: string;
+    /**
+     * Path to checkbox active state icon
+     */
+    iconSrc?: string;
+    /**
+     * Icon size as background
+     */
+    iconSize?: string;
+    /**
+     * What checkbox background color to use
+     */
+    checkboxBackgroundColor?: string;
+    /**
+     * What checkbox active state background color to use
+     */
+    checkboxBackgroundActiveColor?: string;
+    /**
+     * Define checkbox border style
+     */
+    checkboxBorder?: string;
+    /**
+     * Define checkbox active state border style
+     */
+    checkboxActiveBorder?: string;
+    /**
+     * What checkbox background color to use
+     */
+    checkboxBorderRadius?: string;
+}
+interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
+    reverse?: boolean;
+}
+declare const enum answerWithCheckboxTheme {
+    DANCEBIT = "dancebit"
+}
+declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps$1 & IAnswerWithCheckboxContentProps & IThemedComponent>;
+
+interface IAnswerWithIconContentProps {
+    spacingBetweenIconAndContent?: string;
+}
+interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconContentProps {
+    /**
+     * Icon path
+     */
+    iconSrc?: string;
+    /**
+     * Icon width
+     */
+    iconWidth?: string;
+    /**
+     * Icon height
+     */
+    iconHeight?: string;
+    /**
+     * Should icon render on the left side
+     */
+    reverse?: boolean;
+    /**
+     * Define vertical alignment for icon
+     */
+    iconAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch';
+}
+declare const enum answerWithIconTheme {
+    DANCEBIT = "dancebit"
+}
+declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;
+
+interface IAnswerWithIconAndCheckboxContentProps {
     spacingBetweenCheckboxAndContent?: string;
     contentHorizontalAlign?: 'flex-start' | 'center' | 'space-between' | 'flex-end' | 'space-around' | 'space-evenly';
 }
@@ -194,37 +278,31 @@ interface ICheckboxProps {
      */
     checkboxBorderRadius?: string;
 }
-interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
-    reverse?: boolean;
-}
-declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps & IAnswerWithCheckboxContentProps & IThemedComponent>;
-
-interface IAnswerWithIconContentProps {
-    spacingBetweenIconAndContent?: string;
-}
-interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconContentProps {
+interface IAnswerWithIconAndCheckboxImageProps {
     /**
-     * Icon path
-     */
-    iconSrc?: string;
+      Icon path
+  */
+    imageSrc?: string;
     /**
      * Icon width
      */
-    iconWidth?: string;
+    imageWidth?: string;
     /**
      * Icon height
      */
-    iconHeight?: string;
-    /**
-     * Should icon render on the left side
-     */
-    reverse?: boolean;
+    imageHeight?: string;
     /**
      * Define vertical alignment for icon
      */
-    iconAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch';
+    imageAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch';
 }
-declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;
+interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
+    reverse?: boolean;
+}
+declare const enum answerWithIconAndCheckboxTheme {
+    DANCEBIT = "dancebit"
+}
+declare const AnswerWithIconAndCheckbox: React.FC<IAnswerWithIconAndCheckboxProps & IAnswerWithIconAndCheckboxImageProps & IOptionProps & ICheckboxProps & IAnswerWithIconAndCheckboxContentProps & IThemedComponent>;
 
 declare const enum TextAlignment {
     LEFT = "left",
@@ -515,4 +593,4 @@ interface ISelectProps extends IColorsProps, IFontsProps, IDimensionsProps, IPla
 }
 declare const Select: React.FC<ISelectProps>;
 
-export { Answer, AnswerWithCheckbox, AnswerWithIcon, Button, ButtonWithIcon, CircleProgress, Header, Input, InputWithFloatPlaceholder, ListItemWithIcon, Option, ProgressBarBreadcrumbs, Select };
+export { Answer, AnswerWithCheckbox, AnswerWithIcon, AnswerWithIconAndCheckbox, Button, ButtonWithIcon, CircleProgress, Header, Input, InputWithFloatPlaceholder, ListItemWithIcon, Option, ProgressBarBreadcrumbs, Select, answerTheme, answerWithCheckboxTheme, answerWithIconAndCheckboxTheme, answerWithIconTheme };

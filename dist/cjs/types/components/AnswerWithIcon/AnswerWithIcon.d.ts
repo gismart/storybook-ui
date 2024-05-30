@@ -27,4 +27,7 @@ export interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIco
      */
     iconAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch';
 }
+export declare const enum answerWithIconTheme {
+    DANCEBIT = "dancebit"
+}
 export declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;

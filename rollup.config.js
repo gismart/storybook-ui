@@ -1,6 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
+import svg from 'rollup-plugin-svg'
 import dts from 'rollup-plugin-dts'
 
 // NEW
@@ -22,6 +23,7 @@ export default [
       },
     ],
     plugins: [
+      svg(),
       // NEW
       typescript({
         exclude: ['**/*.stories.tsx'],
