@@ -35,8 +35,8 @@ export default {
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
 // 👇 Each story then reuses that template
-export const Regular = Template.bind({})
-Regular.args = {
+export const PrimaryLuvly = Template.bind({})
+PrimaryLuvly.args = {
   isFullWidth: true,
   children: 'Ok, Got it!',
   height: '50px',
@@ -48,40 +48,17 @@ Regular.args = {
   backgroundColor: 'rgb(255, 130, 118)',
 }
 
-export const RegularLuvlyGirlish = Template.bind({})
-RegularLuvlyGirlish.args = {
-  isFullWidth: true,
-  children: 'Sounds great!',
-  height: '52px',
-  lineHeight: '52px',
-  borderRadius: '32px',
-  padding: '0 16px',
-  maxWidth: '320px',
-  fontSize: '18px',
-  fontWeight: '700',
-  color: '#fff',
-  disableBackgroundColor: '#CACACA',
-  backgroundColor: '#628F7B',
-  style: {
-    letterSpacing: '0.2px',
-  },
-}
-
-export const RegularBook = Template.bind({})
-RegularBook.args = {
+export const PrimaryDancebit = Template.bind({})
+PrimaryDancebit.args = {
   isFullWidth: true,
   children: 'Continue',
-  height: '60px',
-  lineHeight: '60px',
+  height: '56px',
+  lineHeight: '56px',
   borderRadius: '30px',
   padding: '0 16px',
-  maxWidth: '320px',
-  fontSize: '16px',
-  fontWeight: '700',
-  color: '#fff',
+  maxWidth: '327px',
+  fontSize: '17px',
+  backgroundColor: '#03AAF5',
   disableBackgroundColor: '#CACACA',
-  backgroundColor: '#EB7F5E',
-  style: {
-    letterSpacing: '0.2px',
-  },
+  fontWeight: '700',
 }

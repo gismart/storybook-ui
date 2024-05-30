@@ -2,7 +2,7 @@ import React from 'react';
 import { IAnswerButtonProps } from '../../models/answer';
 import { IThemedComponent } from '../../models/common';
 import { IOptionProps } from '../Option/Option';
-export interface IAnswerWithCheckboxContentProps {
+export interface IAnswerWithIconAndCheckboxContentProps {
     spacingBetweenCheckboxAndContent?: string;
     contentHorizontalAlign?: 'flex-start' | 'center' | 'space-between' | 'flex-end' | 'space-around' | 'space-evenly';
 }
@@ -44,7 +44,25 @@ export interface ICheckboxProps {
      */
     checkboxBorderRadius?: string;
 }
-export interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
+export interface IAnswerWithIconAndCheckboxImageProps {
+    /**
+      Icon path
+  */
+    imageSrc?: string;
+    /**
+     * Icon width
+     */
+    imageWidth?: string;
+    /**
+     * Icon height
+     */
+    imageHeight?: string;
+    /**
+     * Define vertical alignment for icon
+     */
+    imageAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch';
+}
+export interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
     reverse?: boolean;
 }
-export declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps & IAnswerWithCheckboxContentProps & IThemedComponent>;
+export declare const AnswerWithIconAndCheckbox: React.FC<IAnswerWithIconAndCheckboxProps & IAnswerWithIconAndCheckboxImageProps & IOptionProps & ICheckboxProps & IAnswerWithIconAndCheckboxContentProps & IThemedComponent>;

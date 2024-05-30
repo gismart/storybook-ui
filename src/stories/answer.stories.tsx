@@ -3,7 +3,6 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 import { ControlsCategories } from 'constants/rootConstants'
-import { ComplexAnswerContent } from 'content/ComplexAnswerContent'
 
 import { Answer } from 'components/Answer'
 
@@ -86,75 +85,23 @@ SimpleLuvly.args = {
   value: 'User answer',
 }
 
-export const ComplexLuvly = Template.bind({})
-ComplexLuvly.args = {
-  children: <ComplexAnswerContent />,
-  type: 'checkbox',
-  boxShadow: 'rgb(223 227 243) 0px 8px 20px;',
-  isFullWidth: true,
-  maxWidth: '320px',
-  height: '64px',
-  backgroundColor: '#ffffff',
-  activeBackgroundColor: '#ff8276',
-  color: 'rgb(45, 50, 64)',
-  fontSize: '17px',
-  borderRadius: '20px',
-  padding: '0 15px',
-  value: 'User answer',
-}
-
 export const SimpleDanceBit = Template.bind({})
 SimpleDanceBit.args = {
-  children: 'Answer',
+  children: <span>Less than a year ago</span>,
   type: 'checkbox',
   isFullWidth: true,
-  maxWidth: '320px',
-  height: '64px',
+  maxWidth: '180px',
+  height: '80px',
   backgroundColor: 'rgb(245, 246, 247)',
-  color: 'rgb(19, 29, 48);',
-  fontSize: '16px',
-  fontWeight: 'regular',
-  borderRadius: '16px',
-  padding: '0 15px',
-  value: 'User answer',
-  activeBackgroundColor: 'rgb(3, 170, 245)',
-}
-
-export const SimpleLuvlyGirlish = Template.bind({})
-SimpleLuvlyGirlish.args = {
-  children: '18-29',
-  type: 'radio',
-  boxShadow: '0px 8px 20px #F2E6E1',
-  isFullWidth: true,
-  maxWidth: '320px',
-  height: '64px',
-  backgroundColor: '#ffffff',
-  activeBackgroundColor: '#D0DDD7',
-  activeColor: '#2C3131',
-  color: '#2C3131',
-  fontSize: '18px',
-  lineHeight: '24px',
-  borderRadius: '20px',
-  padding: '0 16px',
-  value: 'User answer',
-}
-
-export const SimpleBook = Template.bind({})
-SimpleBook.args = {
-  children: 'Physical activity',
-  type: 'radio',
-  boxShadow: '0px 8px 20px #E8E8E8',
-  isFullWidth: true,
-  maxWidth: '320px',
-  height: '64px',
-  backgroundColor: '#ffffff',
-  activeBackgroundColor: '#83BAB3',
-  activeColor: '#FFFFFF',
   color: '#17202A',
-  fontSize: '16px',
-  fontWeight: '400',
+  fontSize: '17px',
+  fontWeight: '700',
   lineHeight: '24px',
-  borderRadius: '20px',
+  borderRadius: '16px',
   padding: '0 16px',
-  value: 'User answer',
+  value: 'Less than a year ago',
+  activeBackgroundColor: '#EAF7FF',
+  boxShadow: '0 0 0 1px #E9E9E9',
+  activeBoxShadow: '0 0 0 2px #03AAF5',
+  activeColor: '#17202A',
 }

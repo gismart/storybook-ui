@@ -37,38 +37,22 @@ export interface IButtonProps
   }
 }
 
-const themes: Record<string, any> = {
-  girlish: {
+export const enum buttonTHeme {
+  DANCEBIT = 'dancebitPrimary',
+}
+
+const buttonThemes: Record<string, any> = {
+  dancebitPrimary: {
     isFullWidth: true,
-    height: '52px',
-    lineHeight: '52px',
-    borderRadius: '32px',
-    padding: '0 16px',
-    maxWidth: '320px',
-    fontSize: '18px',
-    fontWeight: '700',
-    color: '#fff',
-    disableBackgroundColor: '#cacaca',
-    backgroundColor: '#628f7b',
-    style: {
-      letterSpacing: '0.2px',
-    },
-  },
-  book: {
-    isFullWidth: true,
-    height: '60px',
-    lineHeight: '60px',
+    height: '56px',
+    lineHeight: '56px',
     borderRadius: '30px',
     padding: '0 16px',
-    maxWidth: '320px',
-    fontSize: '16px',
+    maxWidth: '327px',
+    fontSize: '17px',
+    backgroundColor: '#03AAF5',
+    disableBackgroundColor: '#CACACA',
     fontWeight: '700',
-    color: '#fff',
-    disableBackgroundColor: '#cacaca',
-    backgroundColor: '#EB7F5E',
-    style: {
-      letterSpacing: '0.2px',
-    },
   },
 }
 
@@ -88,7 +72,7 @@ export const Button: React.FC<IButtonProps> = ({
     disabled={disabled}
     disableBackgroundColor={disableBackgroundColor}
     style={style}
-    {...(theme && themes[theme])}
+    {...(theme && buttonThemes[theme])}
     {...props}
   >
     {children}

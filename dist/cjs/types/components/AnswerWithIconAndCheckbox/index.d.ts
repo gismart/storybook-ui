@@ -1,0 +1,1 @@
+export { AnswerWithIconAndCheckbox } from './AnswerWithIconAndCheckbox';

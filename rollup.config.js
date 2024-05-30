@@ -23,7 +23,9 @@ export default [
     ],
     plugins: [
       // NEW
-      typescript(),
+      typescript({
+        exclude: ['**/*.stories.tsx'],
+      }),
       peerDepsExternal(),
 
       resolve(),
