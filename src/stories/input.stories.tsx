@@ -66,3 +66,44 @@ Number.args = {
   allowFloatNumbers: false,
   isContentCentered: true,
 }
+
+export const DancebitNumber = Template.bind({})
+DancebitNumber.args = {
+  maxWidth: '343px',
+  width: '100%',
+  height: '64px',
+  isValid: true,
+  color: '#17202A',
+  fontSize: '30px',
+  fontWeight: '700',
+  lineHeight: '38px',
+  borderRadius: '16px',
+  backgroundColor: 'rgb(255, 255, 255)',
+  border: '1px solid #CACACA',
+  padding: '0 16px',
+  type: 'number',
+  allowFloatNumbers: false,
+  isContentCentered: true,
+  focusedBorderColor: '#CACACA',
+}
+
+export const DancebitText = Template.bind({})
+DancebitText.args = {
+  maxWidth: '343px',
+  width: '100%',
+  height: '64px',
+  isValid: true,
+  color: '#A9A9A9',
+  fontSize: '30px',
+  fontWeight: '700',
+  lineHeight: '38px',
+  borderRadius: '16px',
+  backgroundColor: 'rgb(255, 255, 255)',
+  border: '1px solid #CACACA',
+  padding: '0 16px',
+  type: 'text',
+  allowFloatNumbers: false,
+  isContentCentered: true,
+  focusedBorderColor: '#CACACA',
+  placeholder: 'NAME',
+}

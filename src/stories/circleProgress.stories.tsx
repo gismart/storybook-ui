@@ -40,7 +40,9 @@ const Template: ComponentStory<typeof CircleProgress> = (args) => (
 )
 
 // 👇 Each story then reuses that template
-export const Regular = Template.bind({})
-Regular.args = {
+export const Dancebit = Template.bind({})
+Dancebit.args = {
   value: 50,
+  strokeColorFilled: '#03AAF5',
+  strokeColorEmpty: '#F2F3F5',
 }

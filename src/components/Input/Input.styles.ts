@@ -81,9 +81,10 @@ export const StyledInput = {
     }
 
     &::placeholder {
-      font-weight: 500;
-      line-height: 20px;
-      color: rgba(19, 29, 48, 0.5);
+      font-size: ${({ fontSize }) => fontSize || '16px'};
+      line-height: ${({ lineHeight }) => lineHeight || '16px'};
+      font-weight: ${({ fontWeight }) => fontWeight || 400};
+      font-style: ${({ fontStyle }) => fontStyle || 'normal'};
     }
   `,
   Label: styled.span<ILabelProps>`

@@ -6,4 +6,5 @@ export const CommonFontsStyles = css<IFontsProps>`
   font-size: ${({ fontSize }) => fontSize || '16px'};
   line-height: ${({ lineHeight }) => lineHeight || '16px'};
   font-weight: ${({ fontWeight }) => fontWeight || 400};
+  font-style: ${({ fontStyle }) => fontStyle || 'normal'};
 `
