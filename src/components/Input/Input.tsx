@@ -6,7 +6,7 @@ import React, {
   useMemo,
   useState,
 } from 'react'
-import { IThemedComponent } from 'models/common'
+import { IThemedComponent } from '../../models/common'
 import { IInputProps } from '../../models/input'
 import { StyledInput as S } from './Input.styles'
 
