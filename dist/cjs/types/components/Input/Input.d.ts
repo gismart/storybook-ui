@@ -1,4 +1,5 @@
 import React, { InputHTMLAttributes, RefObject } from 'react';
+import { IThemedComponent } from '../../models/common';
 import { IInputProps } from '../../models/input';
 export declare const NumericKeypadRegex: RegExp;
 export declare const NumericKeypadFloatRegex: RegExp;
@@ -21,4 +22,4 @@ export interface IProps extends IInputProps, ILabelProps, IWrapperProps, Omit<In
     allowFloatNumbers?: boolean;
     isContentCentered?: boolean;
 }
-export declare const Input: React.FC<IProps>;
+export declare const Input: React.FC<IProps & IThemedComponent>;

@@ -202,7 +202,7 @@ interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
     reverse?: boolean;
 }
 declare const enum answerWithCheckboxTheme {
-    DANCEBIT = "dancebit"
+    DANCEBIT_PRIMARY = "dancebitPrimary"
 }
 declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps$1 & IAnswerWithCheckboxContentProps & IThemedComponent>;
 
@@ -510,7 +510,7 @@ interface IProps$1 extends IInputProps, ILabelProps$1, IWrapperProps, Omit<Input
     allowFloatNumbers?: boolean;
     isContentCentered?: boolean;
 }
-declare const Input: React.FC<IProps$1>;
+declare const Input: React.FC<IProps$1 & IThemedComponent>;
 
 interface ILabelProps {
     leftLabelPosition?: string;
