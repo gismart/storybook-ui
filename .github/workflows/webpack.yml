@@ -35,7 +35,7 @@ jobs:
           name: app-build
       - run: ls dist
       - name: Pushing to dev branch
-        uses: actions-js/push@develop
+        uses: actions-js/push@master
         with:
           github_token: ${{ secrets.BUILD_KEY }}
           branch: rollup
