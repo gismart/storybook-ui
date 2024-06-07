@@ -1,5 +1,4 @@
-name: NodeJS with Webpack
-
+name: Rollup Build
 on:
   workflow_dispatch:
     inputs:
