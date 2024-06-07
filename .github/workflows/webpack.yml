@@ -38,11 +38,7 @@ jobs:
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.BUILD_KEY }}
-          branch: rollup-build
+          branch: develop
           message: Build
           author_name: RollupAction[bot]
           force: true
-      - name: create pull request
-        run: gh pr create -B develop -H rollup-build --title 'Merge rollup-build into develop' --body 'Created by Github action'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
