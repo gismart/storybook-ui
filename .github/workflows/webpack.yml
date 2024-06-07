@@ -37,7 +37,7 @@ jobs:
       - name: Pushing to dev branch
         uses: actions-js/push@develop
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.BUILD_KEY }}
           branch: rollup
           message: Build
           author_name: RollupAction[bot]
