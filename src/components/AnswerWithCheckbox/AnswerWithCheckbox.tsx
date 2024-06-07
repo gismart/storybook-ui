@@ -68,14 +68,14 @@ export interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
 }
 
 export const enum answerWithCheckboxTheme {
-  DANCEBIT_PRIMARY = 'dancebitPrimary',
+  DANCEBIT = 'dancebit',
 }
 
 const answerWithCheckboxThemes: Record<
   string,
   Record<string, string | boolean>
 > = {
-  dancebitPrimary: {
+  dancebit: {
     type: 'checkbox',
     isFullWidth: true,
     height: '80px',
