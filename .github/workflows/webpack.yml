@@ -33,16 +33,15 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: app-build
-      - run: ls dist
       - name: Pushing to dev branch
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.BUILD_KEY }}
-          branch: rollup
+          branch: rollup-build
           message: Build
           author_name: RollupAction[bot]
           force: true
       - name: create pull request
-        run: gh pr create -B base_branch -H branch_to_merge --title 'Merge branch_to_merge into base_branch' --body 'Created by Github action'
+        run: gh pr create -B develop -H rollup-build --title 'Merge rollup-build into develop' --body 'Created by Github action'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
