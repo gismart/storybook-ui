@@ -34,5 +34,3 @@ jobs:
         with:
           name: app-build
       - run: ls dist
-      - name: Pushing to production branch
-        uses: actions-js/push@develop
