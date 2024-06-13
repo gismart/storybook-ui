@@ -98,17 +98,19 @@ const AnswerWithIconBase: React.FC<IAnswerWithIconProps & IOptionProps> = ({
     onChange={onChange}
   >
     <S.Root {...props}>
-      <S.Icon
-        src={iconSrc}
-        alt=""
-        style={{
-          width: iconWidth,
-          height: iconHeight,
-          alignSelf: iconAlignSelf,
-          minHeight: iconMinHeight,
-          minWidth: iconMinWidth,
-        }}
-      />
+      {iconSrc && (
+        <S.Icon
+          src={iconSrc}
+          alt=""
+          style={{
+            width: iconWidth,
+            height: iconHeight,
+            alignSelf: iconAlignSelf,
+            minHeight: iconMinHeight,
+            minWidth: iconMinWidth,
+          }}
+        />
+      )}
       <S.Content spacingBetweenIconAndContent={spacingBetweenIconAndContent}>
         <div>{children}</div>
       </S.Content>
