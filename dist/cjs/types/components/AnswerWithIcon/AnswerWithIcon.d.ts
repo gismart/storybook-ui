@@ -1,6 +1,6 @@
 import React from 'react';
-import { IThemedComponent } from '../../models/common';
-import { IAnswerButtonProps } from '../../models/answer';
+import { IThemedComponent } from 'models/common';
+import { IAnswerButtonProps } from 'models/answer';
 import { IOptionProps } from '../Option/Option';
 export interface IAnswerWithIconContentProps {
     spacingBetweenIconAndContent?: string;
@@ -15,9 +15,17 @@ export interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIco
      */
     iconWidth?: string;
     /**
+     * Icon min width
+     */
+    iconMinWidth?: string;
+    /**
      * Icon height
      */
     iconHeight?: string;
+    /**
+     * Icon min height
+     */
+    iconMinHeight?: string;
     /**
      * Should icon render on the left side
      */

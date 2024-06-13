@@ -1,4 +1,6 @@
 import React, { ButtonHTMLAttributes, HTMLInputTypeAttribute, InputHTMLAttributes, RefObject, FocusEvent } from 'react';
+import { IThemedComponent as IThemedComponent$1 } from 'models/common';
+import { IAnswerButtonProps as IAnswerButtonProps$1 } from 'models/answer';
 import { MultiValue, SingleValue } from 'react-select';
 
 interface IDimensionsProps {
@@ -202,14 +204,14 @@ interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
     reverse?: boolean;
 }
 declare const enum answerWithCheckboxTheme {
-    DANCEBIT_PRIMARY = "dancebitPrimary"
+    DANCEBIT = "dancebit"
 }
 declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps$1 & IAnswerWithCheckboxContentProps & IThemedComponent>;
 
 interface IAnswerWithIconContentProps {
     spacingBetweenIconAndContent?: string;
 }
-interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconContentProps {
+interface IAnswerWithIconProps extends IAnswerButtonProps$1, IAnswerWithIconContentProps {
     /**
      * Icon path
      */
@@ -219,9 +221,17 @@ interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconConten
      */
     iconWidth?: string;
     /**
+     * Icon min width
+     */
+    iconMinWidth?: string;
+    /**
      * Icon height
      */
     iconHeight?: string;
+    /**
+     * Icon min height
+     */
+    iconMinHeight?: string;
     /**
      * Should icon render on the left side
      */
@@ -234,7 +244,7 @@ interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconConten
 declare const enum answerWithIconTheme {
     DANCEBIT = "dancebit"
 }
-declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;
+declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent$1>;
 
 interface IAnswerWithIconAndCheckboxContentProps {
     spacingBetweenCheckboxAndContent?: string;

@@ -48,6 +48,6 @@ export interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
     reverse?: boolean;
 }
 export declare const enum answerWithCheckboxTheme {
-    DANCEBIT_PRIMARY = "dancebitPrimary"
+    DANCEBIT = "dancebit"
 }
 export declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps & IAnswerWithCheckboxContentProps & IThemedComponent>;
