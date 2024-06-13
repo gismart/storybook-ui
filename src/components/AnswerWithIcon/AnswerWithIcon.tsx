@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { IThemedComponent } from '../../models/common'
-import { IAnswerButtonProps } from '../../models/answer'
+import { IThemedComponent } from 'models/common'
+import { IAnswerButtonProps } from 'models/answer'
 import { Option } from '../Option'
 import { IOptionProps } from '../Option/Option'
 import { StyledAnswerWithIcon as S } from './AnswerWithIcon.styles'
@@ -22,9 +22,17 @@ export interface IAnswerWithIconProps
    */
   iconWidth?: string
   /**
+   * Icon min width
+   */
+  iconMinWidth?: string
+  /**
    * Icon height
    */
   iconHeight?: string
+  /**
+   * Icon min height
+   */
+  iconMinHeight?: string
   /**
    * Should icon render on the left side
    */
@@ -44,11 +52,11 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
     type: 'radio',
     isFullWidth: true,
     height: '100px',
-    backgroundColor: '#F5F6F7',
-    activeBackgroundColor: '#EAF7FF',
+    backgroundColor: '#f5f6f7',
+    activeBackgroundColor: '#eaf7ff',
     boxShadow: '0 0 0 1px#E9E9E9',
-    color: '#2C3131',
-    activeColor: '#2C3131',
+    color: '#2c3131',
+    activeColor: '#2c3131',
     fontSize: '17px',
     fontWeight: '700',
     lineHeight: '24px',
@@ -56,6 +64,8 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
     contentHorizontalAlign: 'flex-start',
     padding: '0 16px 0 8px',
     iconHeight: '100px',
+    iconMinHeight: '100px',
+    iconMinWidth: '100px',
     spacingBetweenIconAndContent: '16px',
     iconAlignSelf: 'flex-end',
     activeBoxShadow: ' 0 0 0 2px #03AAF5',
@@ -72,6 +82,8 @@ const AnswerWithIconBase: React.FC<IAnswerWithIconProps & IOptionProps> = ({
   onChange,
   iconSrc,
   iconWidth,
+  iconMinWidth,
+  iconMinHeight,
   iconHeight,
   spacingBetweenIconAndContent,
   iconAlignSelf,
@@ -93,6 +105,8 @@ const AnswerWithIconBase: React.FC<IAnswerWithIconProps & IOptionProps> = ({
           width: iconWidth,
           height: iconHeight,
           alignSelf: iconAlignSelf,
+          minHeight: iconMinHeight,
+          minWidth: iconMinWidth,
         }}
       />
       <S.Content spacingBetweenIconAndContent={spacingBetweenIconAndContent}>
