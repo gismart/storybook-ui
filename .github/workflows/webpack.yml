@@ -7,7 +7,6 @@ on:
         type: choice
         options:
           - build
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +18,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npm run build
+    - run: npm run rollup
     - uses: actions/upload-artifact@v3
       with:
         name: app-build
@@ -33,12 +32,16 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: app-build
-          path: dist
+      - run: ls dist
       - name: Pushing to dev branch
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.BUILD_KEY }}
-          branch: develop
+          branch: rollup
           message: Build
           author_name: RollupAction[bot]
           force: true
+      - name: create pull request
+        run: gh pr create -B develop -H rollup-build --title 'Merge rollup-build into develop' --body 'Created by Github action'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
