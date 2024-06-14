@@ -29,6 +29,7 @@ export const StyledAnswerWithIconAndCheckbox = {
   `,
   Checkbox: styled.span<ICheckboxProps>`
     width: ${({ checkboxWidth }) => checkboxWidth || '20px'};
+    min-width: ${({ checkboxWidth }) => checkboxWidth || '20px'};
     height: ${({ checkboxHeight }) => checkboxHeight || '20px'};
     border-radius: ${({ checkboxBorderRadius }) =>
       checkboxBorderRadius || '50%'};
