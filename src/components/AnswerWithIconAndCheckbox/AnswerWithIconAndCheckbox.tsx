@@ -180,7 +180,9 @@ const AnswerWithIconAndCheckboxBase: React.FC<
           alt=""
           style={{
             width: imageWidth,
+            minWidth: imageWidth,
             height: imageHeight,
+            minHeight: imageHeight,
             alignSelf: imageAlignSelf,
           }}
         />
