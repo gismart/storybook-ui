@@ -69,6 +69,7 @@ export interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
 
 export const enum answerWithCheckboxTheme {
   DANCEBIT = 'dancebit',
+  NUTRIMATE = 'nutrimate',
 }
 
 const answerWithCheckboxThemes: Record<
