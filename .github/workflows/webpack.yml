@@ -43,6 +43,6 @@ jobs:
           author_name: RollupAction[bot]
           force: true
       - name: create pull request
-        run: gh pr create -B develop -H rollup-build --title 'Merge rollup-build into develop' --body 'Created by Github action'
+        run: gh pr create -B main -H rollup-build --title 'Merge rollup-build into main' --body 'Created by Github action'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
