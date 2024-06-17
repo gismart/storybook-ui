@@ -105,3 +105,24 @@ SimpleDanceBit.args = {
   activeBoxShadow: '0 0 0 2px #03AAF5',
   activeColor: '#17202A',
 }
+
+export const SimpleNutrimate = Template.bind({})
+SimpleNutrimate.args = {
+  activeBackgroundColor: 'rgba(169, 205, 80, 0.2)',
+  activeBorder: '1px solid #a9cd50',
+  activeColor: '#2c3131',
+  backgroundColor: '#ffffff',
+  border: '1px solid #e9e9e9',
+  borderRadius: '48px',
+  children: 'Less than a year ago',
+  color: '#2c3131',
+  fontSize: '17px',
+  fontWeight: '600',
+  height: '80px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '0 16px',
+  type: 'checkbox',
+  value: 'Less than a year ago',
+}

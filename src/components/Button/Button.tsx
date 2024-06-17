@@ -54,6 +54,18 @@ const buttonThemes: Record<string, any> = {
     disableBackgroundColor: '#CACACA',
     fontWeight: '700',
   },
+  nutrimatePrimary: {
+    backgroundColor: '#a9cd50',
+    borderRadius: '30px',
+    disableBackgroundColor: '#cacaca',
+    fontSize: '17px',
+    fontWeight: '700',
+    height: '56px',
+    isFullWidth: true,
+    lineHeight: '24px',
+    maxWidth: '343px',
+    padding: '10px 16px',
+  },
 }
 
 export const Button: React.FC<IButtonProps> = ({
