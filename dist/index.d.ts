@@ -1,6 +1,4 @@
 import React, { ButtonHTMLAttributes, HTMLInputTypeAttribute, InputHTMLAttributes, RefObject, FocusEvent } from 'react';
-import { IThemedComponent as IThemedComponent$1 } from 'models/common';
-import { IAnswerButtonProps as IAnswerButtonProps$1 } from 'models/answer';
 import { MultiValue, SingleValue } from 'react-select';
 
 interface IDimensionsProps {
@@ -154,7 +152,8 @@ declare const Option: React.FC<IOptionProps>;
 
 declare const enum answerTheme {
     DANCEBIT = "dancebit",
-    LUVLY = "luvly"
+    LUVLY = "luvly",
+    NUTRIMATE = "nutrimate"
 }
 declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent>;
 
@@ -204,14 +203,15 @@ interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
     reverse?: boolean;
 }
 declare const enum answerWithCheckboxTheme {
-    DANCEBIT = "dancebit"
+    DANCEBIT = "dancebit",
+    NUTRIMATE = "nutrimate"
 }
 declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps$1 & IAnswerWithCheckboxContentProps & IThemedComponent>;
 
 interface IAnswerWithIconContentProps {
     spacingBetweenIconAndContent?: string;
 }
-interface IAnswerWithIconProps extends IAnswerButtonProps$1, IAnswerWithIconContentProps {
+interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconContentProps {
     /**
      * Icon path
      */
@@ -242,9 +242,10 @@ interface IAnswerWithIconProps extends IAnswerButtonProps$1, IAnswerWithIconCont
     iconAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch';
 }
 declare const enum answerWithIconTheme {
-    DANCEBIT = "dancebit"
+    DANCEBIT = "dancebit",
+    NUTRIMATE = "nutrimate"
 }
-declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent$1>;
+declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;
 
 interface IAnswerWithIconAndCheckboxContentProps {
     spacingBetweenCheckboxAndContent?: string;
@@ -310,7 +311,8 @@ interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
     reverse?: boolean;
 }
 declare const enum answerWithIconAndCheckboxTheme {
-    DANCEBIT = "dancebit"
+    DANCEBIT = "dancebit",
+    NUTRIMATE = "nutrimate"
 }
 declare const AnswerWithIconAndCheckbox: React.FC<IAnswerWithIconAndCheckboxProps & IAnswerWithIconAndCheckboxImageProps & IOptionProps & ICheckboxProps & IAnswerWithIconAndCheckboxContentProps & IThemedComponent>;
 
@@ -388,59 +390,6 @@ interface IButtonWithIconProps extends ButtonHTMLAttributes<HTMLButtonElement>, 
     };
 }
 declare const ButtonWithIcon: React.FC<IButtonWithIconProps & IThemedComponent>;
-
-interface IContainerProps {
-    /**
-     * Define element height
-     */
-    height: string;
-    /**
-     * Set element margin
-     */
-    margin: string;
-}
-interface IProgressValueProps extends IFontsProps {
-    /**
-     * Set percentage font size
-     */
-    percentageFontSize: string;
-    /**
-     * Set percentage font weight
-     */
-    percentageFontWeight: string;
-    /**
-     * What text color to use
-     */
-    color?: string;
-}
-interface ISvgProps {
-    /**
-     * Progress bar value
-     */
-    value: number;
-    /**
-     * Set stroke color of empty circle
-     */
-    strokeColorEmpty: string;
-    /**
-     * Set stroke color of filled circle
-     */
-    strokeColorFilled: string;
-    /**
-     * Set circle radius
-     */
-    radius?: number;
-}
-interface ICircleProgressProps extends IContainerProps, ISvgProps, IProgressValueProps {
-}
-declare const CircleProgress: React.FC<ICircleProgressProps>;
-
-interface IHeaderProps extends IFontsProps, IColorsProps, IDimensionsProps {
-    headerText?: string;
-    logoSvg: string;
-    marginRight?: string;
-}
-declare const Header: React.FC<IHeaderProps>;
 
 interface IInputProps extends IColorsProps, IFontsProps, IDimensionsProps {
     /**
@@ -540,42 +489,6 @@ interface IProps extends IInputProps, ILabelProps, Omit<InputHTMLAttributes<HTML
 }
 declare const InputWithFloatPlaceholder: React.FC<IProps>;
 
-interface IListItemWithIconProps extends IFontsProps, IColorsProps, IDimensionsProps {
-    children?: React.ReactNode;
-    /**
-     * Set icon src
-     */
-    iconSrc: string;
-    /**
-     * Set icon width
-     */
-    iconWidth?: number;
-    /**
-     * Set icon height
-     */
-    iconHeight?: number;
-}
-declare const ListItemWithIcon: React.FC<IListItemWithIconProps>;
-
-interface IProgressBarBreadcrumbsProps extends IFontsProps, IColorsProps {
-    stepsMap: {
-        id: string;
-        text: string;
-    }[][];
-    currentSectionIndex: number;
-    lastStepText: string;
-    isLastStepActive: boolean;
-    stepRender: (text: string) => React.ReactNode;
-    textAlign: string;
-    progressCheckImg: string;
-    activeColor: string;
-    activeBackground: string;
-    activeBoxShadow: string;
-    progressStepBackground: string;
-    passedColor: string;
-}
-declare const ProgressBarBreadcrumbs: React.FC<IProgressBarBreadcrumbsProps>;
-
 interface IOptions {
     value: any;
     label: string;
@@ -603,4 +516,4 @@ interface ISelectProps extends IColorsProps, IFontsProps, IDimensionsProps, IPla
 }
 declare const Select: React.FC<ISelectProps>;
 
-export { Answer, AnswerWithCheckbox, AnswerWithIcon, AnswerWithIconAndCheckbox, Button, ButtonWithIcon, CircleProgress, Header, Input, InputWithFloatPlaceholder, ListItemWithIcon, Option, ProgressBarBreadcrumbs, Select, answerTheme, answerWithCheckboxTheme, answerWithIconAndCheckboxTheme, answerWithIconTheme };
+export { Answer, AnswerWithCheckbox, AnswerWithIcon, AnswerWithIconAndCheckbox, Button, ButtonWithIcon, Input, InputWithFloatPlaceholder, Option, Select, answerTheme, answerWithCheckboxTheme, answerWithIconAndCheckboxTheme, answerWithIconTheme };

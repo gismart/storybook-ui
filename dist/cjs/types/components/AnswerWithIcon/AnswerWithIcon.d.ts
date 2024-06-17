@@ -1,6 +1,6 @@
 import React from 'react';
-import { IThemedComponent } from 'models/common';
-import { IAnswerButtonProps } from 'models/answer';
+import { IAnswerButtonProps } from '../../models/answer';
+import { IThemedComponent } from '../../models/common';
 import { IOptionProps } from '../Option/Option';
 export interface IAnswerWithIconContentProps {
     spacingBetweenIconAndContent?: string;
@@ -36,6 +36,7 @@ export interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIco
     iconAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch';
 }
 export declare const enum answerWithIconTheme {
-    DANCEBIT = "dancebit"
+    DANCEBIT = "dancebit",
+    NUTRIMATE = "nutrimate"
 }
 export declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;
