@@ -9,6 +9,7 @@ import { StyledAnswer as S } from './Answer.styles'
 export const enum answerTheme {
   DANCEBIT = 'dancebit',
   LUVLY = 'luvly',
+  NUTRIMATE = 'nutrimate',
 }
 
 const answerThemes: Record<string, Record<string, string | boolean>> = {

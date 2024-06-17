@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { IThemedComponent } from 'models/common'
-import { IAnswerButtonProps } from 'models/answer'
+import { IAnswerButtonProps } from '../../models/answer'
+import { IThemedComponent } from '../../models/common'
 import { Option } from '../Option'
 import { IOptionProps } from '../Option/Option'
 import { StyledAnswerWithIcon as S } from './AnswerWithIcon.styles'
@@ -45,6 +45,7 @@ export interface IAnswerWithIconProps
 
 export const enum answerWithIconTheme {
   DANCEBIT = 'dancebit',
+  NUTRIMATE = 'nutrimate',
 }
 
 const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {

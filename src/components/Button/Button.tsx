@@ -39,6 +39,7 @@ export interface IButtonProps
 
 export const enum buttonTHeme {
   DANCEBIT = 'dancebitPrimary',
+  NUTRIMATE = 'nutrimate',
 }
 
 const buttonThemes: Record<string, any> = {
