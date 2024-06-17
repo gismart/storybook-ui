@@ -107,3 +107,45 @@ DancebitText.args = {
   focusedBorderColor: '#CACACA',
   placeholder: 'NAME',
 }
+
+export const NutrimateNumber = Template.bind({})
+NutrimateNumber.args = {
+  allowFloatNumbers: false,
+  backgroundColor: '#fff',
+  border: '1px solid #cacaca',
+  borderRadius: '16px',
+  color: '#2c3131',
+  focusedBorderColor: '#CACACA',
+  fontSize: '30px',
+  fontWeight: '700',
+  height: '64px',
+  isContentCentered: true,
+  isValid: true,
+  lineHeight: '38px',
+  maxWidth: '343px',
+  padding: '0 16px',
+  placeholder: '–',
+  type: 'number',
+  width: '100%',
+}
+
+export const NutrimateText = Template.bind({})
+NutrimateText.args = {
+  allowFloatNumbers: false,
+  borderRadius: '16px',
+  backgroundColor: '#fff',
+  border: '1px solid #cacaca',
+  color: '#2c3131',
+  focusedBorderColor: '#cacaca',
+  fontSize: '30px',
+  fontWeight: '700',
+  height: '64px',
+  isContentCentered: true,
+  isValid: true,
+  lineHeight: '38px',
+  maxWidth: '343px',
+  padding: '0 16px',
+  placeholder: '–',
+  type: 'text',
+  width: '100%',
+}

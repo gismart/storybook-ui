@@ -124,6 +124,30 @@ Simple.args = {
   spacingBetweenIconAndContent: '12px',
 }
 
+export const SimpleNutrimate = Template.bind({})
+SimpleNutrimate.args = {
+  activeBackgroundColor: 'rgba(169, 205, 80, 0.2)',
+  activeBorder: '1px solid #a9cd50',
+  activeColor: '#2c3131',
+  backgroundColor: '#ffffff',
+  border: '1px solid #e9e9e9',
+  borderRadius: '48px',
+  children: 'Female',
+  color: '#2c3131',
+  fontSize: '17px',
+  fontWeight: '600',
+  height: '80px',
+  iconHeight: '24px',
+  iconSrc: 'https://cdn-icons-png.flaticon.com/512/1791/1791311.png',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '0 16px',
+  spacingBetweenIconAndContent: '16px',
+  type: 'checkbox',
+  value: 'Female',
+}
+
 export const Complex = Template.bind({})
 Complex.args = {
   children: <ComplexAnswerContent />,

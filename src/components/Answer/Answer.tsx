@@ -42,6 +42,23 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     padding: '0 15px',
     value: 'User answer',
   },
+  nutrimate: {
+    activeBackgroundColor: 'rgba(169, 205, 80, 0.2)',
+    activeBorder: '1px solid #a9cd50',
+    activeColor: '#2c3131',
+    backgroundColor: '#ffffff',
+    border: '1px solid #e9e9e9',
+    borderRadius: '48px',
+    color: '#2c3131',
+    fontSize: '17px',
+    fontWeight: '600',
+    height: '80px',
+    isFullWidth: true,
+    lineHeight: '24px',
+    maxWidth: '343px',
+    padding: '0 16px',
+    type: 'checkbox',
+  },
 }
 
 export const Answer: React.FC<

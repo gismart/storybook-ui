@@ -70,6 +70,24 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
     iconAlignSelf: 'flex-end',
     activeBoxShadow: ' 0 0 0 2px #03AAF5',
   },
+  nutrimate: {
+    activeBackgroundColor: 'rgba(169, 205, 80, 0.2)',
+    activeBorder: '1px solid #a9cd50',
+    activeColor: '#2c3131',
+    backgroundColor: '#ffffff',
+    border: '1px solid #e9e9e9',
+    borderRadius: '48px',
+    color: '#2c3131',
+    fontSize: '17px',
+    fontWeight: '600',
+    height: '80px',
+    iconHeight: '24px',
+    isFullWidth: true,
+    lineHeight: '24px',
+    padding: '0 16px',
+    spacingBetweenIconAndContent: '16px',
+    type: 'radio',
+  },
 }
 
 const AnswerWithIconBase: React.FC<IAnswerWithIconProps & IOptionProps> = ({
