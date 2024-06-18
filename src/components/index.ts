@@ -8,9 +8,9 @@ export {
   AnswerWithIconAndCheckbox,
   answerWithIconAndCheckboxTheme,
 } from './AnswerWithIconAndCheckbox'
-export { Button } from './Button'
+export { Button, buttonTheme } from './Button'
 export { ButtonWithIcon } from './ButtonWithIcon'
-export { Input } from './Input'
+export { Input, inputTheme } from './Input'
 export { InputWithFloatPlaceholder } from './InputWithFloatPlaceholder'
 export { Option } from './Option'
 export { Select } from './Select'
