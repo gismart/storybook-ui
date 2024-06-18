@@ -37,7 +37,7 @@ export interface IButtonProps
   }
 }
 
-export const enum buttonTHeme {
+export const enum buttonTheme {
   DANCEBIT = 'dancebitPrimary',
   NUTRIMATE = 'nutrimate',
 }
