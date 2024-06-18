@@ -13,6 +13,13 @@ import { StyledInput as S } from './Input.styles'
 export const NumericKeypadRegex = /([0-9]{1}|Backspace|Enter)/
 export const NumericKeypadFloatRegex = /([0-9.,]{1}|Backspace|Enter)/
 
+export const enum inputTheme {
+  DANCEBIT_NUMBER = 'dancebitNumber',
+  DANCEBIT_TEXT = 'dancebitText',
+  NUTRIMATE_NUMBER = 'nutrimateNumber',
+  NUTRIMATE_TEXT = 'nutrimateText',
+}
+
 export interface IWrapperProps {
   width?: string
   validationText?: string
