@@ -3,7 +3,6 @@ import React, { InputHTMLAttributes, RefObject } from 'react'
 import { IThemedComponent } from '../../models/common'
 import { IInputProps } from '../../models/input'
 import { StyledInputWithFloatPlaceholder as S } from './InputWithFloatPlaceholder.styles'
-import dancebitCheckIcon from '../../assets/images/dancebit-check-icon.svg'
 
 export const enum InputWithFloatPlaceholderTheme {
   DANCEBIT = 'dancebit',
@@ -44,7 +43,6 @@ const inputThemes: Record<string, any> = {
     border: '1px solid #CACACA',
     padding: '32px 52px 8px 16px',
     hasValidationIcon: true,
-    checkIconSvg: dancebitCheckIcon,
     focusedLabelFontSize: '14px',
     focusedLabelColor: '#626262',
     labelColor: '#626262',
