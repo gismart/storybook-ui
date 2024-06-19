@@ -8,3 +8,4 @@ export { Input, inputTheme } from './Input';
 export { InputWithFloatPlaceholder, InputWithFloatPlaceholderTheme, } from './InputWithFloatPlaceholder';
 export { Option } from './Option';
 export { Select } from './Select';
+export { CircleProgress } from './CircleProgress';
