@@ -11,6 +11,9 @@ export {
 export { Button, buttonTheme } from './Button'
 export { ButtonWithIcon } from './ButtonWithIcon'
 export { Input, inputTheme } from './Input'
-export { InputWithFloatPlaceholder } from './InputWithFloatPlaceholder'
+export {
+  InputWithFloatPlaceholder,
+  InputWithFloatPlaceholderTheme,
+} from './InputWithFloatPlaceholder'
 export { Option } from './Option'
 export { Select } from './Select'

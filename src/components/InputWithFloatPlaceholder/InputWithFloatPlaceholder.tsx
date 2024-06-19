@@ -3,6 +3,10 @@ import React, { InputHTMLAttributes, RefObject } from 'react'
 import { IInputProps } from '../../models/input'
 import { StyledInputWithFloatPlaceholder as S } from './InputWithFloatPlaceholder.styles'
 
+export const enum InputWithFloatPlaceholderTheme {
+  DANCEBIT = 'dancebit',
+}
+
 export interface ILabelProps {
   leftLabelPosition?: string
   labelColor?: string
@@ -48,8 +52,12 @@ export const InputWithFloatPlaceholder: React.FC<IProps> = ({
     <S.Label hasValue={!!value}>{label}</S.Label>
     {hasValidationIcon && (
       <>
-        {value && isValid && <S.Icon src={checkIconSvg} alt="check-icon" />}
-        {value && !isValid && <S.Icon src={crossIconSvg} alt="cross-icon" />}
+        {value && isValid && checkIconSvg && (
+          <S.Icon src={checkIconSvg} alt="check-icon" />
+        )}
+        {value && !isValid && crossIconSvg && (
+          <S.Icon src={crossIconSvg} alt="cross-icon" />
+        )}
       </>
     )}
     {iconSrc && <S.Icon src={iconSrc} alt="input-icon" />}
