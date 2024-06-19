@@ -1,7 +1,9 @@
 import React, { InputHTMLAttributes, RefObject } from 'react'
 
+import { IThemedComponent } from '../../models/common'
 import { IInputProps } from '../../models/input'
 import { StyledInputWithFloatPlaceholder as S } from './InputWithFloatPlaceholder.styles'
+import dancebitCheckIcon from '../../assets/images/dancebit-check-icon.svg'
 
 export const enum InputWithFloatPlaceholderTheme {
   DANCEBIT = 'dancebit',
@@ -28,7 +30,30 @@ export interface IProps
   crossIconSvg?: string
 }
 
-export const InputWithFloatPlaceholder: React.FC<IProps> = ({
+const inputThemes: Record<string, any> = {
+  dancebit: {
+    maxWidth: '320px',
+    width: '260px',
+    label: 'Your email',
+    color: '#000',
+    fontSize: '17px',
+    fontWeight: '400',
+    lineHeight: '24px',
+    borderRadius: '16px',
+    backgroundColor: '#FFF',
+    border: '1px solid #CACACA',
+    padding: '32px 52px 8px 16px',
+    hasValidationIcon: true,
+    checkIconSvg: dancebitCheckIcon,
+    focusedLabelFontSize: '14px',
+    focusedLabelColor: '#626262',
+    labelColor: '#626262',
+    labelFontSize: '16px',
+    labelFontWeight: '400',
+  },
+}
+
+export const InputWithFloatPlaceholderBase: React.FC<IProps> = ({
   value,
   label,
   isValid = true,
@@ -62,4 +87,14 @@ export const InputWithFloatPlaceholder: React.FC<IProps> = ({
     )}
     {iconSrc && <S.Icon src={iconSrc} alt="input-icon" />}
   </S.Wrapper>
+)
+
+export const InputWithFloatPlaceholder: React.FC<IProps & IThemedComponent> = ({
+  theme,
+  ...props
+}) => (
+  <InputWithFloatPlaceholderBase
+    {...(theme && inputThemes[theme])}
+    {...props}
+  />
 )

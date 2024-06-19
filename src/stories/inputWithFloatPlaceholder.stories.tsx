@@ -9,7 +9,6 @@ import {
   InputWithFloatPlaceholderTheme,
 } from 'components/InputWithFloatPlaceholder'
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
-import dancebitCheckIcon from '../assets/images/dancebit-check-icon.svg'
 
 // eslint-disable-next-line import/no-default-export
 export default {
@@ -24,28 +23,6 @@ export default {
   },
 } as ComponentMeta<typeof InputWithFloatPlaceholder>
 
-const inputThemes: Record<string, any> = {
-  dancebit: {
-    maxWidth: '320px',
-    width: '260px',
-    label: 'Your email',
-    color: '#000',
-    fontSize: '17px',
-    fontWeight: '400',
-    lineHeight: '24px',
-    borderRadius: '16px',
-    backgroundColor: '#FFF',
-    border: '1px solid #CACACA',
-    padding: '32px 52px 8px 16px',
-    hasValidationIcon: true,
-    checkIconSvg: dancebitCheckIcon,
-    focusedLabelFontSize: '14px',
-    focusedLabelColor: '#626262',
-    labelColor: '#626262',
-    labelFontSize: '16px',
-    labelFontWeight: '400',
-  },
-}
 // 👇 We create a “template” of how args map to rendering
 const Template: ComponentStory<typeof InputWithFloatPlaceholder> = (args) => (
   <InputWithFloatPlaceholder {...args} />
@@ -76,5 +53,5 @@ export const DancebitInput = Template.bind({})
 DancebitInput.args = {
   value: 'example value',
   isValid: true,
-  ...inputThemes[InputWithFloatPlaceholderTheme.DANCEBIT],
+  theme: InputWithFloatPlaceholderTheme.DANCEBIT,
 }
