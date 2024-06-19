@@ -529,4 +529,50 @@ interface ISelectProps extends IColorsProps, IFontsProps, IDimensionsProps, IPla
 }
 declare const Select: React.FC<ISelectProps>;
 
-export { Answer, AnswerWithCheckbox, AnswerWithIcon, AnswerWithIconAndCheckbox, Button, ButtonWithIcon, Input, InputWithFloatPlaceholder, InputWithFloatPlaceholderTheme, Option, Select, answerTheme, answerWithCheckboxTheme, answerWithIconAndCheckboxTheme, answerWithIconTheme, buttonTheme, inputTheme };
+interface IContainerProps {
+    /**
+     * Define element height
+     */
+    height: string;
+    /**
+     * Set element margin
+     */
+    margin: string;
+}
+interface IProgressValueProps extends IFontsProps {
+    /**
+     * Set percentage font size
+     */
+    percentageFontSize: string;
+    /**
+     * Set percentage font weight
+     */
+    percentageFontWeight: string;
+    /**
+     * What text color to use
+     */
+    color?: string;
+}
+interface ISvgProps {
+    /**
+     * Progress bar value
+     */
+    value: number;
+    /**
+     * Set stroke color of empty circle
+     */
+    strokeColorEmpty: string;
+    /**
+     * Set stroke color of filled circle
+     */
+    strokeColorFilled: string;
+    /**
+     * Set circle radius
+     */
+    radius?: number;
+}
+interface ICircleProgressProps extends IContainerProps, ISvgProps, IProgressValueProps {
+}
+declare const CircleProgress: React.FC<ICircleProgressProps>;
+
+export { Answer, AnswerWithCheckbox, AnswerWithIcon, AnswerWithIconAndCheckbox, Button, ButtonWithIcon, CircleProgress, Input, InputWithFloatPlaceholder, InputWithFloatPlaceholderTheme, Option, Select, answerTheme, answerWithCheckboxTheme, answerWithIconAndCheckboxTheme, answerWithIconTheme, buttonTheme, inputTheme };
