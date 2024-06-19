@@ -347,6 +347,10 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, IFontsPr
         [key: string]: any;
     };
 }
+declare const enum buttonTheme {
+    DANCEBIT = "dancebitPrimary",
+    NUTRIMATE = "nutrimate"
+}
 declare const Button: React.FC<IButtonProps>;
 
 interface IButtonWithIconProps extends ButtonHTMLAttributes<HTMLButtonElement>, IFontsProps, IColorsProps, IDimensionsProps {
@@ -450,6 +454,12 @@ interface IInputProps extends IColorsProps, IFontsProps, IDimensionsProps {
     validationText?: string;
 }
 
+declare const enum inputTheme {
+    DANCEBIT_NUMBER = "dancebitNumber",
+    DANCEBIT_TEXT = "dancebitText",
+    NUTRIMATE_NUMBER = "nutrimateNumber",
+    NUTRIMATE_TEXT = "nutrimateText"
+}
 interface IWrapperProps {
     width?: string;
     validationText?: string;
@@ -471,6 +481,9 @@ interface IProps$1 extends IInputProps, ILabelProps$1, IWrapperProps, Omit<Input
 }
 declare const Input: React.FC<IProps$1 & IThemedComponent>;
 
+declare const enum InputWithFloatPlaceholderTheme {
+    DANCEBIT = "dancebit"
+}
 interface ILabelProps {
     leftLabelPosition?: string;
     labelColor?: string;
@@ -487,7 +500,7 @@ interface IProps extends IInputProps, ILabelProps, Omit<InputHTMLAttributes<HTML
     checkIconSvg?: string;
     crossIconSvg?: string;
 }
-declare const InputWithFloatPlaceholder: React.FC<IProps>;
+declare const InputWithFloatPlaceholder: React.FC<IProps & IThemedComponent>;
 
 interface IOptions {
     value: any;
@@ -516,4 +529,4 @@ interface ISelectProps extends IColorsProps, IFontsProps, IDimensionsProps, IPla
 }
 declare const Select: React.FC<ISelectProps>;
 
-export { Answer, AnswerWithCheckbox, AnswerWithIcon, AnswerWithIconAndCheckbox, Button, ButtonWithIcon, Input, InputWithFloatPlaceholder, Option, Select, answerTheme, answerWithCheckboxTheme, answerWithIconAndCheckboxTheme, answerWithIconTheme };
+export { Answer, AnswerWithCheckbox, AnswerWithIcon, AnswerWithIconAndCheckbox, Button, ButtonWithIcon, Input, InputWithFloatPlaceholder, InputWithFloatPlaceholderTheme, Option, Select, answerTheme, answerWithCheckboxTheme, answerWithIconAndCheckboxTheme, answerWithIconTheme, buttonTheme, inputTheme };
