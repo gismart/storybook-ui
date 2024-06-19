@@ -1,5 +1,9 @@
 import React, { InputHTMLAttributes, RefObject } from 'react';
+import { IThemedComponent } from '../../models/common';
 import { IInputProps } from '../../models/input';
+export declare const enum InputWithFloatPlaceholderTheme {
+    DANCEBIT = "dancebit"
+}
 export interface ILabelProps {
     leftLabelPosition?: string;
     labelColor?: string;
@@ -16,4 +20,5 @@ export interface IProps extends IInputProps, ILabelProps, Omit<InputHTMLAttribut
     checkIconSvg?: string;
     crossIconSvg?: string;
 }
-export declare const InputWithFloatPlaceholder: React.FC<IProps>;
+export declare const InputWithFloatPlaceholderBase: React.FC<IProps>;
+export declare const InputWithFloatPlaceholder: React.FC<IProps & IThemedComponent>;

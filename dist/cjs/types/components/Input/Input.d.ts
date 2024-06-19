@@ -3,6 +3,12 @@ import { IThemedComponent } from '../../models/common';
 import { IInputProps } from '../../models/input';
 export declare const NumericKeypadRegex: RegExp;
 export declare const NumericKeypadFloatRegex: RegExp;
+export declare const enum inputTheme {
+    DANCEBIT_NUMBER = "dancebitNumber",
+    DANCEBIT_TEXT = "dancebitText",
+    NUTRIMATE_NUMBER = "nutrimateNumber",
+    NUTRIMATE_TEXT = "nutrimateText"
+}
 export interface IWrapperProps {
     width?: string;
     validationText?: string;

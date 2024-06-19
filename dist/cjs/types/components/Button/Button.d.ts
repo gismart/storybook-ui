@@ -28,7 +28,7 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, I
         [key: string]: any;
     };
 }
-export declare const enum buttonTHeme {
+export declare const enum buttonTheme {
     DANCEBIT = "dancebitPrimary",
     NUTRIMATE = "nutrimate"
 }
