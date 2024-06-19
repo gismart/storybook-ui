@@ -1,1 +1,4 @@
-export { InputWithFloatPlaceholder } from './InputWithFloatPlaceholder'
+export {
+  InputWithFloatPlaceholder,
+  InputWithFloatPlaceholderTheme,
+} from './InputWithFloatPlaceholder'

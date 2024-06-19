@@ -1,10 +1,13 @@
 import React from 'react'
-import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import checkIcon from 'assets/images/check-icon-green.svg'
 import crossIcon from 'assets/images/cross-icon.svg'
 
-import { InputWithFloatPlaceholder } from 'components/InputWithFloatPlaceholder'
+import {
+  InputWithFloatPlaceholder,
+  InputWithFloatPlaceholderTheme,
+} from 'components/InputWithFloatPlaceholder'
 import { COMMON_STYLES_CONTROLS } from 'constants/controls'
 
 // eslint-disable-next-line import/no-default-export
@@ -44,4 +47,11 @@ Regular.args = {
   value: 'example value',
   checkIconSvg: checkIcon,
   crossIconSvg: crossIcon,
+}
+
+export const DancebitInput = Template.bind({})
+DancebitInput.args = {
+  value: 'example value',
+  isValid: true,
+  theme: InputWithFloatPlaceholderTheme.DANCEBIT,
 }
