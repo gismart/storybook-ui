@@ -19,6 +19,12 @@ export const COMMON_STYLES_CONTROLS = {
       category: ControlsCategories.COLORS,
     },
   },
+  placeholderColor: {
+    control: 'color',
+    table: {
+      category: ControlsCategories.COLORS,
+    },
+  },
   boxShadow: {
     control: 'text',
     table: {

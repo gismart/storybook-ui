@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components'
-import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
 import {
   ILabelProps,
   IProps,
   IWrapperProps,
 } from '../../components/Input/Input'
-import { CommonDimensionsStyles } from '../../styles/CommonDimensions.styles'
 import { CommonColorsStyles } from '../../styles/CommonColors.styles'
+import { CommonDimensionsStyles } from '../../styles/CommonDimensions.styles'
+import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
 
 export const StyledInput = {
   Wrapper: styled.div<IWrapperProps>`
@@ -85,6 +85,7 @@ export const StyledInput = {
       line-height: ${({ lineHeight }) => lineHeight || '16px'};
       font-weight: ${({ fontWeight }) => fontWeight || 400};
       font-style: ${({ fontStyle }) => fontStyle || 'normal'};
+      color: ${({ placeholderColor }) => placeholderColor || '#81848c'};
     }
   `,
   Label: styled.span<ILabelProps>`
