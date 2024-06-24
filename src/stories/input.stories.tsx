@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { Input } from 'components/Input'
@@ -106,6 +107,7 @@ DancebitText.args = {
   isContentCentered: true,
   focusedBorderColor: '#CACACA',
   placeholder: 'NAME',
+  placeholderColor: '#A9A9A9',
 }
 
 export const NutrimateNumber = Template.bind({})

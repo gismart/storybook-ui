@@ -82,6 +82,7 @@ const inputThemes: Record<string, Record<string, string | boolean>> = {
     allowFloatNumbers: false,
     isContentCentered: true,
     focusedBorderColor: '#CACACA',
+    placeholderColor: '#A9A9A9',
   },
   nutrimateNumber: {
     allowFloatNumbers: false,
