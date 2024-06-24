@@ -62,6 +62,10 @@ interface IColorsProps {
      */
     color?: string;
     /**
+     * What placeholder color to use
+     */
+    placeholderColor?: string;
+    /**
      * What shadow to use
      */
     boxShadow?: string;
