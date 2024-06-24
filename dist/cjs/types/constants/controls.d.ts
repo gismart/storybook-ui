@@ -18,6 +18,12 @@ export declare const COMMON_STYLES_CONTROLS: {
             category: ControlsCategories;
         };
     };
+    placeholderColor: {
+        control: string;
+        table: {
+            category: ControlsCategories;
+        };
+    };
     boxShadow: {
         control: string;
         table: {
