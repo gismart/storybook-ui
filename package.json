@@ -6,7 +6,7 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "start": "start-storybook -p 6006",
     "clean": "rm -rf core",
