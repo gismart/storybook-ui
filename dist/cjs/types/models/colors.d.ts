@@ -16,6 +16,10 @@ export interface IColorsProps {
      */
     placeholderColor?: string;
     /**
+     * What error color to use
+     */
+    errorMessageColor?: string;
+    /**
      * What shadow to use
      */
     boxShadow?: string;

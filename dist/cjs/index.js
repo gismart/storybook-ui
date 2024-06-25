@@ -321,6 +321,21 @@ import{jsxs as e,jsx as t,Fragment as n}from"react/jsx-runtime";import*as r from
     position: relative;
     display: block;
     margin-bottom: ${({marginBottom:e})=>`${e}px`};
+
+    &::after {
+      display: block;
+      position: absolute;
+      left: 16px;
+      color: ${({errorMessageColor:e})=>e||"#f83b00"};
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-top: 6px;
+    }
+
+    &[data-valid='false']::after {
+      content: attr(data-validation-text);
+    }
   `,Input:st.input`
     display: block;
     ${pt};
