@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { CommonColorsStyles } from '../../styles/CommonColors.styles'
-import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
-import { CommonDimensionsStyles } from '../../styles/CommonDimensions.styles'
 import {
   ILabelProps,
   IProps,
 } from '../../components/InputWithFloatPlaceholder/InputWithFloatPlaceholder'
+import { CommonColorsStyles } from '../../styles/CommonColors.styles'
+import { CommonDimensionsStyles } from '../../styles/CommonDimensions.styles'
+import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
 
 export const StyledInputWithFloatPlaceholder = {
   Wrapper: styled.div<IProps>`
@@ -13,6 +13,21 @@ export const StyledInputWithFloatPlaceholder = {
     position: relative;
     display: block;
     margin-bottom: ${({ marginBottom }) => `${marginBottom}px`};
+
+    &::after {
+      display: block;
+      position: absolute;
+      left: 16px;
+      color: ${({ errorMessageColor }) => errorMessageColor || '#f83b00'};
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-top: 6px;
+    }
+
+    &[data-valid='false']::after {
+      content: attr(data-validation-text);
+    }
   `,
   Input: styled.input<IProps>`
     display: block;
