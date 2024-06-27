@@ -95,7 +95,7 @@ import{jsxs as e,jsx as t,Fragment as n}from"react/jsx-runtime";import*as r from
       color: ${({activeColor:e})=>e||"#fff"};
     }
   `,Checkbox:st.span`
-    width: ${({checkboxWidth:e})=>e||"20px"};
+    min-width: ${({checkboxWidth:e})=>e||"20px"};
     height: ${({checkboxHeight:e})=>e||"20px"};
     border-radius: ${({checkboxBorderRadius:e})=>e||"50%"};
     background-position: center;
