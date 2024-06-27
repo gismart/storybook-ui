@@ -202,9 +202,7 @@ const AnswerWithIconAndCheckboxBase: React.FC<
         >
           <div>{children}</div>
         </S.Content>
-        <S.Icon
-          src={imageSrc}
-          alt=""
+        <div
           style={{
             width: imageWidth,
             minWidth: imageWidth,
@@ -212,7 +210,9 @@ const AnswerWithIconAndCheckboxBase: React.FC<
             minHeight: imageHeight,
             alignSelf: imageAlignSelf,
           }}
-        />
+        >
+          <S.Icon src={imageSrc} alt="" />
+        </div>
       </S.Root>
     </Option>
   )

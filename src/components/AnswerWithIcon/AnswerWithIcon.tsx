@@ -118,9 +118,7 @@ const AnswerWithIconBase: React.FC<IAnswerWithIconProps & IOptionProps> = ({
   >
     <S.Root {...props}>
       {iconSrc && (
-        <S.Icon
-          src={iconSrc}
-          alt=""
+        <div
           style={{
             width: iconWidth,
             height: iconHeight,
@@ -128,7 +126,9 @@ const AnswerWithIconBase: React.FC<IAnswerWithIconProps & IOptionProps> = ({
             minHeight: iconMinHeight,
             minWidth: iconMinWidth,
           }}
-        />
+        >
+          <S.Icon src={iconSrc} alt="" />
+        </div>
       )}
       <S.Content spacingBetweenIconAndContent={spacingBetweenIconAndContent}>
         <div>{children}</div>
