@@ -40,6 +40,7 @@ export interface IButtonProps
 export const enum buttonTheme {
   DANCEBIT = 'dancebitPrimary',
   NUTRIMATE = 'nutrimate',
+  FITMI = 'fitmePrimary',
 }
 
 const buttonThemes: Record<string, any> = {
@@ -57,6 +58,18 @@ const buttonThemes: Record<string, any> = {
   },
   nutrimatePrimary: {
     backgroundColor: '#a9cd50',
+    borderRadius: '30px',
+    disableBackgroundColor: '#cacaca',
+    fontSize: '17px',
+    fontWeight: '700',
+    height: '56px',
+    isFullWidth: true,
+    lineHeight: '24px',
+    maxWidth: '343px',
+    padding: '10px 16px',
+  },
+  fitmePrimary: {
+    backgroundColor: '#8378EF',
     borderRadius: '30px',
     disableBackgroundColor: '#cacaca',
     fontSize: '17px',
