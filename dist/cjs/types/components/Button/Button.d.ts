@@ -30,6 +30,7 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, I
 }
 export declare const enum buttonTheme {
     DANCEBIT = "dancebitPrimary",
-    NUTRIMATE = "nutrimate"
+    NUTRIMATE = "nutrimate",
+    FITMI = "fitmePrimary"
 }
 export declare const Button: React.FC<IButtonProps>;
