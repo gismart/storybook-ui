@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# How to use guide (for developers only)
+
+1. After you commit your changes you should create a PR to main brunch and add at least one reviewer.
+2. As soon as PR is approved, you can merge it and run build action.
+3. If the build succeeds, another PR will be created automatically. You should validate changes and, if everything is okay, merge it to main.
+4. Run npm uninstall storybook-ui && npm i github:gismart/storybook-ui#main command to update package in your web app.
+
+Don't forget to update @types/react package to avoid unexpected errors.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
