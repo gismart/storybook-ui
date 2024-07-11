@@ -357,7 +357,8 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, IFontsPr
 }
 declare const enum buttonTheme {
     DANCEBIT = "dancebitPrimary",
-    NUTRIMATE = "nutrimate"
+    NUTRIMATE = "nutrimate",
+    FITMI = "fitmePrimary"
 }
 declare const Button: React.FC<IButtonProps>;
 
