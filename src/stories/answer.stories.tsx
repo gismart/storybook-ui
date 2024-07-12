@@ -126,3 +126,26 @@ SimpleNutrimate.args = {
   type: 'checkbox',
   value: 'Less than a year ago',
 }
+
+export const SimpleFitme = Template.bind({})
+SimpleFitme.args = {
+  height: '80px',
+  isFullWidth: true,
+  maxWidth: '343px',
+  fontSize: '17px',
+  fontWeight: '600',
+  lineHeight: '24px',
+  color: '#17202A',
+  activeColor: '#17202A',
+  backgroundColor: '#ffffff',
+  activeBackgroundColor: '#F0ECFF',
+  border: '2px solid transparent',
+  activeBorder: '2px solid #8378EF',
+  boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03)',
+  activeBoxShadow: 'none',
+  borderRadius: '16px',
+  padding: '0 16px',
+  type: 'checkbox',
+  children: 'No, I have never heard about chair yoga',
+  value: 'never',
+}

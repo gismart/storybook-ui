@@ -70,6 +70,7 @@ export interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
 export const enum answerWithCheckboxTheme {
   DANCEBIT = 'dancebit',
   NUTRIMATE = 'nutrimate',
+  FITME = 'fitme',
 }
 
 const answerWithCheckboxThemes: Record<
@@ -127,6 +128,33 @@ const answerWithCheckboxThemes: Record<
     padding: '0 16px',
     reverse: true,
     spacingBetweenCheckboxAndContent: '0 16px 0 0',
+    type: 'checkbox',
+  },
+  fitme: {
+    height: '80px',
+    isFullWidth: true,
+    maxWidth: '343px',
+    fontSize: '17px',
+    lineHeight: '24px',
+    fontWeight: '600',
+    color: '#17202A',
+    activeColor: '#17202A',
+    padding: '0 16px',
+    reverse: true,
+    backgroundColor: '#fff',
+    activeBackgroundColor: '#F0ECFF',
+    border: '2px solid transparent',
+    activeBorder: '2px solid #8378EF',
+    borderRadius: '16px',
+    iconSrc: checkIconWhite,
+    spacingBetweenCheckboxAndContent: '0 16px 0 0',
+    checkboxBorder: '1px solid #CACACA',
+    checkboxBorderRadius: '50%',
+    checkboxActiveBorder: 'none',
+    checkboxBackgroundColor: '#fff',
+    checkboxBackgroundActiveColor: '#8378EF',
+    checkboxHeight: '24px',
+    checkboxWidth: '24px',
     type: 'checkbox',
   },
 }
