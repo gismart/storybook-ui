@@ -161,7 +161,8 @@ declare const Option: React.FC<IOptionProps>;
 declare const enum answerTheme {
     DANCEBIT = "dancebit",
     LUVLY = "luvly",
-    NUTRIMATE = "nutrimate"
+    NUTRIMATE = "nutrimate",
+    FITME = "fitme"
 }
 declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent>;
 
@@ -212,7 +213,8 @@ interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
 }
 declare const enum answerWithCheckboxTheme {
     DANCEBIT = "dancebit",
-    NUTRIMATE = "nutrimate"
+    NUTRIMATE = "nutrimate",
+    FITME = "fitme"
 }
 declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps$1 & IAnswerWithCheckboxContentProps & IThemedComponent>;
 

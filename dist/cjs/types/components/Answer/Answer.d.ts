@@ -5,6 +5,7 @@ import { IOptionProps } from '../Option/Option';
 export declare const enum answerTheme {
     DANCEBIT = "dancebit",
     LUVLY = "luvly",
-    NUTRIMATE = "nutrimate"
+    NUTRIMATE = "nutrimate",
+    FITME = "fitme"
 }
 export declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent>;
