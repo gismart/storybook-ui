@@ -192,3 +192,29 @@ DancebitImage.args = {
   iconAlignSelf: 'flex-end',
   activeBoxShadow: ' 0 0 0 2px #03AAF5',
 }
+
+export const Fitme = Template.bind({})
+Fitme.args = {
+  height: '80px',
+  isFullWidth: true,
+  maxWidth: '343px',
+  fontSize: '17px',
+  fontWeight: '600',
+  lineHeight: '24px',
+  color: '#17202A',
+  activeColor: '#17202A',
+  padding: '0 16px',
+  backgroundColor: '#fff',
+  activeBackgroundColor: '#F0ECFF',
+  border: '2px solid transparent',
+  activeBorder: '2px solid #8378EF',
+  borderRadius: '16px',
+  boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03);',
+  activeBoxShadow: 'none',
+  iconSrc: 'https://cdn-icons-png.flaticon.com/512/1791/1791311.png',
+  iconHeight: '40px',
+  spacingBetweenIconAndContent: '16px',
+  children: 'No - just ready to look and feel my best!',
+  type: 'checkbox',
+  value: 'User answer',
+}
