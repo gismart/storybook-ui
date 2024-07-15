@@ -215,6 +215,8 @@ FitmeCheckbox.args = {
   border: '2px solid transparent',
   activeBorder: '2px solid #8378EF',
   borderRadius: '16px',
+  boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03);',
+  activeBoxShadow: 'none',
   iconSrc: checkIconWhite,
   spacingBetweenCheckboxAndContent: '0 16px 0 0',
   checkboxBorder: '1px solid #CACACA',
