@@ -37,6 +37,7 @@ export interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIco
 }
 export declare const enum answerWithIconTheme {
     DANCEBIT = "dancebit",
-    NUTRIMATE = "nutrimate"
+    NUTRIMATE = "nutrimate",
+    FITME = "fitme"
 }
 export declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;
