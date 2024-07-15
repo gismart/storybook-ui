@@ -217,7 +217,8 @@ FitmeCheckbox.args = {
   borderRadius: '16px',
   boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03);',
   activeBoxShadow: 'none',
-  iconSrc: checkIconWhite,
+  iconSrc:
+    'https://cdn-prod-unified-content.gismart.xyz/95a0f4aac157ae778464868301bbc89a757bbd8234362ef568be31e6d6bf9e38/check-icon-white.webp',
   spacingBetweenCheckboxAndContent: '0 16px 0 0',
   checkboxBorder: '1px solid #CACACA',
   checkboxBorderRadius: '50%',
