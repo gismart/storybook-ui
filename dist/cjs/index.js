@@ -169,26 +169,27 @@ import{jsxs as e,jsx as t,Fragment as n}from"react/jsx-runtime";import*as r from
     height: auto;
     vertical-align: top;
   `};var zt;!function(e){e.DANCEBIT="dancebit",e.NUTRIMATE="nutrimate",e.FITME="fitme"}(zt||(zt={}));const Ot={dancebit:{type:"checkbox",isFullWidth:!0,height:"80px",backgroundColor:"#F5F6F7",color:"#17202A",fontSize:"17px",fontWeight:"700",lineHeight:"24px",borderRadius:"6px",padding:"0 16px",spacingBetweenCheckboxAndContent:"0 16px",checkboxWidth:"24px",checkboxHeight:"24px",checkboxBorderRadius:"8px",checkboxBorder:"1.5px solid #CACACA",checkboxBackgroundActiveColor:"#03AAF5",reverse:!0,activeBackgroundColor:"#EAF7FF",activeColor:"#17202A",border:"2px solid transparent",iconSrc:wt,boxShadow:"0 0 0 1px #E9E9E9",activeBoxShadow:"0 0 0 2px #03AAF5",checkboxActiveBorder:"1px solid transparent",imageWidth:"40px",imageHeight:"40px",imageAlignSelf:"center"},nutrimate:{activeBackgroundColor:"rgba(169, 205, 80, 0.2)",activeBorder:"1px solid #a9cd50",activeColor:"#2c3131",backgroundColor:"#fff",border:"1px solid #e9e9e9",borderRadius:"48px",checkboxActiveBorder:"1px solid #a9cd50",checkboxBackgroundActiveColor:"#a9cd50",checkboxBackgroundColor:"#fff",checkboxBorder:"1px solid #E9E9E9",checkboxBorderRadius:"8px",checkboxHeight:"24px",checkboxWidth:"24px",color:"#2c3131",spacingBetweenCheckboxAndContent:"0 16px",fontSize:"17px",fontWeight:"600",height:"80px",isFullWidth:!0,lineHeight:"24px",maxWidth:"343px",padding:"0 16px",reverse:!0,type:"checkbox"},fitme:{height:"80px",isFullWidth:!0,maxWidth:"343px",fontSize:"17px",lineHeight:"24px",fontWeight:"600",color:"#17202A",activeColor:"#17202A",padding:"0 16px",reverse:!0,backgroundColor:"#fff",activeBackgroundColor:"#F0ECFF",border:"2px solid transparent",activeBorder:"2px solid #8378EF",borderRadius:"16px",boxShadow:"0px 4px 14px 0px rgba(8, 4, 23, 0.03);",activeBoxShadow:"none",iconSrc:"https://cdn-prod-unified-content.gismart.xyz/95a0f4aac157ae778464868301bbc89a757bbd8234362ef568be31e6d6bf9e38/check-icon-white.webp",spacingBetweenCheckboxAndContent:"0 0 0 16px",checkboxBorder:"1px solid #CACACA",checkboxBorderRadius:"50%",checkboxActiveBorder:"none",checkboxBackgroundColor:"#fff",checkboxBackgroundActiveColor:"#8378EF",checkboxHeight:"24px",checkboxWidth:"24px",imageSrc:"",imageWidth:"40px",imageHeight:"40px",imageAlignSelf:"center",type:"checkbox"}},Lt=({children:n,type:r,value:o,name:a,checked:i,disabled:l,onChange:u,checkboxWidth:s,checkboxHeight:c,checkboxBackgroundColor:d,checkboxBorder:f,spacingBetweenCheckboxAndContent:p,contentHorizontalAlign:h,checkboxBorderRadius:m,imageSrc:g,imageWidth:v,imageHeight:b,imageAlignSelf:y,...w})=>t(dt,{value:o,name:a,type:r,checked:i,disabled:l,onChange:u,children:e(Pt.Root,{...w,children:[t(Pt.Checkbox,{checkboxWidth:s,checkboxHeight:c,checkboxBackgroundColor:d,checkboxBorder:f,checkboxBorderRadius:m}),t(Pt.Content,{spacingBetweenCheckboxAndContent:p,contentHorizontalAlign:h,children:t("div",{children:n})}),t(Pt.Icon,{src:g,alt:"",style:{width:v,minWidth:v,height:b,minHeight:b,alignSelf:y}})]})}),Bt=({theme:e,...n})=>t(Lt,{...e&&Ot[e],...n});var Mt,Dt;!function(e){e.LEFT="left",e.CENTER="center",e.RIGHT="right",e.JUSTIFY="justify"}(Mt||(Mt={})),function(e){e.COMMON="common",e.COLORS="colors",e.FONTS="fonts",e.SIZES="sizes",e.ALIGNMENT="alignment",e.INTERACTION="interaction",e.ADDON="addon"}(Dt||(Dt={}));const Ft=st.button`
+  border: none;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
   ${ft};
   ${pt};
   ${ht};
 
-  display: block;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  transition: 0.2s ease-out;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  overflow-wrap: break-word;
-
   text-align: ${({textAlign:e})=>e||Mt.CENTER};
 
   &:disabled {
-    pointer-events: none;
     background-color: ${({disableBackgroundColor:e})=>e||"#e1e1e1"};
+    color: ${({disableColor:e})=>e||"#fff"};
+    pointer-events: none;
   }
-`;var Gt;!function(e){e.DANCEBIT="dancebitPrimary",e.NUTRIMATE="nutrimate",e.FITMI="fitmePrimary"}(Gt||(Gt={}));const Vt={dancebitPrimary:{isFullWidth:!0,height:"56px",lineHeight:"56px",borderRadius:"30px",padding:"0 16px",maxWidth:"327px",fontSize:"17px",backgroundColor:"#03AAF5",disableBackgroundColor:"#CACACA",fontWeight:"700"},nutrimatePrimary:{backgroundColor:"#a9cd50",borderRadius:"30px",disableBackgroundColor:"#cacaca",fontSize:"17px",fontWeight:"700",height:"56px",isFullWidth:!0,lineHeight:"24px",maxWidth:"343px",padding:"10px 16px"},fitmePrimary:{backgroundColor:"#8378EF",borderRadius:"30px",disableBackgroundColor:"#cacaca",fontSize:"17px",fontWeight:"700",height:"56px",isFullWidth:!0,lineHeight:"24px",maxWidth:"343px",padding:"10px 16px"}},Wt=({children:e,buttonRef:n,textAlign:r,disabled:o,disableBackgroundColor:a,style:i,theme:l,...u})=>t(Ft,{ref:n,textAlign:r,disabled:o,disableBackgroundColor:a,style:i,...l&&Vt[l],...u,children:e}),_t=st.button`
+`;var Gt;!function(e){e.DANCEBIT="dancebitPrimary",e.NUTRIMATE_PRIMARY="nutrimatePrimary",e.NUTRIMATE_DEFAULT="nutrimateDefault",e.FITMI="fitmePrimary"}(Gt||(Gt={}));const Vt={dancebitPrimary:{isFullWidth:!0,height:"56px",lineHeight:"56px",borderRadius:"30px",padding:"0 16px",maxWidth:"327px",fontSize:"17px",backgroundColor:"#03AAF5",disableBackgroundColor:"#CACACA",fontWeight:"700"},nutrimatePrimary:{backgroundColor:"#a9cd50",borderRadius:"30px",disableBackgroundColor:"#cacaca",fontSize:"17px",fontWeight:"700",height:"56px",isFullWidth:!0,lineHeight:"24px",maxWidth:"343px",padding:"10px 16px"},nutrimateDefault:{backgroundColor:"#fff",border:"1px solid #e9e9e9",borderRadius:"30px",color:"#98bf36",disableBackgroundColor:"#cacaca",disableColor:"#fff",fontSize:"17px",fontWeight:"700",height:"56px",isFullWidth:!0,lineHeight:"24px",maxWidth:"343px",padding:"10px 16px"},fitmePrimary:{backgroundColor:"#8378EF",borderRadius:"30px",disableBackgroundColor:"#cacaca",fontSize:"17px",fontWeight:"700",height:"56px",isFullWidth:!0,lineHeight:"24px",maxWidth:"343px",padding:"10px 16px"}},Wt=({children:e,buttonRef:n,textAlign:r,disabled:o,disableBackgroundColor:a,style:i,theme:l,...u})=>t(Ft,{ref:n,textAlign:r,disabled:o,disableBackgroundColor:a,style:i,...l&&Vt[l],...u,children:e}),_t=st.button`
   ${ft};
   ${pt};
   ${ht};

@@ -22,6 +22,10 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, I
      */
     disableBackgroundColor?: string;
     /**
+     * What font color to use when disable
+     */
+    disableColor?: string;
+    /**
      * Custom styles
      */
     style?: {
@@ -30,7 +34,8 @@ export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, I
 }
 export declare const enum buttonTheme {
     DANCEBIT = "dancebitPrimary",
-    NUTRIMATE = "nutrimate",
+    NUTRIMATE_PRIMARY = "nutrimatePrimary",
+    NUTRIMATE_DEFAULT = "nutrimateDefault",
     FITMI = "fitmePrimary"
 }
 export declare const Button: React.FC<IButtonProps>;
