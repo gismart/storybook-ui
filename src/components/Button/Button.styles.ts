@@ -7,24 +7,25 @@ import { CommonFontsStyles } from '../../styles/CommonFonts.styles'
 import { IButtonProps } from './Button'
 
 export const StyledButton = styled.button<IButtonProps>`
+  border: none;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
   ${CommonFontsStyles};
   ${CommonColorsStyles};
   ${CommonDimensionsStyles};
 
-  display: block;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  transition: 0.2s ease-out;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  overflow-wrap: break-word;
-
   text-align: ${({ textAlign }) => textAlign || TextAlignment.CENTER};
 
   &:disabled {
-    pointer-events: none;
     background-color: ${({ disableBackgroundColor }) =>
       disableBackgroundColor || '#e1e1e1'};
+    color: ${({ disableColor }) => disableColor || '#fff'};
+    pointer-events: none;
   }
 `

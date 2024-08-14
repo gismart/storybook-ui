@@ -78,6 +78,24 @@ PrimaryNutrimate.args = {
   padding: '10px 16px',
 }
 
+export const DefaultNutrimate = Template.bind({})
+DefaultNutrimate.args = {
+  backgroundColor: '#fff',
+  border: '1px solid #e9e9e9',
+  borderRadius: '30px',
+  color: '#98bf36',
+  children: 'Continue',
+  disableBackgroundColor: '#cacaca',
+  disableColor: '#fff',
+  fontSize: '17px',
+  fontWeight: '700',
+  height: '56px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '10px 16px',
+}
+
 export const PrimaryFitme = Template.bind({})
 PrimaryFitme.args = {
   backgroundColor: '#8378EF',
