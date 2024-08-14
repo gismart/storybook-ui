@@ -30,6 +30,10 @@ export interface IButtonProps
    */
   disableBackgroundColor?: string
   /**
+   * What font color to use when disable
+   */
+  disableColor?: string
+  /**
    * Custom styles
    */
   style?: {
@@ -39,7 +43,8 @@ export interface IButtonProps
 
 export const enum buttonTheme {
   DANCEBIT = 'dancebitPrimary',
-  NUTRIMATE = 'nutrimate',
+  NUTRIMATE_PRIMARY = 'nutrimatePrimary',
+  NUTRIMATE_DEFAULT = 'nutrimateDefault',
   FITMI = 'fitmePrimary',
 }
 
@@ -60,6 +65,21 @@ const buttonThemes: Record<string, any> = {
     backgroundColor: '#a9cd50',
     borderRadius: '30px',
     disableBackgroundColor: '#cacaca',
+    fontSize: '17px',
+    fontWeight: '700',
+    height: '56px',
+    isFullWidth: true,
+    lineHeight: '24px',
+    maxWidth: '343px',
+    padding: '10px 16px',
+  },
+  nutrimateDefault: {
+    backgroundColor: '#fff',
+    border: '1px solid #e9e9e9',
+    borderRadius: '30px',
+    color: '#98bf36',
+    disableBackgroundColor: '#cacaca',
+    disableColor: '#fff',
     fontSize: '17px',
     fontWeight: '700',
     height: '56px',
