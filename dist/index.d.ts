@@ -500,7 +500,8 @@ interface IProps$1 extends IInputProps, ILabelProps$1, IWrapperProps, Omit<Input
 declare const Input: React.FC<IProps$1 & IThemedComponent>;
 
 declare const enum InputWithFloatPlaceholderTheme {
-    DANCEBIT = "dancebit"
+    DANCEBIT = "dancebit",
+    NUTRIMATE = "nutrimate"
 }
 interface ILabelProps {
     leftLabelPosition?: string;
