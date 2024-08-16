@@ -92,8 +92,17 @@ export const InputWithFloatPlaceholderBase: React.FC<IProps> = ({
     marginBottom={marginBottom}
     {...props}
   >
-    <S.Input required type={type} height={height} value={value} {...props} />
-    <S.Label hasValue={!!value}>{label}</S.Label>
+    <S.Input
+      required
+      type={type}
+      height={height}
+      value={value}
+      ref={props.inputRef}
+      {...props}
+    />
+    <S.Label hasValue={!!value} {...props}>
+      {label}
+    </S.Label>
     {hasValidationIcon && (
       <>
         {value && isValid && checkIconSvg && (
