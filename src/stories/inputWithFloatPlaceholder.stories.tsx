@@ -55,3 +55,10 @@ DancebitInput.args = {
   isValid: true,
   theme: InputWithFloatPlaceholderTheme.DANCEBIT,
 }
+
+export const NutrimateInput = Template.bind({})
+NutrimateInput.args = {
+  value: 'some value',
+  isValid: false,
+  theme: InputWithFloatPlaceholderTheme.NUTRIMATE,
+}
