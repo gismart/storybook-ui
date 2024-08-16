@@ -2,7 +2,8 @@ import React, { InputHTMLAttributes, RefObject } from 'react';
 import { IThemedComponent } from '../../models/common';
 import { IInputProps } from '../../models/input';
 export declare const enum InputWithFloatPlaceholderTheme {
-    DANCEBIT = "dancebit"
+    DANCEBIT = "dancebit",
+    NUTRIMATE = "nutrimate"
 }
 export interface ILabelProps {
     leftLabelPosition?: string;
