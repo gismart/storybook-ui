@@ -26,6 +26,7 @@ export interface IProps
   isContentCentered?: boolean
   iconSrc?: string
   marginBottom?: number
+  backgroundColor?: string
   checkIconSvg?: string
   crossIconSvg?: string
 }
@@ -84,12 +85,14 @@ export const InputWithFloatPlaceholderBase: React.FC<IProps> = ({
   hasValidationIcon = false,
   checkIconSvg,
   crossIconSvg,
+  backgroundColor = '#fff',
   ...props
 }) => (
   <S.Wrapper
     data-valid={isValid}
     data-validation-text={validationText}
     marginBottom={marginBottom}
+    backgroundColor={backgroundColor}
     {...props}
   >
     <S.Input
@@ -98,6 +101,7 @@ export const InputWithFloatPlaceholderBase: React.FC<IProps> = ({
       height={height}
       value={value}
       ref={props.inputRef}
+      backgroundColor={backgroundColor}
       {...props}
     />
     <S.Label hasValue={!!value} {...props}>

@@ -13,6 +13,7 @@ export const StyledInputWithFloatPlaceholder = {
     position: relative;
     display: block;
     margin-bottom: ${({ marginBottom }) => `${marginBottom}px`};
+    background-color: ${({ backgroundColor }) => backgroundColor || '#ffffff'};
 
     &::after {
       display: block;
