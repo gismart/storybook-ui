@@ -11,6 +11,7 @@ export const enum answerTheme {
   LUVLY = 'luvly',
   NUTRIMATE = 'nutrimate',
   FITME = 'fitme',
+  CARDIMATE = 'cardimate',
 }
 
 const answerThemes: Record<string, Record<string, string | boolean>> = {
@@ -76,6 +77,23 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     activeBorder: '2px solid #8378EF',
     boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03)',
     activeBoxShadow: 'none',
+    borderRadius: '16px',
+    padding: '0 16px',
+    type: 'checkbox',
+  },
+  cardimate: {
+    height: '80px',
+    isFullWidth: true,
+    maxWidth: '343px',
+    fontSize: '17px',
+    fontWeight: '700',
+    lineHeight: '24px',
+    color: '#2C3131',
+    activeColor: '#2C3131',
+    backgroundColor: '#F2F3F5',
+    activeBackgroundColor: 'rgba(53, 179, 229, 0.12)',
+    border: '1px solid #E9E9E9',
+    activeBorder: '1px solid #35B3E5',
     borderRadius: '16px',
     padding: '0 16px',
     type: 'checkbox',

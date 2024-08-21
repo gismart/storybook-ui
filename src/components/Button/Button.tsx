@@ -46,6 +46,7 @@ export const enum buttonTheme {
   NUTRIMATE_PRIMARY = 'nutrimatePrimary',
   NUTRIMATE_DEFAULT = 'nutrimateDefault',
   FITMI = 'fitmePrimary',
+  CARDIMATE = 'cardimate',
 }
 
 const buttonThemes: Record<string, any> = {
@@ -90,6 +91,18 @@ const buttonThemes: Record<string, any> = {
   },
   fitmePrimary: {
     backgroundColor: '#8378EF',
+    borderRadius: '30px',
+    disableBackgroundColor: '#cacaca',
+    fontSize: '17px',
+    fontWeight: '700',
+    height: '56px',
+    isFullWidth: true,
+    lineHeight: '24px',
+    maxWidth: '343px',
+    padding: '10px 16px',
+  },
+  cardimatePrimary: {
+    backgroundColor: '#E74C3C',
     borderRadius: '30px',
     disableBackgroundColor: '#cacaca',
     fontSize: '17px',

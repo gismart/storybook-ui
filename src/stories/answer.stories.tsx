@@ -149,3 +149,24 @@ SimpleFitme.args = {
   children: 'No, I have never heard about chair yoga',
   value: 'never',
 }
+
+export const SimpleCardimate = Template.bind({})
+SimpleCardimate.args = {
+  height: '80px',
+  isFullWidth: true,
+  maxWidth: '343px',
+  fontSize: '17px',
+  fontWeight: '700',
+  lineHeight: '24px',
+  color: '#2C3131',
+  activeColor: '#2C3131',
+  backgroundColor: '#F2F3F5',
+  activeBackgroundColor: 'rgba(53, 179, 229, 0.12)',
+  border: '1px solid #E9E9E9',
+  activeBorder: '1px solid #35B3E5',
+  borderRadius: '16px',
+  padding: '0 16px',
+  type: 'checkbox',
+  children: 'Female',
+  value: 'female',
+}
