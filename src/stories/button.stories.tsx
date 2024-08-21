@@ -110,3 +110,18 @@ PrimaryFitme.args = {
   padding: '10px 16px',
   children: 'Continue',
 }
+
+export const PrimaryCardimate = Template.bind({})
+PrimaryCardimate.args = {
+  backgroundColor: '#E74C3C',
+  borderRadius: '30px',
+  disableBackgroundColor: '#cacaca',
+  fontSize: '17px',
+  fontWeight: '700',
+  height: '56px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '10px 16px',
+  children: 'Continue',
+}
