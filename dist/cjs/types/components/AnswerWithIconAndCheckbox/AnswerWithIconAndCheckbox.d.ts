@@ -68,6 +68,7 @@ export interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
 export declare const enum answerWithIconAndCheckboxTheme {
     DANCEBIT = "dancebit",
     NUTRIMATE = "nutrimate",
-    FITME = "fitme"
+    FITME = "fitme",
+    CARDIMATE = "cardimate"
 }
 export declare const AnswerWithIconAndCheckbox: React.FC<IAnswerWithIconAndCheckboxProps & IAnswerWithIconAndCheckboxImageProps & IOptionProps & ICheckboxProps & IAnswerWithIconAndCheckboxContentProps & IThemedComponent>;

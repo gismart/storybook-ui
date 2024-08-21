@@ -6,6 +6,7 @@ export declare const enum answerTheme {
     DANCEBIT = "dancebit",
     LUVLY = "luvly",
     NUTRIMATE = "nutrimate",
-    FITME = "fitme"
+    FITME = "fitme",
+    CARDIMATE = "cardimate"
 }
 export declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent>;

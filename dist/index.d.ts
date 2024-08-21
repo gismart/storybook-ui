@@ -162,7 +162,8 @@ declare const enum answerTheme {
     DANCEBIT = "dancebit",
     LUVLY = "luvly",
     NUTRIMATE = "nutrimate",
-    FITME = "fitme"
+    FITME = "fitme",
+    CARDIMATE = "cardimate"
 }
 declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent>;
 
@@ -214,7 +215,8 @@ interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
 declare const enum answerWithCheckboxTheme {
     DANCEBIT = "dancebit",
     NUTRIMATE = "nutrimate",
-    FITME = "fitme"
+    FITME = "fitme",
+    CARDIMATE = "cardimate"
 }
 declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps$1 & IAnswerWithCheckboxContentProps & IThemedComponent>;
 
@@ -324,7 +326,8 @@ interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
 declare const enum answerWithIconAndCheckboxTheme {
     DANCEBIT = "dancebit",
     NUTRIMATE = "nutrimate",
-    FITME = "fitme"
+    FITME = "fitme",
+    CARDIMATE = "cardimate"
 }
 declare const AnswerWithIconAndCheckbox: React.FC<IAnswerWithIconAndCheckboxProps & IAnswerWithIconAndCheckboxImageProps & IOptionProps & ICheckboxProps & IAnswerWithIconAndCheckboxContentProps & IThemedComponent>;
 
@@ -367,7 +370,8 @@ declare const enum buttonTheme {
     DANCEBIT = "dancebitPrimary",
     NUTRIMATE_PRIMARY = "nutrimatePrimary",
     NUTRIMATE_DEFAULT = "nutrimateDefault",
-    FITMI = "fitmePrimary"
+    FITMI = "fitmePrimary",
+    CARDIMATE = "cardimate"
 }
 declare const Button: React.FC<IButtonProps>;
 
