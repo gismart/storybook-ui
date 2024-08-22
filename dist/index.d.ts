@@ -371,7 +371,7 @@ declare const enum buttonTheme {
     NUTRIMATE_PRIMARY = "nutrimatePrimary",
     NUTRIMATE_DEFAULT = "nutrimateDefault",
     FITMI = "fitmePrimary",
-    CARDIMATE = "cardimate"
+    CARDIMATE = "cardimatePrimary"
 }
 declare const Button: React.FC<IButtonProps>;
 

@@ -37,6 +37,6 @@ export declare const enum buttonTheme {
     NUTRIMATE_PRIMARY = "nutrimatePrimary",
     NUTRIMATE_DEFAULT = "nutrimateDefault",
     FITMI = "fitmePrimary",
-    CARDIMATE = "cardimate"
+    CARDIMATE = "cardimatePrimary"
 }
 export declare const Button: React.FC<IButtonProps>;
