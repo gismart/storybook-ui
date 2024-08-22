@@ -439,6 +439,11 @@ interface IInputProps extends IColorsProps, IFontsProps, IDimensionsProps {
      */
     label?: string;
     /**
+     * Input label short text
+     */
+    shortLabel?: string;
+    /**
+    /**
      * Label size in px
      */
     labelFontSize?: string;
