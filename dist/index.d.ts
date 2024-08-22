@@ -520,6 +520,7 @@ interface IProps extends IInputProps, ILabelProps, Omit<InputHTMLAttributes<HTML
     isContentCentered?: boolean;
     iconSrc?: string;
     marginBottom?: number;
+    backgroundColor?: string;
     checkIconSvg?: string;
     crossIconSvg?: string;
 }
