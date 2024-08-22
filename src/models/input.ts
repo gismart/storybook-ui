@@ -29,6 +29,11 @@ export interface IInputProps
    */
   label?: string
   /**
+   * Input label short text
+   */
+  shortLabel?: string
+  /**
+  /**
    * Label size in px
    */
   labelFontSize?: string

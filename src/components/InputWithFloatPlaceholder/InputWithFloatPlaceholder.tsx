@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, RefObject } from 'react'
+import React, { InputHTMLAttributes, RefObject, useMemo } from 'react'
 
 import { IThemedComponent } from '../../models/common'
 import { IInputProps } from '../../models/input'
@@ -76,6 +76,7 @@ const inputThemes: Record<string, any> = {
 export const InputWithFloatPlaceholderBase: React.FC<IProps> = ({
   value,
   label,
+  shortLabel = '',
   isValid = true,
   validationText = '',
   type = 'text',
@@ -87,39 +88,48 @@ export const InputWithFloatPlaceholderBase: React.FC<IProps> = ({
   crossIconSvg,
   backgroundColor = '#fff',
   ...props
-}) => (
-  <S.Wrapper
-    data-valid={isValid}
-    data-validation-text={validationText}
-    marginBottom={marginBottom}
-    backgroundColor={backgroundColor}
-    {...props}
-  >
-    <S.Input
-      required
-      type={type}
-      height={height}
-      value={value}
-      ref={props.inputRef}
+}) => {
+  const labelToShow = useMemo(() => {
+    if (shortLabel) {
+      return value ? shortLabel : label
+    }
+    return label
+  }, [label, shortLabel, value])
+
+  return (
+    <S.Wrapper
+      data-valid={isValid}
+      data-validation-text={validationText}
+      marginBottom={marginBottom}
       backgroundColor={backgroundColor}
       {...props}
-    />
-    <S.Label hasValue={!!value} {...props}>
-      {label}
-    </S.Label>
-    {hasValidationIcon && (
-      <>
-        {value && isValid && checkIconSvg && (
-          <S.Icon src={checkIconSvg} alt="check-icon" />
-        )}
-        {value && !isValid && crossIconSvg && (
-          <S.Icon src={crossIconSvg} alt="cross-icon" />
-        )}
-      </>
-    )}
-    {iconSrc && <S.Icon src={iconSrc} alt="input-icon" />}
-  </S.Wrapper>
-)
+    >
+      <S.Input
+        required
+        type={type}
+        height={height}
+        value={value}
+        ref={props.inputRef}
+        backgroundColor={backgroundColor}
+        {...props}
+      />
+      <S.Label hasValue={!!value} {...props}>
+        {labelToShow}
+      </S.Label>
+      {hasValidationIcon && (
+        <>
+          {value && isValid && checkIconSvg && (
+            <S.Icon src={checkIconSvg} alt="check-icon" />
+          )}
+          {value && !isValid && crossIconSvg && (
+            <S.Icon src={crossIconSvg} alt="cross-icon" />
+          )}
+        </>
+      )}
+      {iconSrc && <S.Icon src={iconSrc} alt="input-icon" />}
+    </S.Wrapper>
+  )
+}
 
 export const InputWithFloatPlaceholder: React.FC<IProps & IThemedComponent> = ({
   theme,
