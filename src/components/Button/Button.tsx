@@ -46,7 +46,7 @@ export const enum buttonTheme {
   NUTRIMATE_PRIMARY = 'nutrimatePrimary',
   NUTRIMATE_DEFAULT = 'nutrimateDefault',
   FITMI = 'fitmePrimary',
-  CARDIMATE = 'cardimate',
+  CARDIMATE = 'cardimatePrimary',
 }
 
 const buttonThemes: Record<string, any> = {
