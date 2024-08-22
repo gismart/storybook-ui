@@ -18,6 +18,7 @@ export interface IProps extends IInputProps, ILabelProps, Omit<InputHTMLAttribut
     isContentCentered?: boolean;
     iconSrc?: string;
     marginBottom?: number;
+    backgroundColor?: string;
     checkIconSvg?: string;
     crossIconSvg?: string;
 }
