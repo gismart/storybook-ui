@@ -62,3 +62,10 @@ NutrimateInput.args = {
   isValid: false,
   theme: InputWithFloatPlaceholderTheme.NUTRIMATE,
 }
+
+export const CardimateInput = Template.bind({})
+CardimateInput.args = {
+  value: 'some value',
+  isValid: false,
+  theme: InputWithFloatPlaceholderTheme.CARDIMATE,
+}
