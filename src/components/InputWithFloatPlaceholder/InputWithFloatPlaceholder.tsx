@@ -7,6 +7,7 @@ import { StyledInputWithFloatPlaceholder as S } from './InputWithFloatPlaceholde
 export const enum InputWithFloatPlaceholderTheme {
   DANCEBIT = 'dancebit',
   NUTRIMATE = 'nutrimate',
+  CARDIMATE = 'cardimate',
 }
 
 export interface ILabelProps {
@@ -68,6 +69,26 @@ const inputThemes: Record<string, any> = {
     focusedLabelColor: '#626262',
     labelColor: '#626262',
     labelFontSize: '16px',
+    labelFontWeight: '400',
+    labelLineHeight: '18px',
+  },
+  cardimate: {
+    maxWidth: '343px',
+    width: '100%',
+    label: 'Your name',
+    color: '#000',
+    fontSize: '17px',
+    fontWeight: '400',
+    lineHeight: '24px',
+    borderRadius: '16px',
+    backgroundColor: '#FFF',
+    border: '1px solid #cacaca',
+    padding: '32px 16px 8px',
+    hasValidationIcon: false,
+    focusedLabelFontSize: '14px',
+    focusedLabelColor: '#626262',
+    labelColor: '#626262',
+    labelFontSize: '17px',
     labelFontWeight: '400',
     labelLineHeight: '18px',
   },
