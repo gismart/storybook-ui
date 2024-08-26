@@ -510,7 +510,8 @@ declare const Input: React.FC<IProps$1 & IThemedComponent>;
 
 declare const enum InputWithFloatPlaceholderTheme {
     DANCEBIT = "dancebit",
-    NUTRIMATE = "nutrimate"
+    NUTRIMATE = "nutrimate",
+    CARDIMATE = "cardimate"
 }
 interface ILabelProps {
     leftLabelPosition?: string;

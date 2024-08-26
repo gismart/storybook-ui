@@ -3,7 +3,8 @@ import { IThemedComponent } from '../../models/common';
 import { IInputProps } from '../../models/input';
 export declare const enum InputWithFloatPlaceholderTheme {
     DANCEBIT = "dancebit",
-    NUTRIMATE = "nutrimate"
+    NUTRIMATE = "nutrimate",
+    CARDIMATE = "cardimate"
 }
 export interface ILabelProps {
     leftLabelPosition?: string;
