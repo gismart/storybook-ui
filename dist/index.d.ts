@@ -529,6 +529,7 @@ interface IProps extends IInputProps, ILabelProps, Omit<InputHTMLAttributes<HTML
     backgroundColor?: string;
     checkIconSvg?: string;
     crossIconSvg?: string;
+    validationIconSize?: number;
 }
 declare const InputWithFloatPlaceholder: React.FC<IProps & IThemedComponent>;
 
