@@ -30,6 +30,7 @@ export interface IProps
   backgroundColor?: string
   checkIconSvg?: string
   crossIconSvg?: string
+  validationIconSize?: number
 }
 
 const inputThemes: Record<string, any> = {
@@ -83,7 +84,7 @@ const inputThemes: Record<string, any> = {
     borderRadius: '16px',
     backgroundColor: '#FFF',
     border: '1px solid #cacaca',
-    padding: '32px 16px 8px',
+    padding: '28px 16px 8px',
     hasValidationIcon: false,
     focusedLabelFontSize: '14px',
     focusedLabelColor: '#626262',
@@ -105,6 +106,7 @@ export const InputWithFloatPlaceholderBase: React.FC<IProps> = ({
   marginBottom = 0,
   height = '60px',
   hasValidationIcon = false,
+  validationIconSize = 20,
   checkIconSvg,
   crossIconSvg,
   backgroundColor = '#fff',
@@ -140,10 +142,18 @@ export const InputWithFloatPlaceholderBase: React.FC<IProps> = ({
       {hasValidationIcon && (
         <>
           {value && isValid && checkIconSvg && (
-            <S.Icon src={checkIconSvg} alt="check-icon" />
+            <S.Icon
+              src={checkIconSvg}
+              alt="check-icon"
+              validationIconSize={validationIconSize}
+            />
           )}
           {value && !isValid && crossIconSvg && (
-            <S.Icon src={crossIconSvg} alt="cross-icon" />
+            <S.Icon
+              src={crossIconSvg}
+              alt="cross-icon"
+              validationIconSize={validationIconSize}
+            />
           )}
         </>
       )}
