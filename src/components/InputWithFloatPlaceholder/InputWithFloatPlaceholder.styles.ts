@@ -19,11 +19,11 @@ export const StyledInputWithFloatPlaceholder = {
       display: block;
       position: absolute;
       left: 16px;
+      bottom: -20px;
       color: ${({ errorMessageColor }) => errorMessageColor || '#f83b00'};
       font-size: 14px;
       font-weight: 400;
       line-height: 18px;
-      margin-top: 6px;
     }
 
     &[data-valid='false']::after {
@@ -68,12 +68,12 @@ export const StyledInputWithFloatPlaceholder = {
     pointer-events: none;
     cursor: text;
   `,
-  Icon: styled.img`
+  Icon: styled.img<IProps>`
     position: absolute;
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    width: ${({ validationIconSize }) => `${validationIconSize}px`};
+    height: ${({ validationIconSize }) => `${validationIconSize}px`};
   `,
 }
