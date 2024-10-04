@@ -71,7 +71,7 @@ export const StyledPostPaymentProgressBar = {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    transition: background 0.2s linear;
+    transition: background 0.25s linear;
     ${CommonColorsStyles}
 
     ${({ isActive, activeColor, activeBackground, activeBoxShadow }) =>
