@@ -84,6 +84,25 @@ SimpleLuvly.args = {
   padding: '0 15px',
   value: 'User answer',
 }
+export const AccountLuvly = Template.bind({})
+AccountLuvly.args = {
+  children: `It's difficult to stay on track and find motivation to keep going`,
+  type: 'checkbox',
+  boxShadow: 'none',
+  isFullWidth: true,
+  maxWidth: '311px',
+  height: '80px',
+  backgroundColor: '#f2f3f5',
+  activeBackgroundColor: 'rgba(255, 130, 118, 0.12)',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #ff8276',
+  color: '#17202a',
+  activeColor: '#17202a',
+  fontSize: '17px',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  padding: '0 17px',
+}
 
 export const SimpleDanceBit = Template.bind({})
 SimpleDanceBit.args = {
@@ -106,6 +125,26 @@ SimpleDanceBit.args = {
   activeColor: '#17202A',
 }
 
+export const AccountDanceBit = Template.bind({})
+AccountDanceBit.args = {
+  children: 'The challenge is overwhelming and requires too much effort',
+  type: 'checkbox',
+  boxShadow: 'none',
+  isFullWidth: true,
+  maxWidth: '311px',
+  height: '80px',
+  backgroundColor: '#f2f3f5',
+  activeBackgroundColor: '#eaf7ff',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #03aaf5',
+  color: '#17202a',
+  activeColor: '#17202a',
+  fontSize: '17px',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  padding: '0 17px',
+}
+
 export const SimpleNutrimate = Template.bind({})
 SimpleNutrimate.args = {
   activeBackgroundColor: 'rgba(169, 205, 80, 0.2)',
@@ -125,6 +164,26 @@ SimpleNutrimate.args = {
   padding: '0 16px',
   type: 'checkbox',
   value: 'Less than a year ago',
+}
+
+export const AccountNutrimate = Template.bind({})
+AccountNutrimate.args = {
+  children: 'The challenge is overwhelming and requires too much effort',
+  type: 'checkbox',
+  boxShadow: 'none',
+  isFullWidth: true,
+  maxWidth: '311px',
+  height: '80px',
+  backgroundColor: '#fff',
+  activeBackgroundColor: 'rgba(169, 205, 80, 0.20)',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #a9cd50',
+  color: '#2c3131',
+  activeColor: '#2c3131',
+  fontSize: '17px',
+  lineHeight: '24px',
+  borderRadius: '48px',
+  padding: '0 17px',
 }
 
 export const SimpleFitme = Template.bind({})

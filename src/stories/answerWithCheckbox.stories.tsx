@@ -132,6 +132,39 @@ const Template: ComponentStory<typeof AnswerWithCheckbox> = (args) => (
 )
 
 // 👇 Each story then reuses that template
+
+export const AccountLulvyCheckbox = Template.bind({})
+AccountLulvyCheckbox.args = {
+  children: (
+    <span>
+      Get a smaller <br /> waist
+    </span>
+  ),
+  type: 'checkbox',
+  isFullWidth: true,
+  maxWidth: '311px',
+  height: '80px',
+  backgroundColor: '#f2f3f5',
+  activeBackgroundColor: 'rgba(255, 130, 118, 0.12)',
+  color: '#17202a',
+  fontSize: '17px',
+  fontWeight: '400',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  padding: '0 17px',
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  checkboxWidth: '22px',
+  checkboxHeight: '22px',
+  checkboxBorderRadius: '6px',
+  checkboxBorder: '1px solid #e9e9e9',
+  checkboxBackgroundActiveColor: '#ff8276',
+  reverse: true,
+  activeColor: '#17202a',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #ff8276',
+  iconSrc: checkIconWhite,
+  checkboxActiveBorder: '1px solid transparent',
+}
 export const DancebitCheckbox = Template.bind({})
 DancebitCheckbox.args = {
   children: (
@@ -167,6 +200,39 @@ DancebitCheckbox.args = {
   checkboxActiveBorder: '1px solid transparent',
 }
 
+export const AccountDancebitCheckbox = Template.bind({})
+AccountDancebitCheckbox.args = {
+  children: (
+    <span>
+      Get a smaller <br /> waist
+    </span>
+  ),
+  type: 'checkbox',
+  isFullWidth: true,
+  maxWidth: '311px',
+  height: '80px',
+  backgroundColor: '#f2f3f5',
+  activeBackgroundColor: '#eaf7ff',
+  color: '#17202a',
+  fontSize: '17px',
+  fontWeight: '400',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  padding: '0 17px',
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  checkboxWidth: '22px',
+  checkboxHeight: '22px',
+  checkboxBorderRadius: '6px',
+  checkboxBorder: '1px solid #e9e9e9',
+  checkboxBackgroundActiveColor: '#03aaf5',
+  reverse: true,
+  activeColor: '#17202a',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #03aaf5',
+  iconSrc: checkIconWhite,
+  checkboxActiveBorder: '1px solid transparent',
+}
+
 export const NutrimateCheckbox = Template.bind({})
 NutrimateCheckbox.args = {
   activeBackgroundColor: 'rgba(169, 205, 80, 0.2)',
@@ -196,6 +262,39 @@ NutrimateCheckbox.args = {
   spacingBetweenCheckboxAndContent: '0 16px 0 0',
   value: 'whole_body',
   type: 'checkbox',
+}
+
+export const AccountNutrimateCheckbox = Template.bind({})
+AccountNutrimateCheckbox.args = {
+  children: (
+    <span>
+      Get a smaller <br /> waist
+    </span>
+  ),
+  type: 'checkbox',
+  isFullWidth: true,
+  maxWidth: '311px',
+  height: '80px',
+  backgroundColor: '#fff',
+  activeBackgroundColor: 'rgba(169, 205, 80, 0.20)',
+  color: '#2c3131',
+  fontSize: '17px',
+  fontWeight: '400',
+  lineHeight: '24px',
+  borderRadius: '48px',
+  padding: '0 17px',
+  spacingBetweenCheckboxAndContent: '0 0 0 16px',
+  checkboxWidth: '22px',
+  checkboxHeight: '22px',
+  checkboxBorderRadius: '6px',
+  checkboxBorder: '1px solid #e9e9e9',
+  checkboxBackgroundActiveColor: '#a9cd50',
+  reverse: false,
+  activeColor: '#2c3131',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #a9cd50',
+  iconSrc: checkIconWhite,
+  checkboxActiveBorder: '1px solid transparent',
 }
 
 export const FitmeCheckbox = Template.bind({})
