@@ -68,8 +68,11 @@ export interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
 }
 
 export const enum answerWithCheckboxTheme {
+  ACCOUNT_LUVLY = 'accountLuvly',
   DANCEBIT = 'dancebit',
+  ACCOUNT_DANCEBIT = 'accountDancebit',
   NUTRIMATE = 'nutrimate',
+  ACCOUNT_NUTRIMATE = 'accountNutrimate',
   FITME = 'fitme',
   CARDIMATE = 'cardimate',
 }
@@ -91,6 +94,7 @@ const answerWithCheckboxThemes: Record<
     lineHeight: '24px',
     borderRadius: '16px',
     padding: '0 17px',
+    margin: '0 0 16px',
     spacingBetweenCheckboxAndContent: '0 16px 0 0',
     checkboxWidth: '22px',
     checkboxHeight: '22px',
@@ -143,6 +147,7 @@ const answerWithCheckboxThemes: Record<
     lineHeight: '24px',
     borderRadius: '16px',
     padding: '0 17px',
+    margin: '0 0 16px',
     spacingBetweenCheckboxAndContent: '0 16px 0 0',
     checkboxWidth: '22px',
     checkboxHeight: '22px',
@@ -196,6 +201,7 @@ const answerWithCheckboxThemes: Record<
     lineHeight: '24px',
     borderRadius: '48px',
     padding: '0 17px',
+    margin: '0 0 16px',
     spacingBetweenCheckboxAndContent: '0 0 0 16px',
     checkboxWidth: '22px',
     checkboxHeight: '22px',

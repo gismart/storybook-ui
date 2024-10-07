@@ -102,6 +102,7 @@ AccountLuvly.args = {
   lineHeight: '24px',
   borderRadius: '16px',
   padding: '0 17px',
+  margin: '0 0 16px',
 }
 
 export const SimpleDanceBit = Template.bind({})
@@ -143,6 +144,7 @@ AccountDanceBit.args = {
   lineHeight: '24px',
   borderRadius: '16px',
   padding: '0 17px',
+  margin: '0 0 16px',
 }
 
 export const SimpleNutrimate = Template.bind({})
@@ -184,6 +186,7 @@ AccountNutrimate.args = {
   lineHeight: '24px',
   borderRadius: '48px',
   padding: '0 17px',
+  margin: '0 0 16px',
 }
 
 export const SimpleFitme = Template.bind({})
