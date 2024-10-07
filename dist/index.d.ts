@@ -160,8 +160,11 @@ declare const Option: React.FC<IOptionProps>;
 
 declare const enum answerTheme {
     DANCEBIT = "dancebit",
+    ACCOUNT_DANCEBIT = "accountDancebit",
     LUVLY = "luvly",
+    ACCOUNT_LUVLY = "accountLuvly",
     NUTRIMATE = "nutrimate",
+    ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
     CARDIMATE = "cardimate"
 }
@@ -213,8 +216,11 @@ interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
     reverse?: boolean;
 }
 declare const enum answerWithCheckboxTheme {
+    ACCOUNT_LUVLY = "accountLuvly",
     DANCEBIT = "dancebit",
+    ACCOUNT_DANCEBIT = "accountDancebit",
     NUTRIMATE = "nutrimate",
+    ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
     CARDIMATE = "cardimate"
 }
