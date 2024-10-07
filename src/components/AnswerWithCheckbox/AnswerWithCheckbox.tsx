@@ -84,7 +84,6 @@ const answerWithCheckboxThemes: Record<
   accountLuvly: {
     type: 'checkbox',
     isFullWidth: true,
-    maxWidth: '311px',
     height: '80px',
     backgroundColor: '#f2f3f5',
     activeBackgroundColor: 'rgba(255, 130, 118, 0.12)',
@@ -137,7 +136,6 @@ const answerWithCheckboxThemes: Record<
   accountDancebit: {
     type: 'checkbox',
     isFullWidth: true,
-    maxWidth: '311px',
     height: '80px',
     backgroundColor: '#f2f3f5',
     activeBackgroundColor: '#eaf7ff',
@@ -191,7 +189,6 @@ const answerWithCheckboxThemes: Record<
   accountNutrimate: {
     type: 'checkbox',
     isFullWidth: true,
-    maxWidth: '311px',
     height: '80px',
     backgroundColor: '#fff',
     activeBackgroundColor: 'rgba(169, 205, 80, 0.20)',
