@@ -8,8 +8,11 @@ import { StyledAnswer as S } from './Answer.styles'
 
 export const enum answerTheme {
   DANCEBIT = 'dancebit',
+  ACCOUNT_DANCEBIT = 'accountDancebit',
   LUVLY = 'luvly',
+  ACCOUNT_LUVLY = 'accountLuvly',
   NUTRIMATE = 'nutrimate',
+  ACCOUNT_NUTRIMATE = 'accountNutrimate',
   FITME = 'fitme',
   CARDIMATE = 'cardimate',
 }
@@ -47,6 +50,7 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     lineHeight: '24px',
     borderRadius: '16px',
     padding: '0 17px',
+    margin: '0 0 16px',
     value: 'User answer',
   },
   luvly: {
@@ -79,6 +83,7 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     lineHeight: '24px',
     borderRadius: '16px',
     padding: '0 17px',
+    margin: '0 0 16px',
     value: 'User answer',
   },
   nutrimate: {
@@ -114,6 +119,7 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     lineHeight: '24px',
     borderRadius: '48px',
     padding: '0 17px',
+    margin: '0 0 16px',
     value: 'User answer',
   },
   fitme: {
