@@ -48,8 +48,11 @@ export interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
     reverse?: boolean;
 }
 export declare const enum answerWithCheckboxTheme {
+    ACCOUNT_LUVLY = "accountLuvly",
     DANCEBIT = "dancebit",
+    ACCOUNT_DANCEBIT = "accountDancebit",
     NUTRIMATE = "nutrimate",
+    ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
     CARDIMATE = "cardimate"
 }
