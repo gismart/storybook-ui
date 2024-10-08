@@ -194,7 +194,7 @@ const answerWithCheckboxThemes: Record<
     activeBackgroundColor: 'rgba(169, 205, 80, 0.20)',
     color: '#2c3131',
     fontSize: '17px',
-    fontWeight: '400',
+    fontWeight: '600',
     lineHeight: '24px',
     borderRadius: '48px',
     padding: '0 17px',
