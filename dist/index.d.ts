@@ -373,6 +373,7 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, IFontsPr
     };
 }
 declare const enum buttonTheme {
+    LUVLY = "luvlyPrimary",
     DANCEBIT = "dancebitPrimary",
     NUTRIMATE_PRIMARY = "nutrimatePrimary",
     NUTRIMATE_DEFAULT = "nutrimateDefault",
