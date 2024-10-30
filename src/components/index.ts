@@ -18,3 +18,4 @@ export {
 export { Option } from './Option'
 export { Select } from './Select'
 export { CircleProgress } from './CircleProgress'
+export { AnswerAccordion, answerAccordionTheme } from './AnswerAccordion'
