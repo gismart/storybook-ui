@@ -510,5 +510,28 @@ import{jsxs as e,jsx as t,Fragment as n}from"react/jsx-runtime";import*as r from
       font-size: ${({percentageFontSize:e})=>e||"32px"};
       font-weight: ${({percentageFontWeight:e})=>e||700};
     }
-  `},ol=({value:n,height:r,margin:o,strokeColorEmpty:a,strokeColorFilled:i,radius:l,fontSize:u,fontWeight:s,color:c,percentageFontSize:d,percentageFontWeight:f})=>e(rl.Container,{height:r,margin:o,children:[e(rl.Svg,{viewBox:"0 0 100 100",value:n,strokeColorEmpty:a,strokeColorFilled:i,radius:l,children:[t("circle",{r:"45",cx:"50",cy:"50"}),t("circle",{r:"45",cx:"50",cy:"50"})]}),e(rl.Label,{fontSize:u,fontWeight:s,color:c,percentageFontSize:d,percentageFontWeight:f,children:[n,t("strong",{children:"%"})]})]});export{yt as Answer,It as AnswerWithCheckbox,Nt as AnswerWithIcon,Lt as AnswerWithIconAndCheckbox,Gt as Button,jt as ButtonWithIcon,ol as CircleProgress,qt as Input,on as InputWithFloatPlaceholder,tn as InputWithFloatPlaceholderTheme,dt as Option,tl as Select,vt as answerTheme,kt as answerWithCheckboxTheme,zt as answerWithIconAndCheckboxTheme,Rt as answerWithIconTheme,Wt as buttonTheme,$t as inputTheme};
+  `},ol=({value:n,height:r,margin:o,strokeColorEmpty:a,strokeColorFilled:i,radius:l,fontSize:u,fontWeight:s,color:c,percentageFontSize:d,percentageFontWeight:f})=>e(rl.Container,{height:r,margin:o,children:[e(rl.Svg,{viewBox:"0 0 100 100",value:n,strokeColorEmpty:a,strokeColorFilled:i,radius:l,children:[t("circle",{r:"45",cx:"50",cy:"50"}),t("circle",{r:"45",cx:"50",cy:"50"})]}),e(rl.Label,{fontSize:u,fontWeight:s,color:c,percentageFontSize:d,percentageFontWeight:f,children:[n,t("strong",{children:"%"})]})]}),al={Root:st.div`
+    ${gt};
+
+    input:checked + & {
+      height: auto;
+    }
+
+    input:checked + & > p {
+      display: flex;
+    }
+  `,HiddenContent:st.p`
+    margin: 0;
+    display: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 12px;
+    border-top: 1px solid #d6cfe5;
+    margin-top: 12px;
+  `,Icon:st.img`
+    max-width: 100%;
+    height: auto;
+  `};var il;!function(e){e.LUVLY="luvly"}(il||(il={}));const ll={luvly:{type:"checkbox",boxShadow:"0px 4px 14px 0px rgba(8, 4, 23, 0.03)",isFullWidth:!0,height:"80px",backgroundColor:"#fff",activeBackgroundColor:"rgba(255, 130, 118, 0.12)",border:"1px solid transparent",activeBorder:"1px solid #ff8276",color:"#17202a",activeColor:"#17202a",fontSize:"17px",fontWeight:"600",lineHeight:"24px",borderRadius:"16px",padding:"0 17px",margin:"0 0 16px",maxWidth:"343px",iconHeight:"24px",spacingBetweenIconAndContent:"12px"}},ul=({theme:n,children:r,type:o,value:a,name:i,checked:l,disabled:u,onChange:s,style:c,iconSrc:d,iconWidth:f,iconMinWidth:p,iconMinHeight:h,iconHeight:g,spacingBetweenIconAndContent:m,iconAlignSelf:v,...b})=>t(dt,{value:a,name:i,type:o,checked:l,disabled:u,onChange:s,children:e(al.Root,{style:c,...n&&ll[n],...b,children:[t("div",{children:r}),e(al.HiddenContent,{children:[d&&t(al.Icon,{src:d,alt:"",style:{width:f,height:g,alignSelf:v,minHeight:h,minWidth:p,marginRight:m}}),"A sculpted, elegant chin can really boost your confidence, and Luvly will help you achieve it"]})]})});export{yt as Answer,ul as AnswerAccordion,It as AnswerWithCheckbox,Nt as AnswerWithIcon,Lt as AnswerWithIconAndCheckbox,Gt as Button,jt as ButtonWithIcon,ol as CircleProgress,qt as Input,on as InputWithFloatPlaceholder,tn as InputWithFloatPlaceholderTheme,dt as Option,tl as Select,il as answerAccordionTheme,vt as answerTheme,kt as answerWithCheckboxTheme,zt as answerWithIconAndCheckboxTheme,Rt as answerWithIconTheme,Wt as buttonTheme,$t as inputTheme};
 //# sourceMappingURL=index.js.map

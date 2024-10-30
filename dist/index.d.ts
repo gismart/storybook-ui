@@ -613,4 +613,39 @@ interface ICircleProgressProps extends IContainerProps, ISvgProps, IProgressValu
 }
 declare const CircleProgress: React.FC<ICircleProgressProps>;
 
-export { Answer, AnswerWithCheckbox, AnswerWithIcon, AnswerWithIconAndCheckbox, Button, ButtonWithIcon, CircleProgress, Input, InputWithFloatPlaceholder, InputWithFloatPlaceholderTheme, Option, Select, answerTheme, answerWithCheckboxTheme, answerWithIconAndCheckboxTheme, answerWithIconTheme, buttonTheme, inputTheme };
+declare const enum answerAccordionTheme {
+    LUVLY = "luvly"
+}
+interface IAnswerAccordionProps extends IAnswerButtonProps {
+    /**
+     * Icon path
+     */
+    iconSrc?: string;
+    /**
+     * Icon width
+     */
+    iconWidth?: string;
+    /**
+     * Icon min width
+     */
+    iconMinWidth?: string;
+    /**
+     * Icon height
+     */
+    iconHeight?: string;
+    /**
+     * Icon min height
+     */
+    iconMinHeight?: string;
+    /**
+     * Define vertical alignment for icon
+     */
+    iconAlignSelf?: 'flex-start' | 'center' | 'flex-end' | 'stretch';
+    /**
+     * Define margin between icon and text
+     */
+    spacingBetweenIconAndContent?: string;
+}
+declare const AnswerAccordion: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent & IAnswerAccordionProps>;
+
+export { Answer, AnswerAccordion, AnswerWithCheckbox, AnswerWithIcon, AnswerWithIconAndCheckbox, Button, ButtonWithIcon, CircleProgress, Input, InputWithFloatPlaceholder, InputWithFloatPlaceholderTheme, Option, Select, answerAccordionTheme, answerTheme, answerWithCheckboxTheme, answerWithIconAndCheckboxTheme, answerWithIconTheme, buttonTheme, inputTheme };
