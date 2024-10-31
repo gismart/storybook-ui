@@ -66,6 +66,10 @@ export interface IAnswerAccordionProps extends IAnswerButtonProps {
    * Define margin between icon and text
    */
   spacingBetweenIconAndContent?: string
+  /**
+   * Define hidden text
+   */
+  hiddenText?: string
 }
 
 export const AnswerAccordion: React.FC<
@@ -87,6 +91,7 @@ export const AnswerAccordion: React.FC<
   iconHeight,
   spacingBetweenIconAndContent,
   iconAlignSelf,
+  hiddenText,
   ...props
 }) => (
   <Option
@@ -118,8 +123,7 @@ export const AnswerAccordion: React.FC<
             }}
           />
         )}
-        A sculpted, elegant chin can really boost your confidence, and Luvly
-        will help you achieve it
+        {hiddenText}
       </S.HiddenContent>
     </S.Root>
   </Option>
