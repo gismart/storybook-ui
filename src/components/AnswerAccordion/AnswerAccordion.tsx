@@ -15,7 +15,6 @@ const answerAccordionThemes: Record<
   Record<string, string | boolean>
 > = {
   luvly: {
-    type: 'checkbox',
     boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03)',
     isFullWidth: true,
     height: '80px',
@@ -26,10 +25,10 @@ const answerAccordionThemes: Record<
     color: '#17202a',
     activeColor: '#17202a',
     fontSize: '17px',
-    fontWeight: '600',
+    fontWeight: '500',
     lineHeight: '24px',
     borderRadius: '16px',
-    padding: '0 17px',
+    padding: '16px',
     margin: '0 0 16px',
     maxWidth: '343px',
     iconHeight: '24px',
