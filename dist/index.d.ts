@@ -645,6 +645,10 @@ interface IAnswerAccordionProps extends IAnswerButtonProps {
      * Define margin between icon and text
      */
     spacingBetweenIconAndContent?: string;
+    /**
+     * Define hidden text
+     */
+    hiddenText?: string;
 }
 declare const AnswerAccordion: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent & IAnswerAccordionProps>;
 
