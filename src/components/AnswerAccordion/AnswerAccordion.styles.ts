@@ -16,6 +16,7 @@ export const StyledAnswerAccordion = {
     }
   `,
   HiddenContent: styled.p`
+    flex-basis: 100%;
     margin: 0;
     display: none;
     font-size: 14px;

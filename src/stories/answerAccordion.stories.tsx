@@ -124,6 +124,8 @@ Simple.args = {
   margin: '0 0 16px',
   maxWidth: '343px',
   value: 'User answer',
+  hiddenText:
+    'A sculpted, elegant chin can really boost your confidence, and Luvly will help you achieve it',
   iconSrc: 'https://cdn-icons-png.flaticon.com/512/1791/1791311.png',
   iconHeight: '24px',
   spacingBetweenIconAndContent: '12px',
