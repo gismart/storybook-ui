@@ -166,7 +166,8 @@ declare const enum answerTheme {
     NUTRIMATE = "nutrimate",
     ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
-    CARDIMATE = "cardimate"
+    CARDIMATE = "cardimate",
+    LUVLY_SOLID = "luvlySolid"
 }
 declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent>;
 
@@ -262,7 +263,8 @@ interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconConten
 declare const enum answerWithIconTheme {
     DANCEBIT = "dancebit",
     NUTRIMATE = "nutrimate",
-    FITME = "fitme"
+    FITME = "fitme",
+    LUVLY_SOLID = "luvlySolid"
 }
 declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;
 
@@ -333,7 +335,8 @@ declare const enum answerWithIconAndCheckboxTheme {
     DANCEBIT = "dancebit",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
-    CARDIMATE = "cardimate"
+    CARDIMATE = "cardimate",
+    LUVLY_SOLID = "luvlySolid"
 }
 declare const AnswerWithIconAndCheckbox: React.FC<IAnswerWithIconAndCheckboxProps & IAnswerWithIconAndCheckboxImageProps & IOptionProps & ICheckboxProps & IAnswerWithIconAndCheckboxContentProps & IThemedComponent>;
 
