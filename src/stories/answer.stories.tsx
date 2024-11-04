@@ -84,6 +84,7 @@ SimpleLuvly.args = {
   padding: '0 15px',
   value: 'User answer',
 }
+
 export const AccountLuvly = Template.bind({})
 AccountLuvly.args = {
   children: `It's difficult to stay on track and find motivation to keep going`,
@@ -102,6 +103,28 @@ AccountLuvly.args = {
   borderRadius: '16px',
   padding: '0 17px',
   margin: '0 0 16px',
+}
+
+export const LuvlySolid = Template.bind({})
+LuvlySolid.args = {
+  children: `Less than a year`,
+  type: 'checkbox',
+  boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03)',
+  isFullWidth: true,
+  height: '80px',
+  backgroundColor: '#fff',
+  activeBackgroundColor: 'rgba(255, 130, 118, 0.12)',
+  border: '2px solid transparent',
+  activeBorder: '2px solid #ff8276',
+  color: '#17202a',
+  activeColor: '#17202a',
+  fontSize: '17px',
+  lineHeight: '24px',
+  fontWeight: '500',
+  borderRadius: '16px',
+  padding: '0 16px',
+  margin: '0 0 12px',
+  maxWidth: '343px',
 }
 
 export const SimpleDanceBit = Template.bind({})

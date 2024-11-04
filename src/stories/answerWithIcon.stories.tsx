@@ -218,3 +218,30 @@ Fitme.args = {
   type: 'checkbox',
   value: 'User answer',
 }
+
+export const LuvlySolid = Template.bind({})
+LuvlySolid.args = {
+  height: '80px',
+  backgroundColor: '#fff',
+  activeBackgroundColor: 'rgba(255, 130, 118, 0.12)',
+  border: '2px solid transparent',
+  activeBorder: '2px solid #ff8276',
+  color: '#17202a',
+  activeColor: '#17202a',
+  fontSize: '17px',
+  lineHeight: '24px',
+  fontWeight: '500',
+  borderRadius: '16px',
+  padding: '0 16px',
+  margin: '0 0 12px',
+  maxWidth: '343px',
+  isFullWidth: true,
+  boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03);',
+  activeBoxShadow: 'none',
+  iconHeight: '40px',
+  spacingBetweenIconAndContent: '16px',
+  type: 'checkbox',
+  children: 'Female',
+  value: 'User answer',
+  iconSrc: 'https://cdn-icons-png.flaticon.com/512/1791/1791311.png',
+}
