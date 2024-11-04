@@ -69,6 +69,7 @@ export declare const enum answerWithIconAndCheckboxTheme {
     DANCEBIT = "dancebit",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
-    CARDIMATE = "cardimate"
+    CARDIMATE = "cardimate",
+    LUVLY_SOLID = "luvlySolid"
 }
 export declare const AnswerWithIconAndCheckbox: React.FC<IAnswerWithIconAndCheckboxProps & IAnswerWithIconAndCheckboxImageProps & IOptionProps & ICheckboxProps & IAnswerWithIconAndCheckboxContentProps & IThemedComponent>;
