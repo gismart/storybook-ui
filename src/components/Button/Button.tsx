@@ -43,6 +43,7 @@ export interface IButtonProps
 
 export const enum buttonTheme {
   LUVLY = 'luvlyPrimary',
+  LUVLY_SECONDARY = 'luvlyPrimary',
   DANCEBIT = 'dancebitPrimary',
   NUTRIMATE_PRIMARY = 'nutrimatePrimary',
   NUTRIMATE_DEFAULT = 'nutrimateDefault',
@@ -62,6 +63,19 @@ const buttonThemes: Record<string, any> = {
     backgroundColor: 'rgb(255, 130, 118)',
     disableBackgroundColor: '#CACACA',
     fontWeight: '700',
+  },
+  luvlySecondary: {
+    isFullWidth: true,
+    children: 'Next',
+    height: '56px',
+    lineHeight: '56px',
+    borderRadius: '30px',
+    padding: '0 16px',
+    maxWidth: '327px',
+    fontSize: '17px',
+    fontWeight: '700',
+    backgroundColor: '#FF7262',
+    disableBackgroundColor: '#CACACA',
   },
   dancebitPrimary: {
     isFullWidth: true,
