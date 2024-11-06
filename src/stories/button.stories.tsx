@@ -48,6 +48,20 @@ PrimaryLuvly.args = {
   backgroundColor: 'rgb(255, 130, 118)',
 }
 
+export const SecondaryLuvly = Template.bind({})
+SecondaryLuvly.args = {
+  isFullWidth: true,
+  children: 'Next',
+  height: '56px',
+  lineHeight: '50px',
+  borderRadius: '30px',
+  padding: '0 16px',
+  maxWidth: '327px',
+  fontSize: '17px',
+  fontWeight: '700',
+  backgroundColor: '#FF7262',
+}
+
 export const PrimaryDancebit = Template.bind({})
 PrimaryDancebit.args = {
   isFullWidth: true,
