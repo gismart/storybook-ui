@@ -300,7 +300,7 @@ LuvlySolid.args = {
   activeBackgroundColor: 'rgba(255, 130, 118, 0.12)',
   activeColor: '#17202A',
   border: '2px solid transparent',
-  activeBorder: '2px solid #ff8276',
+  activeBorder: '2px solid #FF7262',
   iconSrc: checkIconWhite,
   boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03)',
   checkboxActiveBorder: '1.5px solid transparent',
