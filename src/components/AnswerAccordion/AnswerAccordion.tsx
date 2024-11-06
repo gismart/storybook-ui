@@ -21,7 +21,7 @@ const answerAccordionThemes: Record<
     backgroundColor: '#fff',
     activeBackgroundColor: 'rgba(255, 130, 118, 0.12)',
     border: '2px solid transparent',
-    activeBorder: '2px solid #ff8276',
+    activeBorder: '2px solid #FF7262',
     color: '#17202a',
     activeColor: '#17202a',
     fontSize: '17px',
