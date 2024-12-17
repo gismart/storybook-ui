@@ -330,6 +330,38 @@ FitmeCheckbox.args = {
   type: 'checkbox',
   children: 'Diets & food restrictions',
 }
+export const AccountFitmeCheckbox = Template.bind({})
+AccountFitmeCheckbox.args = {
+  children: (
+    <span>
+      Get a smaller <br /> waist
+    </span>
+  ),
+  type: 'checkbox',
+  isFullWidth: true,
+  height: '80px',
+  backgroundColor: '#f2f3f5',
+  activeBackgroundColor: '#F0ECFF',
+  color: '#17202a',
+  fontSize: '17px',
+  fontWeight: '400',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  padding: '0 17px',
+  margin: '0 0 16px',
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  checkboxWidth: '24px',
+  checkboxHeight: '24px',
+  checkboxBorderRadius: '50%',
+  checkboxBorder: '1px solid #e9e9e9',
+  checkboxBackgroundActiveColor: '#8378EF',
+  reverse: true,
+  activeColor: '#17202a',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #8378EF',
+  iconSrc: checkIconWhite,
+  checkboxActiveBorder: '1px solid transparent',
+}
 
 export const CardimateCheckbox = Template.bind({})
 CardimateCheckbox.args = {

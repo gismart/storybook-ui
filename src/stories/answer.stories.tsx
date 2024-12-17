@@ -233,6 +233,26 @@ SimpleFitme.args = {
   value: 'never',
 }
 
+export const AccountFitme = Template.bind({})
+AccountFitme.args = {
+  children: `It's difficult to stay on track and find motivation to keep going`,
+  type: 'checkbox',
+  boxShadow: 'none',
+  isFullWidth: true,
+  height: '80px',
+  backgroundColor: '#f2f3f5',
+  activeBackgroundColor: '#F0ECFF',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #8378ef',
+  color: '#17202a',
+  activeColor: '#17202a',
+  fontSize: '17px',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  padding: '0 17px',
+  margin: '0 0 16px',
+}
+
 export const SimpleCardimate = Template.bind({})
 SimpleCardimate.args = {
   height: '80px',
