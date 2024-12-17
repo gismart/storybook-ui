@@ -166,6 +166,7 @@ declare const enum answerTheme {
     NUTRIMATE = "nutrimate",
     ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
+    ACCOUNT_FITME = "accountFitme",
     CARDIMATE = "cardimate",
     LUVLY_SOLID = "luvlySolid"
 }
@@ -223,6 +224,7 @@ declare const enum answerWithCheckboxTheme {
     NUTRIMATE = "nutrimate",
     ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
+    ACCOUNT_FITME = "accountFitme",
     CARDIMATE = "cardimate"
 }
 declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps$1 & IAnswerWithCheckboxContentProps & IThemedComponent>;
