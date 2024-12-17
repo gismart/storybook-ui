@@ -259,7 +259,7 @@ const answerWithCheckboxThemes: Record<
     spacingBetweenCheckboxAndContent: '0 16px 0 0',
     checkboxWidth: '24px',
     checkboxHeight: '24px',
-    checkboxBorderRadius: '50%',
+    checkboxBorderRadius: '6px',
     checkboxBorder: '1px solid #e9e9e9',
     checkboxBackgroundActiveColor: '#8378EF',
     reverse: true,
