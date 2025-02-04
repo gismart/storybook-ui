@@ -19,7 +19,7 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run rollup
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v2
       with:
         name: app-build
         path: ./dist
