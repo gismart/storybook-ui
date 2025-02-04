@@ -393,3 +393,33 @@ CardimateCheckbox.args = {
   type: 'checkbox',
   children: 'Heart attack prevention',
 }
+
+export const Luvly = Template.bind({})
+Luvly.args = {
+  type: 'checkbox',
+  isFullWidth: true,
+  height: '80px',
+  backgroundColor: '#fff',
+  color: '#2D3240',
+  fontSize: '17px',
+  fontWeight: '600',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  padding: '0 16px',
+  maxWidth: '375px',
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  checkboxWidth: '24px',
+  checkboxHeight: '24px',
+  checkboxBorderRadius: '8px',
+  checkboxBorder: '1.5px solid #CACACA',
+  checkboxBackgroundActiveColor: '#FF7262',
+  reverse: true,
+  activeBackgroundColor: '#FFEFED',
+  activeColor: '#2D3240',
+  border: '2px solid transparent',
+  iconSrc: checkIconWhite,
+  boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03)',
+  activeBoxShadow: '0 0 0 2px #FF7262',
+  checkboxActiveBorder: '1.5px solid transparent',
+  children: 'Cheap and dirty',
+}
