@@ -55,6 +55,7 @@ export declare const enum answerWithCheckboxTheme {
     ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
     ACCOUNT_FITME = "accountFitme",
-    CARDIMATE = "cardimate"
+    CARDIMATE = "cardimate",
+    LUVLY = "luvly"
 }
 export declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps & IAnswerWithCheckboxContentProps & IThemedComponent>;
