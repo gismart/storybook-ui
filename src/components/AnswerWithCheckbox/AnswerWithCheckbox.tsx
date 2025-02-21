@@ -77,6 +77,7 @@ export const enum answerWithCheckboxTheme {
   ACCOUNT_FITME = 'accountFitme',
   CARDIMATE = 'cardimate',
   LUVLY = 'luvly',
+  BLESSED_PATH = 'blessedPath',
 }
 
 const answerWithCheckboxThemes: Record<
@@ -323,6 +324,33 @@ const answerWithCheckboxThemes: Record<
     checkboxHeight: '21px',
     checkboxWidth: '21px',
     type: 'checkbox',
+  },
+  blessedPath: {
+    type: 'checkbox',
+    height: '64px',
+    maxWidth: '327px',
+    activeBackgroundColor: '#F7F9FA',
+    activeBorder: '1px solid rgba(0, 0, 0, 0.10)',
+    activeColor: '#090A0A',
+    backgroundColor: '#DFE5EA',
+    border: '1px solid rgba(0, 0, 0, 0.10)',
+    borderRadius: '8px',
+    checkboxActiveBorder: '1px solid #AD903C',
+    checkboxBackgroundActiveColor: '#AD903C',
+    checkboxBackgroundColor: '#DFE5EA',
+    checkboxBorder: '1px solid #979CA0',
+    checkboxBorderRadius: '4px',
+    checkboxHeight: '24px',
+    checkboxWidth: '24px',
+    color: '#090A0A',
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '16px',
+    iconSrc: checkIconWhite,
+    isFullWidth: true,
+    padding: '24px',
+    reverse: true,
+    spacingBetweenCheckboxAndContent: '0 16px 0 0',
   },
 }
 

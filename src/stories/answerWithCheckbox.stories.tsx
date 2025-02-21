@@ -423,3 +423,33 @@ Luvly.args = {
   checkboxActiveBorder: '1.5px solid transparent',
   children: 'Cheap and dirty',
 }
+
+export const BlessedPathCheckbox = Template.bind({})
+BlessedPathCheckbox.args = {
+  children: <span>Emotional & Mental health</span>,
+  activeBackgroundColor: '#FFFFFF',
+  activeBorder: '1px solid rgba(0, 0, 0, 0.10)',
+  activeColor: '#090A0A',
+  backgroundColor: '#DFE5EA',
+  border: '1px solid rgba(0, 0, 0, 0.10)',
+  borderRadius: '8px',
+  checkboxActiveBorder: '1px solid #AD903C',
+  checkboxBackgroundActiveColor: '#AD903C',
+  checkboxBackgroundColor: '#DFE5EA',
+  checkboxBorder: '1px solid #979CA0',
+  checkboxBorderRadius: '4px',
+  checkboxHeight: '24px',
+  checkboxWidth: '24px',
+  color: '#090A0A',
+  fontSize: '16px',
+  fontWeight: '400',
+  lineHeight: '16px',
+  height: '64px',
+  maxWidth: '327px',
+  iconSrc: checkIconWhite,
+  isFullWidth: true,
+  padding: '24px',
+  reverse: true,
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  type: 'checkbox',
+}
