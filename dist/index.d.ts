@@ -226,7 +226,8 @@ declare const enum answerWithCheckboxTheme {
     FITME = "fitme",
     ACCOUNT_FITME = "accountFitme",
     CARDIMATE = "cardimate",
-    LUVLY = "luvly"
+    LUVLY = "luvly",
+    BLESSED_PATH = "blessedPath"
 }
 declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps$1 & IAnswerWithCheckboxContentProps & IThemedComponent>;
 
