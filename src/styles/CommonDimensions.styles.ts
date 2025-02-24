@@ -22,5 +22,6 @@ export const CommonDimensionsStyles = css<IDimensionsProps>`
       background: ${borderGradientColor};
       background-clip: padding-box, border-box;
       background-origin: padding-box, border-box;
+      transition: none;
     `}
 `

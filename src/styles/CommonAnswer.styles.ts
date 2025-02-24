@@ -39,6 +39,7 @@ export const CommonAnswerStyles = css<IAnswerButtonProps>`
         background: ${activeBackgroundColor};
         background-clip: initial;
         background-origin: initial;
+        transition: none;
       `}
   }
   input:checked + & > * {
