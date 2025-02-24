@@ -192,6 +192,34 @@ DancebitImage.args = {
   iconAlignSelf: 'flex-end',
   activeBoxShadow: ' 0 0 0 2px #03AAF5',
 }
+export const DancebitImageJapanese = Template.bind({})
+DancebitImageJapanese.args = {
+  children: 'Mid-sized',
+  type: 'radio',
+  isFullWidth: true,
+  maxWidth: '343px',
+  height: '100px',
+  backgroundColor: '#FFF',
+  activeBackgroundColor: '#EAF7FF',
+  boxShadow: '0 0 0 1px#E9E9E9',
+  color: '#2C3131',
+  activeColor: '#2C3131',
+  fontSize: '17px',
+  fontWeight: '700',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  contentHorizontalAlign: 'flex-start',
+  padding: '0 16px 0 8px',
+  value: 'mid',
+  iconHeight: '100px',
+  spacingBetweenIconAndContent: '16px',
+  iconSrc: 'https://i.ibb.co/yBpRY8q/mid-size.png',
+  iconAlignSelf: 'flex-end',
+  activeBorder: '3px solid #03AAF5',
+  border: '3px solid transparent',
+  borderGradientColor:
+    'linear-gradient(to right, white, white), linear-gradient(to right, #C6E2FF, #F8DAFB)',
+}
 
 export const Fitme = Template.bind({})
 Fitme.args = {

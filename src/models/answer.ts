@@ -35,7 +35,7 @@ export interface IAnswerButtonProps
    */
   activeBorder?: string
   /**
-   * Define shadow on active element
+   * Define border on color
    */
   activeBoxShadow?: string
   /**

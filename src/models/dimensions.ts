@@ -43,4 +43,8 @@ export interface IDimensionsProps {
    * Define element border
    */
   border?: string
+  /**
+   * Define element borderc color
+   */
+  borderGradientColor?: string
 }

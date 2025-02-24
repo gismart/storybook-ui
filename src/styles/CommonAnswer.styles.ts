@@ -32,6 +32,14 @@ export const CommonAnswerStyles = css<IAnswerButtonProps>`
     color: ${({ activeColor }) => activeColor || '#fff'};
     border: ${({ border, activeBorder }) => activeBorder || border};
     box-shadow: ${({ activeBoxShadow }) => activeBoxShadow || 'none'};
+
+    ${({ borderGradientColor, activeBackgroundColor }) =>
+      borderGradientColor &&
+      css`
+        background: ${activeBackgroundColor};
+        background-clip: initial;
+        background-origin: initial;
+      `}
   }
   input:checked + & > * {
     color: ${({ activeColor }) => activeColor || '#fff'};

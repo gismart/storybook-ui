@@ -8,6 +8,7 @@ import { StyledAnswer as S } from './Answer.styles'
 
 export const enum answerTheme {
   DANCEBIT = 'dancebit',
+  DANCEBIT_JAPANESE = 'dancebitJa',
   ACCOUNT_DANCEBIT = 'accountDancebit',
   LUVLY = 'luvly',
   ACCOUNT_LUVLY = 'accountLuvly',
@@ -35,6 +36,24 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     boxShadow: '0 0 0 1px #E9E9E9',
     activeBoxShadow: '0 0 0 2px #03AAF5',
     activeColor: '#17202A',
+  },
+  dancebitJa: {
+    type: 'checkbox',
+    isFullWidth: true,
+    height: '80px',
+    backgroundColor: '#FFF',
+    color: '#17202A',
+    fontSize: '17px',
+    fontWeight: '700',
+    lineHeight: '24px',
+    borderRadius: '16px',
+    padding: '0 16px',
+    activeBackgroundColor: '#EAF7FF',
+    activeColor: '#17202A',
+    activeBorder: '3px solid #03AAF5',
+    border: '3px solid transparent',
+    borderGradientColor:
+      'linear-gradient(to right, white, white), linear-gradient(to right, #C6E2FF, #F8DAFB)',
   },
   accountDancebit: {
     type: 'checkbox',

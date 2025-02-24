@@ -166,6 +166,41 @@ Dancebit.args = {
   imageHeight: '40px',
   imageAlignSelf: 'center',
 }
+export const DancebitJapanese = Template.bind({})
+DancebitJapanese.args = {
+  children: <span>Busy family life</span>,
+  type: 'checkbox',
+  isFullWidth: true,
+  maxWidth: '343px',
+  height: '80px',
+  backgroundColor: '#FFF',
+  color: '#17202A',
+  fontSize: '17px',
+  fontWeight: '700',
+  lineHeight: '24px',
+  borderRadius: '6px',
+  padding: '0 16px',
+  value: 'lose_belly_fat',
+  spacingBetweenCheckboxAndContent: '0 16px',
+  checkboxWidth: '24px',
+  checkboxHeight: '24px',
+  checkboxBorderRadius: '8px',
+  checkboxBorder: '2px solid #CACACA',
+  checkboxBackgroundActiveColor: '#03AAF5',
+  reverse: true,
+  activeBackgroundColor: '#EAF7FF',
+  activeColor: '#17202A',
+  iconSrc: checkIconWhite,
+  activeBorder: '3px solid #03AAF5',
+  border: '3px solid transparent',
+  borderGradientColor:
+    'linear-gradient(to right, white, white), linear-gradient(to right, #C6E2FF, #F8DAFB)',
+  checkboxActiveBorder: '1px solid transparent',
+  imageSrc: 'https://i.ibb.co/C8zTW2k/break-up-1.png',
+  imageWidth: '40px',
+  imageHeight: '40px',
+  imageAlignSelf: 'center',
+}
 
 export const Nutrimate = Template.bind({})
 Nutrimate.args = {
