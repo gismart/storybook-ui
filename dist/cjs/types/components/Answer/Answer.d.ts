@@ -4,6 +4,7 @@ import { IThemedComponent } from '../../models/common';
 import { IOptionProps } from '../Option/Option';
 export declare const enum answerTheme {
     DANCEBIT = "dancebit",
+    DANCEBIT_JAPANESE = "dancebitJa",
     ACCOUNT_DANCEBIT = "accountDancebit",
     LUVLY = "luvly",
     ACCOUNT_LUVLY = "accountLuvly",
