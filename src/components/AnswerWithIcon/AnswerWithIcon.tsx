@@ -45,7 +45,7 @@ export interface IAnswerWithIconProps
 
 export const enum answerWithIconTheme {
   DANCEBIT = 'dancebit',
-  DANCEBIT_JAPANESE = 'dancebit',
+  DANCEBIT_JAPANESE = 'dancebitJa',
   NUTRIMATE = 'nutrimate',
   FITME = 'fitme',
   LUVLY_SOLID = 'luvlySolid',
