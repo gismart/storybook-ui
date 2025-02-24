@@ -46,6 +46,10 @@ interface IDimensionsProps {
      * Define element border
      */
     border?: string;
+    /**
+     * Define element borderc color
+     */
+    borderGradientColor?: string;
 }
 
 interface IColorsProps {
@@ -117,7 +121,7 @@ interface IAnswerButtonProps extends IDimensionsProps, IFontsProps, IColorsProps
      */
     activeBorder?: string;
     /**
-     * Define shadow on active element
+     * Define border on color
      */
     activeBoxShadow?: string;
     /**
@@ -160,6 +164,7 @@ declare const Option: React.FC<IOptionProps>;
 
 declare const enum answerTheme {
     DANCEBIT = "dancebit",
+    DANCEBIT_JAPANESE = "dancebitJa",
     ACCOUNT_DANCEBIT = "accountDancebit",
     LUVLY = "luvly",
     ACCOUNT_LUVLY = "accountLuvly",
@@ -220,6 +225,7 @@ interface IAnswerWithCheckboxProps extends IAnswerButtonProps {
 declare const enum answerWithCheckboxTheme {
     ACCOUNT_LUVLY = "accountLuvly",
     DANCEBIT = "dancebit",
+    DANCEBIT_JAPANESE = "dancebitJa",
     ACCOUNT_DANCEBIT = "accountDancebit",
     NUTRIMATE = "nutrimate",
     ACCOUNT_NUTRIMATE = "accountNutrimate",
@@ -266,6 +272,7 @@ interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconConten
 }
 declare const enum answerWithIconTheme {
     DANCEBIT = "dancebit",
+    DANCEBIT_JAPANESE = "dancebit",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
     LUVLY_SOLID = "luvlySolid"
@@ -337,6 +344,7 @@ interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
 }
 declare const enum answerWithIconAndCheckboxTheme {
     DANCEBIT = "dancebit",
+    DANCEBIT_JAPANESE = "dancebitJa",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
     CARDIMATE = "cardimate",
