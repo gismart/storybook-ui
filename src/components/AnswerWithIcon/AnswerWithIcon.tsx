@@ -77,7 +77,7 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
   dancebitJa: {
     type: 'radio',
     isFullWidth: true,
-    height: '100px',
+    height: '106px',
     backgroundColor: '#FFF',
     activeBackgroundColor: '#eaf7ff',
     boxShadow: '0 0 0 1px#E9E9E9',
