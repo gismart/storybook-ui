@@ -200,6 +200,41 @@ DancebitCheckbox.args = {
   checkboxActiveBorder: '1px solid transparent',
 }
 
+export const DancebitJapaneseCheckbox = Template.bind({})
+DancebitJapaneseCheckbox.args = {
+  children: (
+    <span>
+      Get a smaller <br /> waist
+    </span>
+  ),
+  type: 'checkbox',
+  isFullWidth: true,
+  maxWidth: '218px',
+  height: '80px',
+  backgroundColor: '#FFF',
+  color: '#17202A',
+  fontSize: '17px',
+  fontWeight: '700',
+  lineHeight: '24px',
+  borderRadius: '6px',
+  padding: '0 16px',
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  checkboxWidth: '24px',
+  checkboxHeight: '24px',
+  checkboxBorderRadius: '8px',
+  checkboxBorder: '2px solid #F8DAFB',
+  checkboxBackgroundActiveColor: '#03AAF5',
+  reverse: true,
+  activeBackgroundColor: '#EAF7FF',
+  activeColor: '#17202A',
+  border: '3px solid transparent',
+  activeBorder: '3px solid #03AAF5',
+  borderGradientColor:
+    'linear-gradient(to right, white, white), linear-gradient(to right, #C6E2FF, #F8DAFB)',
+  iconSrc: checkIconWhite,
+  checkboxActiveBorder: '1px solid transparent',
+}
+
 export const AccountDancebitCheckbox = Template.bind({})
 AccountDancebitCheckbox.args = {
   children: (

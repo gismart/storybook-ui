@@ -15,4 +15,12 @@ export const CommonDimensionsStyles = css<IDimensionsProps>`
   border-radius: ${({ borderRadius }) => borderRadius || 0};
   border: ${({ border }) => border || 'none'};
   box-sizing: border-box;
+
+  ${({ borderGradientColor }) =>
+    borderGradientColor &&
+    css`
+      background: ${borderGradientColor};
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+    `}
 `

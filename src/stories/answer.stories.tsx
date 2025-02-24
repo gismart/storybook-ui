@@ -148,6 +148,28 @@ SimpleDanceBit.args = {
   activeColor: '#17202A',
 }
 
+export const SimpleJapaneseDanceBit = Template.bind({})
+SimpleJapaneseDanceBit.args = {
+  children: <span>Less than a year ago</span>,
+  type: 'checkbox',
+  isFullWidth: true,
+  maxWidth: '180px',
+  height: '80px',
+  backgroundColor: '#FFF',
+  color: '#17202A',
+  fontSize: '17px',
+  fontWeight: '700',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  padding: '0 16px',
+  activeBackgroundColor: '#EAF7FF',
+  activeColor: '#17202A',
+  activeBorder: '3px solid #03AAF5',
+  border: '3px solid transparent',
+  borderGradientColor:
+    'linear-gradient(to right, white, white), linear-gradient(to right, #C6E2FF, #F8DAFB)',
+}
+
 export const AccountDanceBit = Template.bind({})
 AccountDanceBit.args = {
   children: 'The challenge is overwhelming and requires too much effort',
