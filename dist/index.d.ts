@@ -272,7 +272,7 @@ interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconConten
 }
 declare const enum answerWithIconTheme {
     DANCEBIT = "dancebit",
-    DANCEBIT_JAPANESE = "dancebit",
+    DANCEBIT_JAPANESE = "dancebitJa",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
     LUVLY_SOLID = "luvlySolid"
