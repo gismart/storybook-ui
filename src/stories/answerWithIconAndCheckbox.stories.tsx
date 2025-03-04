@@ -172,7 +172,7 @@ DancebitJapanese.args = {
   type: 'checkbox',
   isFullWidth: true,
   maxWidth: '343px',
-  height: '80px',
+  height: '106px',
   backgroundColor: '#FFF',
   color: '#17202A',
   fontSize: '17px',

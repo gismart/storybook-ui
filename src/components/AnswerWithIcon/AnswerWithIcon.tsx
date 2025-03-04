@@ -80,7 +80,7 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
     height: '106px',
     backgroundColor: '#FFF',
     activeBackgroundColor: '#eaf7ff',
-    boxShadow: '0 0 0 1px#E9E9E9',
+    boxShadow: 'none',
     color: '#17202A',
     activeColor: '#17202A',
     fontSize: '17px',
