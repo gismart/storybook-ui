@@ -201,7 +201,7 @@ DancebitImageJapanese.args = {
   height: '100px',
   backgroundColor: '#FFF',
   activeBackgroundColor: '#EAF7FF',
-  boxShadow: '0 0 0 1px#E9E9E9',
+  boxShadow: 'none',
   color: '#2C3131',
   activeColor: '#2C3131',
   fontSize: '17px',

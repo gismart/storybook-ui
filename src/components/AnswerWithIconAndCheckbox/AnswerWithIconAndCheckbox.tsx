@@ -131,7 +131,7 @@ const answerWithCheckboxThemes: Record<
   dancebitJa: {
     type: 'checkbox',
     isFullWidth: true,
-    height: '80px',
+    height: '106px',
     backgroundColor: '#FFF',
     color: '#17202A',
     fontSize: '17px',
