@@ -226,6 +226,7 @@ declare const enum answerWithCheckboxTheme {
     ACCOUNT_LUVLY = "accountLuvly",
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
+    DANCEBIT_ADULT = "dancebitAdult",
     ACCOUNT_DANCEBIT = "accountDancebit",
     NUTRIMATE = "nutrimate",
     ACCOUNT_NUTRIMATE = "accountNutrimate",
@@ -273,6 +274,7 @@ interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIconConten
 declare const enum answerWithIconTheme {
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
+    DANCEBIT_ADULT = "dancebitAdult",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
     LUVLY_SOLID = "luvlySolid"
@@ -345,6 +347,7 @@ interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
 declare const enum answerWithIconAndCheckboxTheme {
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
+    DANCEBIT_ADULT = "dancebitAdult",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
     CARDIMATE = "cardimate",
