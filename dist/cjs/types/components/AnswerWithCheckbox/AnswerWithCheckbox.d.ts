@@ -51,6 +51,7 @@ export declare const enum answerWithCheckboxTheme {
     ACCOUNT_LUVLY = "accountLuvly",
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
+    DANCEBIT_ADULT = "dancebitAdult",
     ACCOUNT_DANCEBIT = "accountDancebit",
     NUTRIMATE = "nutrimate",
     ACCOUNT_NUTRIMATE = "accountNutrimate",

@@ -68,6 +68,7 @@ export interface IAnswerWithIconAndCheckboxProps extends IAnswerButtonProps {
 export declare const enum answerWithIconAndCheckboxTheme {
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
+    DANCEBIT_ADULT = "dancebitAdult",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
     CARDIMATE = "cardimate",
