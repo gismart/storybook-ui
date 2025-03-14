@@ -154,7 +154,7 @@ const answerWithCheckboxThemes: Record<
     checkboxHeight: '24px',
     checkboxBorderRadius: '8px',
     checkboxBorder: '1.5px solid #CACACA',
-    checkboxBackgroundActiveColor: '##03AAF5',
+    checkboxBackgroundActiveColor: '#03AAF5',
     reverse: true,
     activeBackgroundColor: '#C6E9FE',
     activeColor: '#17202A',
@@ -162,7 +162,7 @@ const answerWithCheckboxThemes: Record<
     iconSrc: checkIconWhite,
     boxShadow: '0 0 0 1px #C6E0F4',
     activeBoxShadow: '0 0 0 2px #03AAF5',
-    checkboxActiveBorder: '1px solid transparent',
+    checkboxActiveBorder: '1px solid #03aaf5',
   },
   dancebitJa: {
     type: 'checkbox',
