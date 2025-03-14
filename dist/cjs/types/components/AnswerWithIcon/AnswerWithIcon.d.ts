@@ -38,6 +38,7 @@ export interface IAnswerWithIconProps extends IAnswerButtonProps, IAnswerWithIco
 export declare const enum answerWithIconTheme {
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
+    DANCEBIT_ADULT = "dancebitAdult",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
     LUVLY_SOLID = "luvlySolid"
