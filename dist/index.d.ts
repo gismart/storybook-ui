@@ -165,6 +165,7 @@ declare const Option: React.FC<IOptionProps>;
 declare const enum answerTheme {
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
+    DANCEBIT_ADULT = "dancebitAdult",
     ACCOUNT_DANCEBIT = "accountDancebit",
     LUVLY = "luvly",
     ACCOUNT_LUVLY = "accountLuvly",
