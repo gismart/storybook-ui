@@ -9,6 +9,7 @@ import { StyledAnswer as S } from './Answer.styles'
 export const enum answerTheme {
   DANCEBIT = 'dancebit',
   DANCEBIT_JAPANESE = 'dancebitJa',
+  DANCEBIT_ADULT = 'dancebitAdult',
   ACCOUNT_DANCEBIT = 'accountDancebit',
   LUVLY = 'luvly',
   ACCOUNT_LUVLY = 'accountLuvly',
@@ -54,6 +55,24 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     border: '3px solid transparent',
     borderGradientColor:
       'linear-gradient(to right, white, white), linear-gradient(to right, #C6E2FF, #F8DAFB)',
+  },
+  dancebitAdult: {
+    type: 'checkbox',
+    isFullWidth: true,
+    height: '80px',
+    maxWidth: '180px',
+    backgroundColor: '#FFF',
+    activeBackgroundColor: '#C6E9FE',
+    boxShadow: '0 0 0 1px #C6E0F4',
+    border: '2px solid transparent',
+    color: '#17202A',
+    activeColor: '#17202A',
+    activeBoxShadow: '0 0 0 2px #03AAF5',
+    fontSize: '17px',
+    fontWeight: '700',
+    lineHeight: '24px',
+    borderRadius: '16px',
+    padding: '0 16px',
   },
   accountDancebit: {
     type: 'checkbox',
