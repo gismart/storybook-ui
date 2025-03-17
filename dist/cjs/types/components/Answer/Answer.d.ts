@@ -5,6 +5,7 @@ import { IOptionProps } from '../Option/Option';
 export declare const enum answerTheme {
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
+    DANCEBIT_ADULT = "dancebitAdult",
     ACCOUNT_DANCEBIT = "accountDancebit",
     LUVLY = "luvly",
     ACCOUNT_LUVLY = "accountLuvly",
