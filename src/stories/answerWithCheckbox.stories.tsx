@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
@@ -233,6 +234,34 @@ DancebitJapaneseCheckbox.args = {
     'linear-gradient(to right, white, white), linear-gradient(to right, #C6E2FF, #F8DAFB)',
   iconSrc: checkIconWhite,
   checkboxActiveBorder: '1px solid transparent',
+}
+export const DancebitSexyCheckbox = Template.bind({})
+DancebitSexyCheckbox.args = {
+  children: <span>Lose weight</span>,
+  type: 'checkbox',
+  isFullWidth: true,
+  height: '80px',
+  backgroundColor: 'rgba(255, 255, 255, 0.12)',
+  color: '#fff',
+  fontSize: '17px',
+  fontWeight: '700',
+  lineHeight: '24px',
+  padding: '0 16px',
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  checkboxWidth: '24px',
+  checkboxHeight: '24px',
+  checkboxBorderRadius: '8px',
+  checkboxBorder: '1.5px solid #CACACA',
+  checkboxBackgroundActiveColor: '#C61371',
+  reverse: true,
+  activeBackgroundColor: 'rgba(188, 25, 110, 0.25)',
+  activeColor: '#fff',
+  iconSrc: checkIconWhite,
+  activeBorder: '2px solid #C61371',
+  checkboxActiveBorder: '1px solid #C61371',
+  borderRadius: `16px`,
+  border: `1px solid rgba(255, 255, 255, 0.25)`,
+  backdropFilter: `blur(8px)`,
 }
 
 export const AccountDancebitCheckbox = Template.bind({})
