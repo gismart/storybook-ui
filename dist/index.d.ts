@@ -62,6 +62,10 @@ interface IColorsProps {
      */
     backgroundGradientColor?: string;
     /**
+     * What filter to use
+     */
+    backdropFilter?: string;
+    /**
      * What text color to use
      */
     color?: string;
