@@ -39,6 +39,7 @@ export declare const enum answerWithIconTheme {
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
     DANCEBIT_ADULT = "dancebitAdult",
+    DANCEBIT_SEXY = "dancebitSexy",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
     LUVLY_SOLID = "luvlySolid"

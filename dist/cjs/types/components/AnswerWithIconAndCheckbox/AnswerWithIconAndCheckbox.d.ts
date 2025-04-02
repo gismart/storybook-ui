@@ -69,6 +69,7 @@ export declare const enum answerWithIconAndCheckboxTheme {
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
     DANCEBIT_ADULT = "dancebitAdult",
+    DANCEBIT_SEXY = "dancebitSexy",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
     CARDIMATE = "cardimate",

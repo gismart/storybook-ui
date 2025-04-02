@@ -6,6 +6,7 @@ export declare const enum answerTheme {
     DANCEBIT = "dancebit",
     DANCEBIT_JAPANESE = "dancebitJa",
     DANCEBIT_ADULT = "dancebitAdult",
+    DANCEBIT_SEXY = "dancebitSexy",
     ACCOUNT_DANCEBIT = "accountDancebit",
     LUVLY = "luvly",
     ACCOUNT_LUVLY = "accountLuvly",
