@@ -20,6 +20,7 @@ export const CommonAnswerStyles = css<IAnswerButtonProps>`
   position: relative;
   font-family: sans-serif;
   overflow-wrap: break-word;
+  backdrop-filter: ${({ backdropFilter }) => backdropFilter};
 
   input:checked + & {
     background-color: ${({

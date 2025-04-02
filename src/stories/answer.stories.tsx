@@ -170,6 +170,26 @@ SimpleJapaneseDanceBit.args = {
     'linear-gradient(to right, white, white), linear-gradient(to right, #C6E2FF, #F8DAFB)',
 }
 
+export const SimpleDanceBitSexy = Template.bind({})
+SimpleDanceBitSexy.args = {
+  children: <span>Less than a year ago</span>,
+  type: 'checkbox',
+  isFullWidth: true,
+  height: '80px',
+  borderRadius: '16px',
+  border: '1px solid rgba(255, 255, 255, 0.25)',
+  activeBorder: '2px solid #C61371',
+  backgroundColor: 'rgba(255, 255, 255, 0.12)',
+  activeBackgroundColor: 'rgba(188, 25, 110, 0.25)',
+  backdropFilter: 'blur(8px)',
+  color: '#fff',
+  fontSize: '17px',
+  fontWeight: '700',
+  lineHeight: '24px',
+  padding: '0 16px',
+  activeColor: '#fff',
+}
+
 export const AccountDanceBit = Template.bind({})
 AccountDanceBit.args = {
   children: 'The challenge is overwhelming and requires too much effort',
