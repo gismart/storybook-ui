@@ -239,7 +239,6 @@ DancebitSexyFlow.args = {
   activeBoxShadow: ' 0 0 0 2px #C61371',
   backdropFilter: `blur(8px)`,
   height: '100px',
-  contentHorizontalAlign: 'flex-start',
   iconHeight: '100px',
   iconMinHeight: '100px',
   iconMinWidth: '100px',

@@ -226,11 +226,11 @@ DancebitSexyFlow.args = {
   activeBackgroundColor: 'rgba(188, 25, 110, 0.25)',
   activeColor: '#fff',
   iconSrc: checkIconWhite,
-  activeBorder: '2px solid #C61371',
   checkboxActiveBorder: '1px solid #C61371',
   borderRadius: `16px`,
   border: `2px solid transparent`,
   boxShadow: '0 0 0 1px rgba(255, 255, 255, 0.25)',
+  activeBoxShadow: '0 0 0 2px #C61371',
   backdropFilter: `blur(8px)`,
   imageSrc: 'https://i.ibb.co/C8zTW2k/break-up-1.png',
 }
