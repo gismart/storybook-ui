@@ -260,7 +260,8 @@ DancebitSexyCheckbox.args = {
   activeBorder: '2px solid #C61371',
   checkboxActiveBorder: '1px solid #C61371',
   borderRadius: `16px`,
-  border: `1px solid rgba(255, 255, 255, 0.25)`,
+  border: `2px solid transparent`,
+  boxShadow: '0 0 0 1px rgba(255, 255, 255, 0.25)',
   backdropFilter: `blur(8px)`,
 }
 

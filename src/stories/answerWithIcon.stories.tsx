@@ -220,6 +220,32 @@ DancebitImageJapanese.args = {
   borderGradientColor:
     'linear-gradient(to right, white, white), linear-gradient(to right, #C6E2FF, #F8DAFB)',
 }
+export const DancebitSexyFlow = Template.bind({})
+DancebitSexyFlow.args = {
+  type: 'radio',
+  isFullWidth: true,
+  backgroundColor: 'rgba(255, 255, 255, 0.12)',
+  color: '#fff',
+  fontSize: '17px',
+  fontWeight: '700',
+  lineHeight: '24px',
+  padding: '0 16px',
+  activeBackgroundColor: 'rgba(188, 25, 110, 0.25)',
+  activeColor: '#fff',
+  activeBorder: '2px solid #C61371',
+  borderRadius: `16px`,
+  border: `2px solid transparent`,
+  boxShadow: '0 0 0 1px rgba(255, 255, 255, 0.25)',
+  activeBoxShadow: ' 0 0 0 2px #C61371',
+  backdropFilter: `blur(8px)`,
+  height: '100px',
+  contentHorizontalAlign: 'flex-start',
+  iconHeight: '100px',
+  iconMinHeight: '100px',
+  iconMinWidth: '100px',
+  spacingBetweenIconAndContent: '16px',
+  iconAlignSelf: 'flex-end',
+}
 
 export const Fitme = Template.bind({})
 Fitme.args = {
