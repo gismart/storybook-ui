@@ -134,7 +134,6 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
     padding: '0 16px',
     activeBackgroundColor: 'rgba(188, 25, 110, 0.25)',
     activeColor: '#fff',
-    activeBorder: '2px solid #C61371',
     borderRadius: `16px`,
     border: `2px solid transparent`,
     boxShadow: '0 0 0 1px rgba(255, 255, 255, 0.25)',
