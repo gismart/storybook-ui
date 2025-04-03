@@ -146,7 +146,7 @@ const answerWithIconThemes: Record<string, Record<string, string | boolean>> = {
     iconMinHeight: '100px',
     iconMinWidth: '100px',
     spacingBetweenIconAndContent: '16px',
-    iconAlignSelf: 'flex-end',
+    iconAlignSelf: 'center',
   },
   nutrimate: {
     activeBackgroundColor: 'rgba(169, 205, 80, 0.2)',
