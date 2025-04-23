@@ -276,6 +276,28 @@ SimpleFitme.args = {
   value: 'never',
 }
 
+export const DarkFitme = Template.bind({})
+DarkFitme.args = {
+  height: '80px',
+  isFullWidth: true,
+  maxWidth: '343px',
+  fontSize: '17px',
+  fontWeight: '600',
+  lineHeight: '24px',
+  color: '#fff',
+  activeColor: '#fff',
+  backgroundColor: '#3E3C48',
+  activeBackgroundColor: '#25214D',
+  border: '2px solid transparent',
+  activeBorder: '2px solid #8378EF',
+  activeBoxShadow: 'none',
+  borderRadius: '16px',
+  padding: '0 16px',
+  type: 'checkbox',
+  children: 'Lose weight for good',
+  value: 'never',
+}
+
 export const AccountFitme = Template.bind({})
 AccountFitme.args = {
   children: `It's difficult to stay on track and find motivation to keep going`,
