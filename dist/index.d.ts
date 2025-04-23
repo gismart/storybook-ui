@@ -177,6 +177,7 @@ declare const enum answerTheme {
     NUTRIMATE = "nutrimate",
     ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
+    FITME_DARK = "fitmeDark",
     ACCOUNT_FITME = "accountFitme",
     CARDIMATE = "cardimate",
     LUVLY_SOLID = "luvlySolid"
