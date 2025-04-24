@@ -42,6 +42,7 @@ export declare const enum answerWithIconTheme {
     DANCEBIT_SEXY = "dancebitSexy",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
+    FITME_DARK = "fitmeDark",
     LUVLY_SOLID = "luvlySolid"
 }
 export declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;
