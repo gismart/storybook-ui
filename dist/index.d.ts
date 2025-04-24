@@ -239,6 +239,7 @@ declare const enum answerWithCheckboxTheme {
     NUTRIMATE = "nutrimate",
     ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
+    FITME_DARK = "fitmeDark",
     ACCOUNT_FITME = "accountFitme",
     CARDIMATE = "cardimate",
     LUVLY = "luvly",
@@ -286,6 +287,7 @@ declare const enum answerWithIconTheme {
     DANCEBIT_SEXY = "dancebitSexy",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
+    FITME_DARK = "fitmeDark",
     LUVLY_SOLID = "luvlySolid"
 }
 declare const AnswerWithIcon: React.FC<IAnswerWithIconProps & IOptionProps & IThemedComponent>;
@@ -360,6 +362,7 @@ declare const enum answerWithIconAndCheckboxTheme {
     DANCEBIT_SEXY = "dancebitSexy",
     NUTRIMATE = "nutrimate",
     FITME = "fitme",
+    FITME_DARK = "fitmeDark",
     CARDIMATE = "cardimate",
     LUVLY_SOLID = "luvlySolid"
 }
