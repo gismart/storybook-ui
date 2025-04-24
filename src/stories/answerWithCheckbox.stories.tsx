@@ -395,6 +395,39 @@ FitmeCheckbox.args = {
   type: 'checkbox',
   children: 'Diets & food restrictions',
 }
+
+export const FitmeDarkCheckbox = Template.bind({})
+FitmeDarkCheckbox.args = {
+  height: '80px',
+  isFullWidth: true,
+  maxWidth: '343px',
+  fontSize: '17px',
+  lineHeight: '24px',
+  fontWeight: '600',
+  color: '#fff',
+  activeColor: '#fff',
+  padding: '0 16px',
+  reverse: true,
+  backgroundColor: '#3E3C48',
+  activeBackgroundColor: '#25214D',
+  border: '2px solid transparent',
+  activeBorder: '2px solid #8378EF',
+  borderRadius: '16px',
+  activeBoxShadow: 'none',
+  iconSrc:
+    'https://cdn-prod-unified-content.gismart.xyz/95a0f4aac157ae778464868301bbc89a757bbd8234362ef568be31e6d6bf9e38/check-icon-white.webp',
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  checkboxBorder: '1px solid #CACACA',
+  checkboxBorderRadius: '50%',
+  checkboxActiveBorder: 'none',
+  checkboxBackgroundColor: '#3E3C48',
+  checkboxBackgroundActiveColor: '#8378EF',
+  checkboxHeight: '24px',
+  checkboxWidth: '24px',
+  value: 'diet',
+  type: 'checkbox',
+  children: 'Diets & food restrictions',
+}
 export const AccountFitmeCheckbox = Template.bind({})
 AccountFitmeCheckbox.args = {
   children: (
