@@ -264,7 +264,34 @@ Fitme.args = {
   borderRadius: '16px',
   boxShadow: '0px 4px 14px 0px rgba(8, 4, 23, 0.03);',
   activeBoxShadow: 'none',
-  iconSrc: 'https://cdn-icons-png.flaticon.com/512/1791/1791311.png',
+  iconSrc:
+    'https://cdn-prod-unified-content.gismart.xyz/9549c572d41fa1ace57a00b0494242d596edf1b52f29534285e9ae278735f1b2/FitMe+main+senior+flow+%28fitme_senior_3%29/Icons/birthday.png',
+  iconHeight: '40px',
+  spacingBetweenIconAndContent: '16px',
+  children: 'No - just ready to look and feel my best!',
+  type: 'checkbox',
+  value: 'User answer',
+}
+
+export const FitmeDark = Template.bind({})
+FitmeDark.args = {
+  height: '80px',
+  isFullWidth: true,
+  maxWidth: '343px',
+  fontSize: '17px',
+  fontWeight: '600',
+  lineHeight: '24px',
+  color: '#fff',
+  activeColor: '#fff',
+  padding: '0 16px',
+  backgroundColor: '#3E3C48',
+  activeBackgroundColor: '#25214D',
+  border: '2px solid transparent',
+  activeBorder: '2px solid #8378EF',
+  borderRadius: '16px',
+  activeBoxShadow: 'none',
+  iconSrc:
+    'https://cdn-prod-unified-content.gismart.xyz/9549c572d41fa1ace57a00b0494242d596edf1b52f29534285e9ae278735f1b2/FitMe+main+senior+flow+%28fitme_senior_3%29/Icons/birthday.png',
   iconHeight: '40px',
   spacingBetweenIconAndContent: '16px',
   children: 'No - just ready to look and feel my best!',
