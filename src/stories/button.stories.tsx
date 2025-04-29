@@ -110,6 +110,22 @@ DefaultNutrimate.args = {
   padding: '10px 16px',
 }
 
+export const DarkFitme = Template.bind({})
+DarkFitme.args = {
+  backgroundColor: '#8378EF',
+  borderRadius: '30px',
+  disableBackgroundColor: '#4c4c4c',
+  disableColor: '#a9a9a9',
+  fontSize: '17px',
+  fontWeight: '700',
+  height: '56px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '10px 16px',
+  children: 'Continue',
+}
+
 export const PrimaryFitme = Template.bind({})
 PrimaryFitme.args = {
   backgroundColor: '#8378EF',
