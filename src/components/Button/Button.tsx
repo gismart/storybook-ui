@@ -50,6 +50,7 @@ export const enum buttonTheme {
   FITMI = 'fitmePrimary',
   FITMI_DARK = 'fitmeDark',
   CARDIMATE = 'cardimatePrimary',
+  FAMIO = 'famioPrimary',
 }
 
 const buttonThemes: Record<string, any> = {
@@ -146,6 +147,18 @@ const buttonThemes: Record<string, any> = {
     backgroundColor: '#E74C3C',
     borderRadius: '30px',
     disableBackgroundColor: '#cacaca',
+    fontSize: '17px',
+    fontWeight: '700',
+    height: '56px',
+    isFullWidth: true,
+    lineHeight: '24px',
+    maxWidth: '343px',
+    padding: '10px 16px',
+  },
+  famioPrimary: {
+    backgroundColor: '#6336ff',
+    borderRadius: '30px',
+    disableBackgroundColor: 'rgba(99, 54, 255, 0.3)',
     fontSize: '17px',
     fontWeight: '700',
     height: '56px',
