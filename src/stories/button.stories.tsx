@@ -155,3 +155,18 @@ PrimaryCardimate.args = {
   padding: '10px 16px',
   children: 'Continue',
 }
+
+export const PrimarySpilio = Template.bind({})
+PrimarySpilio.args = {
+  backgroundColor: '#1a1a1a',
+  borderRadius: '30px',
+  disableBackgroundColor: '#cacaca',
+  fontSize: '17px',
+  fontWeight: '700',
+  height: '56px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '10px 16px',
+  children: 'Continue',
+}

@@ -83,6 +83,7 @@ export const enum answerWithCheckboxTheme {
   CARDIMATE = 'cardimate',
   LUVLY = 'luvly',
   BLESSED_PATH = 'blessedPath',
+  SPILIO = 'spilio',
 }
 
 const answerWithCheckboxThemes: Record<
@@ -465,6 +466,32 @@ const answerWithCheckboxThemes: Record<
     padding: '24px',
     reverse: true,
     spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  },
+  spilio: {
+    type: 'checkbox',
+    isFullWidth: true,
+    height: '80px',
+    backgroundColor: '#f2f3f5',
+    activeBackgroundColor: '#fff',
+    color: '#17202a',
+    fontSize: '17px',
+    fontWeight: '400',
+    lineHeight: '24px',
+    borderRadius: '16px',
+    padding: '0 17px',
+    margin: '0 0 16px',
+    spacingBetweenCheckboxAndContent: '0 16px 0 0',
+    checkboxWidth: '24px',
+    checkboxHeight: '24px',
+    checkboxBorderRadius: '6px',
+    checkboxBorder: '1px solid #e9e9e9',
+    checkboxBackgroundActiveColor: '#1a1a1a',
+    reverse: true,
+    activeColor: '#17202a',
+    border: '1px solid #e9e9e9',
+    activeBorder: '1px solid #2c3131',
+    iconSrc: checkIconWhite,
+    checkboxActiveBorder: '1px solid #1a1a1a',
   },
 }
 

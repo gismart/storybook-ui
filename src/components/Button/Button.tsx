@@ -51,6 +51,7 @@ export const enum buttonTheme {
   FITMI_DARK = 'fitmeDark',
   CARDIMATE = 'cardimatePrimary',
   FAMIO = 'famioPrimary',
+  SPILIO = 'spilioPrimary',
 }
 
 const buttonThemes: Record<string, any> = {
@@ -159,6 +160,18 @@ const buttonThemes: Record<string, any> = {
     backgroundColor: '#6336ff',
     borderRadius: '30px',
     disableBackgroundColor: 'rgba(99, 54, 255, 0.3)',
+    fontSize: '17px',
+    fontWeight: '700',
+    height: '56px',
+    isFullWidth: true,
+    lineHeight: '24px',
+    maxWidth: '343px',
+    padding: '10px 16px',
+  },
+  spilioPrimary: {
+    backgroundColor: '#1a1a1a',
+    borderRadius: '30px',
+    disableBackgroundColor: '#cacaca',
     fontSize: '17px',
     fontWeight: '700',
     height: '56px',

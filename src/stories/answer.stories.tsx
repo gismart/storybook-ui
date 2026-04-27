@@ -338,3 +338,23 @@ SimpleCardimate.args = {
   children: 'Female',
   value: 'female',
 }
+
+export const Spilio = Template.bind({})
+Spilio.args = {
+  children: `Yes, pause my subscription and contact me`,
+  type: 'checkbox',
+  boxShadow: 'none',
+  isFullWidth: true,
+  height: '80px',
+  backgroundColor: '#f2f3f5',
+  activeBackgroundColor: '#fff',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #1a1a1a',
+  color: '#17202a',
+  activeColor: '#17202a',
+  fontSize: '17px',
+  lineHeight: '24px',
+  borderRadius: '16px',
+  padding: '0 17px',
+  margin: '0 0 16px',
+}
