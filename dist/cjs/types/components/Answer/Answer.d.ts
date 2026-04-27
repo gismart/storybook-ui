@@ -16,6 +16,7 @@ export declare const enum answerTheme {
     FITME_DARK = "fitmeDark",
     ACCOUNT_FITME = "accountFitme",
     CARDIMATE = "cardimate",
-    LUVLY_SOLID = "luvlySolid"
+    LUVLY_SOLID = "luvlySolid",
+    SPILIO = "spilio"
 }
 export declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent>;
