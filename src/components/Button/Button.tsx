@@ -52,6 +52,7 @@ export const enum buttonTheme {
   CARDIMATE = 'cardimatePrimary',
   FAMIO = 'famioPrimary',
   SPILIO = 'spilioPrimary',
+  AYAHPATH = 'ayahpathPrimary',
 }
 
 const buttonThemes: Record<string, any> = {
@@ -172,6 +173,20 @@ const buttonThemes: Record<string, any> = {
     backgroundColor: '#1a1a1a',
     borderRadius: '30px',
     disableBackgroundColor: '#cacaca',
+    fontSize: '17px',
+    fontWeight: '700',
+    height: '56px',
+    isFullWidth: true,
+    lineHeight: '24px',
+    maxWidth: '343px',
+    padding: '10px 16px',
+  },
+  ayahpathPrimary: {
+    color: '#FFD188',
+    backgroundColor: '#1E353E',
+    borderRadius: '30px',
+    disableBackgroundColor: '#cacaca',
+    disableColor: '#FFFFFF',
     fontSize: '17px',
     fontWeight: '700',
     height: '56px',

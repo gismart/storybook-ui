@@ -170,3 +170,20 @@ PrimarySpilio.args = {
   padding: '10px 16px',
   children: 'Continue',
 }
+
+export const PrimaryAyahPath = Template.bind({})
+PrimaryAyahPath.args = {
+  backgroundColor: '#1E353E',
+  borderRadius: '30px',
+  color: '#FFD188',
+  disableBackgroundColor: '#cacaca',
+  disableColor: '#FFFFFF',
+  fontSize: '17px',
+  fontWeight: '700',
+  height: '56px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '10px 16px',
+  children: 'Continue',
+}
