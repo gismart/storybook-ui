@@ -22,6 +22,7 @@ export const enum answerTheme {
   CARDIMATE = 'cardimate',
   LUVLY_SOLID = 'luvlySolid',
   SPILIO = 'spilio',
+  AYAHPATH = 'ayahpath',
 }
 
 const answerThemes: Record<string, Record<string, string | boolean>> = {
@@ -283,6 +284,25 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     color: '#17202a',
     activeColor: '#17202a',
     fontSize: '17px',
+    lineHeight: '24px',
+    borderRadius: '16px',
+    padding: '0 17px',
+    margin: '0 0 16px',
+    value: 'User answer',
+  },
+  ayahpath: {
+    type: 'checkbox',
+    boxShadow: 'none',
+    isFullWidth: true,
+    height: '80px',
+    backgroundColor: '#f2f3f5',
+    activeBackgroundColor: 'rgba(173, 144, 60, 0.12)',
+    border: '1px solid #E9E9E9',
+    activeBorder: '1px solid #AD903C',
+    color: '#17202A',
+    activeColor: '#17202a',
+    fontSize: '17px',
+    fontWeight: '400',
     lineHeight: '24px',
     borderRadius: '16px',
     padding: '0 17px',

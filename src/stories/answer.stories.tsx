@@ -358,3 +358,24 @@ Spilio.args = {
   padding: '0 17px',
   margin: '0 0 16px',
 }
+
+export const AyahPath = Template.bind({})
+AyahPath.args = {
+  children: `Yes, pause my subscription and contact me`,
+  type: 'checkbox',
+  boxShadow: 'none',
+  isFullWidth: true,
+  height: '80px',
+  backgroundColor: '#f2f3f5',
+  activeBackgroundColor: 'rgba(173, 144, 60, 0.12)',
+  border: '1px solid #E9E9E9',
+  activeBorder: '1px solid #AD903C',
+  color: '#17202A',
+  activeColor: '#17202a',
+  fontSize: '17px',
+  lineHeight: '24px',
+  fontWeight: '400',
+  borderRadius: '16px',
+  padding: '0 17px',
+  margin: '0 0 16px',
+}
