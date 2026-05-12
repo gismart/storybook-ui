@@ -42,6 +42,7 @@ export declare const enum buttonTheme {
     FITMI_DARK = "fitmeDark",
     CARDIMATE = "cardimatePrimary",
     FAMIO = "famioPrimary",
-    SPILIO = "spilioPrimary"
+    SPILIO = "spilioPrimary",
+    AYAHPATH = "ayahpathPrimary"
 }
 export declare const Button: React.FC<IButtonProps>;

@@ -181,7 +181,8 @@ declare const enum answerTheme {
     ACCOUNT_FITME = "accountFitme",
     CARDIMATE = "cardimate",
     LUVLY_SOLID = "luvlySolid",
-    SPILIO = "spilio"
+    SPILIO = "spilio",
+    AYAHPATH = "ayahpath"
 }
 declare const Answer: React.FC<IAnswerButtonProps & IOptionProps & IThemedComponent>;
 
@@ -245,6 +246,7 @@ declare const enum answerWithCheckboxTheme {
     CARDIMATE = "cardimate",
     LUVLY = "luvly",
     BLESSED_PATH = "blessedPath",
+    AYAHPATH = "ayahPath",
     SPILIO = "spilio"
 }
 declare const AnswerWithCheckbox: React.FC<IAnswerWithCheckboxProps & IOptionProps & ICheckboxProps$1 & IAnswerWithCheckboxContentProps & IThemedComponent>;
@@ -415,7 +417,8 @@ declare const enum buttonTheme {
     FITMI_DARK = "fitmeDark",
     CARDIMATE = "cardimatePrimary",
     FAMIO = "famioPrimary",
-    SPILIO = "spilioPrimary"
+    SPILIO = "spilioPrimary",
+    AYAHPATH = "ayahpathPrimary"
 }
 declare const Button: React.FC<IButtonProps>;
 
