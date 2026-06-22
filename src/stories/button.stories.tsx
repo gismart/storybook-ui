@@ -92,6 +92,21 @@ PrimaryNutrimate.args = {
   padding: '10px 16px',
 }
 
+export const NutriWalking = Template.bind({})
+NutriWalking.args = {
+  backgroundColor: '#f1693b',
+  borderRadius: '30px',
+  children: 'Continue',
+  disableBackgroundColor: '#cacaca',
+  fontSize: '17px',
+  fontWeight: '700',
+  height: '56px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '10px 16px',
+}
+
 export const DefaultNutrimate = Template.bind({})
 DefaultNutrimate.args = {
   backgroundColor: '#fff',

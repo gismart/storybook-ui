@@ -362,6 +362,37 @@ AccountNutrimateCheckbox.args = {
   checkboxActiveBorder: '1px solid transparent',
 }
 
+export const NutriWalkingCheckbox = Template.bind({})
+NutriWalkingCheckbox.args = {
+  activeBackgroundColor: '#fff2e1',
+  activeBorder: '1px solid #f1693b',
+  activeColor: '#2c3131',
+  backgroundColor: '#fff',
+  border: '1px solid #e9e9e9',
+  borderRadius: '16px',
+  children: 'Whole body',
+  checkboxActiveBorder: '1px solid #f1693b',
+  checkboxBackgroundActiveColor: '#f1693b',
+  checkboxBackgroundColor: '#fff',
+  checkboxBorder: '1px solid #E9E9E9',
+  checkboxBorderRadius: '8px',
+  checkboxHeight: '24px',
+  checkboxWidth: '24px',
+  color: '#2c3131',
+  fontSize: '17px',
+  fontWeight: '600',
+  height: '80px',
+  iconSrc: checkIconWhite,
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '0 16px',
+  reverse: true,
+  spacingBetweenCheckboxAndContent: '0 16px 0 0',
+  value: 'whole_body',
+  type: 'checkbox',
+}
+
 export const FitmeCheckbox = Template.bind({})
 FitmeCheckbox.args = {
   height: '80px',

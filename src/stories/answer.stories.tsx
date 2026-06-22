@@ -253,6 +253,27 @@ AccountNutrimate.args = {
   margin: '0 0 16px',
 }
 
+export const NutriWalking = Template.bind({})
+NutriWalking.args = {
+  children: 'The challenge is overwhelming and requires too much effort',
+  type: 'checkbox',
+  boxShadow: 'none',
+  isFullWidth: true,
+  height: '80px',
+  backgroundColor: '#fff',
+  activeBackgroundColor: '#fff2e1',
+  border: '1px solid #e9e9e9',
+  activeBorder: '1px solid #f1693b',
+  color: '#2c3131',
+  activeColor: '#2c3131',
+  fontSize: '17px',
+  fontWeight: '600',
+  lineHeight: '24px',
+  borderRadius: '48px',
+  padding: '0 17px',
+  margin: '0 0 16px',
+}
+
 export const SimpleFitme = Template.bind({})
 SimpleFitme.args = {
   height: '80px',
