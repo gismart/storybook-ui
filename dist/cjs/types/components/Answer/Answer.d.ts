@@ -11,6 +11,7 @@ export declare const enum answerTheme {
     LUVLY = "luvly",
     ACCOUNT_LUVLY = "accountLuvly",
     NUTRIMATE = "nutrimate",
+    NUTRI_WALKING = "nutriWalking",
     ACCOUNT_NUTRIMATE = "accountNutrimate",
     FITME = "fitme",
     FITME_DARK = "fitmeDark",

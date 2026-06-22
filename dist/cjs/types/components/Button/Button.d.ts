@@ -38,6 +38,7 @@ export declare const enum buttonTheme {
     DANCEBIT = "dancebitPrimary",
     NUTRIMATE_PRIMARY = "nutrimatePrimary",
     NUTRIMATE_DEFAULT = "nutrimateDefault",
+    NUTRI_WALKING = "nutriWalking",
     FITMI = "fitmePrimary",
     FITMI_DARK = "fitmeDark",
     CARDIMATE = "cardimatePrimary",
