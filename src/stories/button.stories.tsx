@@ -186,6 +186,21 @@ PrimarySpilio.args = {
   children: 'Continue',
 }
 
+export const PrimaryDeeply = Template.bind({})
+PrimaryDeeply.args = {
+  backgroundColor: '#0C6760',
+  borderRadius: '30px',
+  disableBackgroundColor: '#cacaca',
+  fontSize: '17px',
+  fontWeight: '700',
+  height: '56px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '10px 16px',
+  children: 'Continue',
+}
+
 export const PrimaryAyahPath = Template.bind({})
 PrimaryAyahPath.args = {
   backgroundColor: '#1E353E',
