@@ -9,7 +9,7 @@ on:
           - build
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, docker]
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -24,7 +24,7 @@ jobs:
         name: app-build
         path: ./dist
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, docker]
     needs: [build]
     steps:
       - uses: actions/checkout@v3
