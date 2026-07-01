@@ -56,6 +56,7 @@ export const enum buttonTheme {
   DEEPLY = 'deeplyPrimary',
   AYAHPATH = 'ayahpathPrimary',
   AYAHPATH_SECONDARY = 'ayahpathSecondary',
+  MYGROWTH = 'mygrowthPrimary',
 }
 
 const buttonThemes: Record<string, any> = {
@@ -233,6 +234,19 @@ const buttonThemes: Record<string, any> = {
     lineHeight: '24px',
     height: '56px',
     isFullWidth: true,
+    maxWidth: '343px',
+    padding: '10px 16px',
+  },
+  mygrowthPrimary: {
+    backgroundColor: '#8378ef',
+    color: '#ffffff',
+    borderRadius: '30px',
+    disableBackgroundColor: '#cacaca',
+    fontSize: '17px',
+    fontWeight: '700',
+    height: '56px',
+    isFullWidth: true,
+    lineHeight: '24px',
     maxWidth: '343px',
     padding: '10px 16px',
   },
