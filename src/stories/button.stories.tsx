@@ -218,6 +218,22 @@ PrimaryAyahPath.args = {
   children: 'Continue',
 }
 
+export const PrimaryMyGrowth = Template.bind({})
+PrimaryMyGrowth.args = {
+  backgroundColor: '#8378ef',
+  color: '#ffffff',
+  borderRadius: '30px',
+  disableBackgroundColor: '#cacaca',
+  fontSize: '17px',
+  fontWeight: '700',
+  height: '56px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '10px 16px',
+  children: 'Continue',
+}
+
 export const SecondaryAyahPath = Template.bind({})
 SecondaryAyahPath.args = {
   backgroundColor: '#D7DFE5',
