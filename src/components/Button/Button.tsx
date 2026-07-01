@@ -55,6 +55,7 @@ export const enum buttonTheme {
   SPILIO = 'spilioPrimary',
   DEEPLY = 'deeplyPrimary',
   AYAHPATH = 'ayahpathPrimary',
+  AYAHPATH_SECONDARY = 'ayahpathSecondary',
 }
 
 const buttonThemes: Record<string, any> = {
@@ -218,6 +219,20 @@ const buttonThemes: Record<string, any> = {
     height: '56px',
     isFullWidth: true,
     lineHeight: '24px',
+    maxWidth: '343px',
+    padding: '10px 16px',
+  },
+  ayahpathSecondary: {
+    color: '#1E353E',
+    backgroundColor: '#D7DFE5',
+    borderRadius: '30px',
+    disableBackgroundColor: '#cacaca',
+    disableColor: '#FFFFFF',
+    fontSize: '17px',
+    fontWeight: '700',
+    lineHeight: '24px',
+    height: '56px',
+    isFullWidth: true,
     maxWidth: '343px',
     padding: '10px 16px',
   },
