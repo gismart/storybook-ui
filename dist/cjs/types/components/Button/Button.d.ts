@@ -46,6 +46,7 @@ export declare const enum buttonTheme {
     SPILIO = "spilioPrimary",
     DEEPLY = "deeplyPrimary",
     AYAHPATH = "ayahpathPrimary",
-    AYAHPATH_SECONDARY = "ayahpathSecondary"
+    AYAHPATH_SECONDARY = "ayahpathSecondary",
+    MYGROWTH = "mygrowthPrimary"
 }
 export declare const Button: React.FC<IButtonProps>;
