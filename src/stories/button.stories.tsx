@@ -250,3 +250,19 @@ SecondaryAyahPath.args = {
   padding: '10px 16px',
   children: 'Cancel My Subscription',
 }
+
+export const PrimaryTestora = Template.bind({})
+PrimaryTestora.args = {
+  backgroundColor: '#50AB64',
+  color: '#ffffff',
+  borderRadius: '30px',
+  disableBackgroundColor: '#cacaca',
+  fontSize: '17px',
+  fontWeight: '700',
+  height: '56px',
+  isFullWidth: true,
+  lineHeight: '24px',
+  maxWidth: '343px',
+  padding: '10px 16px',
+  children: 'Continue',
+}
