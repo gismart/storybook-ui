@@ -25,6 +25,7 @@ export const enum answerTheme {
   SPILIO = 'spilio',
   DEEPLY = 'deeply',
   AYAHPATH = 'ayahpath',
+  TESTORA = 'testora',
 }
 
 const answerThemes: Record<string, Record<string, string | boolean>> = {
@@ -338,6 +339,25 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     activeBackgroundColor: 'rgba(173, 144, 60, 0.12)',
     border: '1px solid #E9E9E9',
     activeBorder: '1px solid #AD903C',
+    color: '#17202A',
+    activeColor: '#17202a',
+    fontSize: '17px',
+    fontWeight: '400',
+    lineHeight: '24px',
+    borderRadius: '16px',
+    padding: '0 17px',
+    margin: '0 0 16px',
+    value: 'User answer',
+  },
+  testora: {
+    type: 'checkbox',
+    boxShadow: 'none',
+    isFullWidth: true,
+    height: '80px',
+    backgroundColor: '#f2f3f5',
+    activeBackgroundColor: '#EDFFF1',
+    border: '1px solid #E9E9E9',
+    activeBorder: '1px solid #50AB64',
     color: '#17202A',
     activeColor: '#17202a',
     fontSize: '17px',
