@@ -87,6 +87,7 @@ export const enum answerWithCheckboxTheme {
   AYAHPATH = 'ayahPath',
   SPILIO = 'spilio',
   DEEPLY = 'deeply',
+  FAMIO = 'famio',
 }
 
 const answerWithCheckboxThemes: Record<
@@ -599,6 +600,32 @@ const answerWithCheckboxThemes: Record<
     activeBorder: '1px solid #50AB64',
     iconSrc: checkIconWhite,
     checkboxActiveBorder: '1px solid #50AB64',
+  },
+  famio: {
+    type: 'checkbox',
+    isFullWidth: true,
+    height: 'auto',
+    backgroundColor: '#fff',
+    activeBackgroundColor: '#E7E6FF',
+    color: '#0a324d',
+    fontSize: '16px',
+    fontWeight: '600',
+    lineHeight: '22px',
+    borderRadius: '30px',
+    padding: '16px 58px 16px 24px',
+    margin: '0 0 12px',
+    spacingBetweenCheckboxAndContent: '0 16px 0 0',
+    checkboxWidth: '18px',
+    checkboxHeight: '18px',
+    checkboxBorderRadius: '4px',
+    checkboxBorder: '2px solid #bcc9d0',
+    checkboxBackgroundActiveColor: '#6336FF',
+    reverse: true,
+    activeColor: '#0a324d',
+    border: '1px solid transparent',
+    activeBorder: '1px solid #6336FF',
+    iconSrc: checkIconWhite,
+    checkboxActiveBorder: 'none',
   },
 }
 

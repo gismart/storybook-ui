@@ -442,3 +442,25 @@ Testora.args = {
   margin: '0 0 16px',
   value: 'User answer',
 }
+
+export const Famio = Template.bind({})
+Famio.args = {
+  children: `Yes, pause my subscription and contact me`,
+  type: 'checkbox',
+  boxShadow: 'none',
+  isFullWidth: true,
+  height: '70px',
+  backgroundColor: '#eff5f7',
+  activeBackgroundColor: '#6336ff',
+  border: '1px solid transparent',
+  activeBorder: 'none',
+  color: '#0a324d',
+  activeColor: '#fff',
+  fontSize: '16px',
+  fontWeight: '600',
+  lineHeight: '22px',
+  borderRadius: '16px',
+  padding: '0 24px',
+  margin: '0 0 12px',
+  value: 'User answer',
+}

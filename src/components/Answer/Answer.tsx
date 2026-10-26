@@ -26,6 +26,7 @@ export const enum answerTheme {
   DEEPLY = 'deeply',
   AYAHPATH = 'ayahpath',
   TESTORA = 'testora',
+  FAMIO = 'famio',
 }
 
 const answerThemes: Record<string, Record<string, string | boolean>> = {
@@ -366,6 +367,25 @@ const answerThemes: Record<string, Record<string, string | boolean>> = {
     borderRadius: '16px',
     padding: '0 17px',
     margin: '0 0 16px',
+    value: 'User answer',
+  },
+  famio: {
+    type: 'checkbox',
+    boxShadow: 'none',
+    isFullWidth: true,
+    height: '70px',
+    backgroundColor: '#eff5f7',
+    activeBackgroundColor: '#6336ff',
+    border: '1px solid transparent',
+    activeBorder: 'none',
+    color: '#0a324d',
+    activeColor: '#fff',
+    fontSize: '16px',
+    fontWeight: '600',
+    lineHeight: '22px',
+    borderRadius: '16px',
+    padding: '0 24px',
+    margin: '0 0 12px',
     value: 'User answer',
   },
 }
